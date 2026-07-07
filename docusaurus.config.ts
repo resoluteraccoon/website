@@ -2,35 +2,24 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
   title: 'Resolute Raccoon',
   tagline: 'Blackhat-grade cybersecurity club',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
   url: 'https://resoluteraccoon.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/website/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'resoluteraccoon', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
+  organizationName: 'resoluteraccoon',
+  projectName: 'website',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -42,22 +31,12 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/resoluteraccoon/website/edit/main/',
+          editUrl: 'https://github.com/resoluteraccoon/website/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/resoluteraccoon/website/edit/main/',
-          // Useful options to enforce blogging best practices
+          feedOptions: { type: ['rss', 'atom'], xslt: true },
+          editUrl: 'https://github.com/resoluteraccoon/website/edit/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -70,113 +49,57 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/resoluteraccoon-social-card.jpg',
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'Resolute Raccoon',
       logo: {
-        alt: 'Resolute Raccoon Logo',
-        src: 'img/logo.jpg',
+        alt: 'Resolute Raccoon',
+        src: 'img/logo.png',
+        target: '_self',
       },
       items: [
-        {
-          to: '/docs/about',
-          label: 'About',
-          position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Features',
-        },
-        {
-          to: '/docs/learnings/overview',
-          label: 'Learnings',
-          position: 'left',
-        },
-        {
-          to: '/docs/community/overview',
-          label: 'Community',
-          position: 'left',
-        },
-        {
-          to: '/docs/hacker-club/overview',
-          label: 'Hacker Club',
-          position: 'left',
-        },
-        {
-          href: 'https://github.com/resoluteraccoon/website',
-          label: 'GitHub',
-          position: 'right',
-        },
+        { to: '/docs/about', label: 'About', position: 'left' },
+        { to: '/docs/features/overview', label: 'Features', position: 'left' },
+        { to: '/docs/learnings/overview', label: 'Learnings', position: 'left' },
+        { to: '/docs/community/overview', label: 'Community', position: 'left' },
+        { to: '/docs/hacker-club/overview', label: 'Hacker Club', position: 'left' },
+        { href: 'https://github.com/resoluteraccoon', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'Resolute Raccoon',
+        src: 'img/logo.png',
+        height: 50,
+        width: 50,
+      },
       links: [
         {
-          title: 'Docs',
+          title: 'Sitemap',
           items: [
-            {
-              label: 'About',
-              to: '/docs/about',
-            },
-            {
-              label: 'Features',
-              to: '/docs/features/overview',
-            },
-            {
-              label: 'Learnings',
-              to: '/docs/learnings/overview',
-            },
-            {
-              label: 'Community',
-              to: '/docs/community/overview',
-            },
-            {
-              label: 'Hacker Club',
-              to: '/docs/hacker-club/overview',
-            },
+            { label: 'About', to: '/docs/about' },
+            { label: 'Features', to: '/docs/features/overview' },
+            { label: 'Learnings', to: '/docs/learnings/overview' },
+            { label: 'Community', to: '/docs/community/overview' },
+            { label: 'Hacker Club', to: '/docs/hacker-club/overview' },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/resoluteraccoon/website',
-            },
+            { label: 'Discord', href: '#' },
+            { label: 'X / Twitter', href: '#' },
+            { label: 'GitHub', href: 'https://github.com/resoluteraccoon' },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Resolute Raccoon. Built with Docusaurus.`,
+      copyright: 'Copyright © 2026 Resolute Raccoon. Built by students, for students.',
     },
     prism: {
       theme: prismThemes.github,

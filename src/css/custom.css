@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-family-heading: 'Space Grotesk', 'Inter', sans-serif;
   --ifm-color-primary: #00cc6a;
   --ifm-color-primary-dark: #00b35c;
   --ifm-color-primary-darker: #00994d;
@@ -17,9 +18,34 @@
   --ifm-heading-color: #ffffff;
 }
 
-/* Dark mode forced */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.navbar__logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.navbar__logo img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pagination-nav {
+  display: none;
+}
+
+/* Dark theme forced */
 [data-theme='dark'] {
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-family-heading: 'Space Grotesk', 'Inter', sans-serif;
   --ifm-color-primary: #00cc6a;
   --ifm-color-primary-dark: #00b35c;
   --ifm-color-primary-darker: #00994d;
@@ -35,15 +61,13 @@
   --ifm-heading-color: #ffffff;
 }
 
-/* Global styles */
 html, body {
   background-color: #0a0a0a;
   color: #e0e0e0;
 }
 
-/* Navbar */
 .navbar {
-  background-color: #0d0cccc66a10 !important;
+  background-color: #0d0d0d !important;
   border-bottom: 1px solid #1a1a1a;
 }
 
@@ -51,6 +75,8 @@ html, body {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.02em;
+  font-family: var(--ifm-font-family-heading);
+  text-transform: uppercase;
 }
 
 .navbar__link {
@@ -62,7 +88,6 @@ html, body {
   color: #00cc6a !important;
 }
 
-/* Sidebar */
 .menu__link {
   color: #b3b3b3 !important;
   font-weight: 500;
@@ -77,7 +102,6 @@ html, body {
   background: #1a1a1a !important;
 }
 
-/* Footer */
 .footer {
   background-color: #0d0d0d !important;
   border-top: 1px solid #1a1a1a;
@@ -91,7 +115,6 @@ html, body {
   color: #00cc6a !important;
 }
 
-/* Buttons */
 .button--primary {
   background: #00cc6a;
   border-color: #00cc6a;
@@ -115,7 +138,6 @@ html, body {
   color: #00cc6a;
 }
 
-/* Code blocks */
 .codeBlock {
   background: #0d0d0d !important;
   border: 1px solid #1a1a1a;
@@ -130,7 +152,6 @@ html, body {
   background: rgba(0, 204, 106, 0.1) !important;
 }
 
-/* Cards */
 .card {
   background: #111111;
   border: 1px solid #1a1a1a;
@@ -142,7 +163,6 @@ html, body {
   box-shadow: 0 4px 20px rgba(0, 204, 106, 0.1);
 }
 
-/* Hero */
 .hero {
   background: linear-gradient(180deg, #0a0a0a 0%, #0d0d0d 100%);
   border-bottom: 1px solid #1a1a1a;
@@ -152,6 +172,8 @@ html, body {
   color: #ffffff;
   font-weight: 700;
   letter-spacing: -0.03em;
+  font-family: var(--ifm-font-family-heading);
+  text-transform: uppercase;
 }
 
 .hero__subtitle {
@@ -159,7 +181,6 @@ html, body {
   font-weight: 400;
 }
 
-/* Links */
 a {
   color: #00cc6a;
 }
@@ -168,7 +189,6 @@ a:hover {
   color: #33e688;
 }
 
-/* Headings */
 .markdown h1, .markdown h2, .markdown h3, .markdown h4 {
   color: #ffffff;
 }
@@ -178,13 +198,11 @@ a:hover {
   padding-bottom: 0.5rem;
 }
 
-/* Selection */
 ::selection {
   background: rgba(0, 204, 106, 0.3);
   color: #ffffff;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -203,7 +221,6 @@ a:hover {
   background: #00cc6a;
 }
 
-/* Table of Contents */
 .tableOfContents {
   border-left: 1px solid #1a1a1a;
 }
@@ -218,7 +235,6 @@ a:hover {
   border-left-color: #00cc6a;
 }
 
-/* Dropdown menus */
 .dropdown__menu {
   background: #111111;
   border: 1px solid #1a1a1a;
@@ -233,7 +249,6 @@ a:hover {
   color: #00cc6a;
 }
 
-/* Inline code */
 .markdown code {
   background: #111111;
   color: #ff6b6b;
@@ -248,14 +263,12 @@ a:hover {
   padding: 0;
 }
 
-/* Blockquotes */
 .markdown blockquote {
   border-left: 3px solid #00cc6a;
   background: #0d0d0d;
   color: #b3b3b3;
 }
 
-/* HR */
 .markdown hr {
   border-color: #1a1a1a;
 }

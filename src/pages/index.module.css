@@ -1,23 +1,186 @@
 /**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
+ * Homepage styles - Hero slideshow + Feature cards
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.heroSlideshow {
+  height: 100vh;
+  min-height: 600px;
   position: relative;
   overflow: hidden;
+  background: #0a0a0a;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+.slidesContainer {
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  pointer-events: none;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.slideHeadline {
+  font-family: var(--ifm-font-family-heading);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 1.5rem;
+  line-height: 1.1;
+}
+
+.slideSubtext {
+  font-family: var(--ifm-font-family-base);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  color: #b3b3b3;
+  margin: 0;
+  max-width: 700px;
+}
+
+.dotIndicators {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.75rem;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #333333;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dot:hover {
+  background: #666666;
+}
+
+.dot.active {
+  background: #00cc6a;
+  transform: scale(1.2);
+}
+
+/* Feature Cards Section */
+.featureCardsSection {
+  padding: 6rem 0;
+  background: #0a0a0a;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 996px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
   }
 }
 
-.buttons {
-  display: flex;
+.featureCard {
+  position: relative;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #00cc6a;
+  border-radius: 0 0 2px 2px;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  border-color: #00cc6a;
+  box-shadow: 0 20px 40px rgba(0, 204, 106, 0.15);
+}
+
+.cardAccent {
+  display: none; /* handled by ::before */
+}
+
+.cardTitle {
+  font-family: var(--ifm-font-family-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin: 1rem 0 1rem;
+}
+
+.cardDescription {
+  font-family: var(--ifm-font-family-base);
+  font-size: 1rem;
+  font-weight: 400;
+  color: #b3b3b3;
+  line-height: 1.6;
+  margin: 0 0 2rem;
+}
+
+.cardCTA {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--ifm-font-family-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #00cc6a;
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.cardCTA:hover {
+  color: #33e688;
+  gap: 0.75rem;
 }
