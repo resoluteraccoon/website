@@ -1,82 +1,49 @@
-/**
- * ResoluteRaccoon - Dark Hacker Theme
- * Black background, green accent, Inter font
- */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --ifm-color-primary: #00cc6a;
-  --ifm-color-primary-dark: #00b35f;
-  --ifm-color-primary-darker: #00a357;
-  --ifm-color-primary-darkest: #008045;
-  --ifm-color-primary-light: #1ae67a;
-  --ifm-color-primary-lighter: #33e688;
-  --ifm-color-primary-lightest: #66edae;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 204, 106, 0.15);
-  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --ifm-color-primary-dark: #00b35c;
+  --ifm-color-primary-darker: #00994d;
+  --ifm-color-primary-darkest: #007a3d;
+  --ifm-color-primary-light: #00e67a;
+  --ifm-color-primary-lighter: #1aff8c;
+  --ifm-color-primary-lightest: #4dffa6;
   --ifm-background-color: #0a0a0a;
-  --ifm-background-surface-color: #111111;
-  --ifm-color-content: #ffffff;
-  --ifm-color-content-secondary: #b3b3b3;
-  --ifm-link-color: #00cc6a;
-  --ifm-link-hover-color: #33e688;
-  --ifm-navbar-background-color: #0a0a0a;
-  --ifm-navbar-border-color: #1a1a1a;
-  --ifm-footer-background-color: #0a0a0a;
-  --ifm-footer-color: #ffffff;
-  --ifm-footer-link-color: #b3b3b3;
-  --ifm-footer-link-hover-color: #00cc6a;
-  --ifm-menu-color: #ffffff;
-  --ifm-menu-color-active: #00cc6a;
-  --ifm-menu-background-active: #111111;
-  --ifm-table-border-color: #1a1a1a;
-  --ifm-table-stripe-background: #111111;
-  --ifm-code-background: #111111;
-  --ifm-pre-background: #0d0d0d;
-  --ifm-hr-border-color: #1a1a1a;
+  --ifm-navbar-background-color: #0d0d0d;
+  --ifm-sidebar-background-color: #0d0d0d;
+  --ifm-footer-background-color: #0d0d0d;
+  --ifm-font-color-base: #e0e0e0;
+  --ifm-heading-color: #ffffff;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode forced */
 [data-theme='dark'] {
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --ifm-color-primary: #00cc6a;
-  --ifm-color-primary-text-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 204, 106, 0.15);
+  --ifm-color-primary-dark: #00b35c;
+  --ifm-color-primary-darker: #00994d;
+  --ifm-color-primary-darkest: #007a3d;
+  --ifm-color-primary-light: #00e67a;
+  --ifm-color-primary-lighter: #1aff8c;
+  --ifm-color-primary-lightest: #4dffa6;
   --ifm-background-color: #0a0a0a;
-  --ifm-background-surface-color: #111111;
-  --ifm-color-content: #ffffff;
-  --ifm-color-content-secondary: #b3b3b3;
-  --ifm-link-color: #00cc6a;
-  --ifm-link-hover-color: #33e688;
-  --ifm-navbar-background-color: #0a0a0a;
-  --ifm-navbar-border-color: #1a1a1a;
-  --ifm-footer-background-color: #0a0a0a;
-  --ifm-footer-color: #ffffff;
-  --ifm-footer-link-color: #b3b3b3;
-  --ifm-footer-link-hover-color: #00cc6a;
-  --ifm-menu-color: #ffffff;
-  --ifm-menu-color-active: #00cc6a;
-  --ifm-menu-background-active: #111111;
-  --ifm-table-border-color: #1a1a1a;
-  --ifm-table-stripe-background: #111111;
-  --ifm-code-background: #111111;
-  --ifm-pre-background: #0d0d0d;
-  --ifm-hr-border-color: #1a1a1a;
+  --ifm-navbar-background-color: #0d0d0d;
+  --ifm-sidebar-background-color: #0d0d0d;
+  --ifm-footer-background-color: #0d0d0d;
+  --ifm-font-color-base: #e0e0e0;
+  --ifm-heading-color: #ffffff;
 }
 
-html {
-  background: #0a0a0a;
+/* Global styles */
+html, body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
 }
 
-body {
-  background: #0a0a0a;
-  color: #ffffff;
-}
-
+/* Navbar */
 .navbar {
-  background: #0a0a0a !important;
+  background-color: #0d0cccc66a10 !important;
   border-bottom: 1px solid #1a1a1a;
 }
 
@@ -89,35 +56,31 @@ body {
 .navbar__link {
   color: #ffffff !important;
   font-weight: 500;
-  transition: color 0.15s ease;
 }
 
 .navbar__link:hover {
   color: #00cc6a !important;
 }
 
-.navbar__items .navbar__item {
-  font-weight: 500;
-}
-
+/* Sidebar */
 .menu__link {
-  color: #ffffff !important;
+  color: #b3b3b3 !important;
   font-weight: 500;
-}
-
-.menu__link--active {
-  color: #00cc6a !important;
-  background: #111111 !important;
 }
 
 .menu__link:hover {
   color: #00cc6a !important;
 }
 
+.menu__link--active {
+  color: #00cc6a !important;
+  background: #1a1a1a !important;
+}
+
+/* Footer */
 .footer {
-  background: #0a0a0a !important;
+  background-color: #0d0d0d !important;
   border-top: 1px solid #1a1a1a;
-  color: #ffffff;
 }
 
 .footer__link-item {
@@ -128,26 +91,17 @@ body {
   color: #00cc6a !important;
 }
 
-.footer__copyright {
-  color: #666666;
-}
-
-.button--primary,
-.button--secondary {
-  border-radius: 4px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
+/* Buttons */
 .button--primary {
   background: #00cc6a;
   border-color: #00cc6a;
   color: #0a0a0a;
+  font-weight: 600;
 }
 
 .button--primary:hover {
-  background: #00b35f;
-  border-color: #00b35f;
+  background: #00b35c;
+  border-color: #00b35c;
 }
 
 .button--secondary {
@@ -161,6 +115,7 @@ body {
   color: #00cc6a;
 }
 
+/* Code blocks */
 .codeBlock {
   background: #0d0d0d !important;
   border: 1px solid #1a1a1a;
@@ -175,63 +130,7 @@ body {
   background: rgba(0, 204, 106, 0.1) !important;
 }
 
-.prism-code {
-  color: #e0e0e0;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #666666;
-}
-
-.token.punctuation {
-  color: #999999;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: #ff6b6b;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #00cc6a;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.token.variable {
-  color: #ffd43b;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: #7aa2f7;
-}
-
-.token.function,
-.token.class-name {
-  color: #bb9af7;
-}
-
-.token.regex,
-.token.important {
-  color: #f7768e;
-}
-
+/* Cards */
 .card {
   background: #111111;
   border: 1px solid #1a1a1a;
@@ -243,92 +142,7 @@ body {
   box-shadow: 0 4px 20px rgba(0, 204, 106, 0.1);
 }
 
-.dropdown__menu {
-  background: #111111;
-  border: 1px solid #1a1a1a;
-}
-
-.dropdown__link {
-  color: #ffffff;
-}
-
-.dropdown__link:hover {
-  background: #1a1a1a;
-  color: #00cc6a;
-}
-
-.sidebar {
-  background: #0a0a0a;
-  border-right: 1px solid #1a1a1a;
-}
-
-.menu {
-  background: transparent;
-}
-
-.menu__list {
-  background: transparent;
-}
-
-.menu__link {
-  color: #b3b3b3;
-  font-weight: 500;
-  border-radius: 4px;
-  margin: 2px 8px;
-  padding: 8px 12px;
-  transition: all 0.15s ease;
-}
-
-.menu__link:hover {
-  background: #111111;
-  color: #00cc6a;
-}
-
-.menu__link--active {
-  background: #111111;
-  color: #00cc6a;
-  font-weight: 600;
-}
-
-.menu__link--sublist::after {
-  color: #666666;
-}
-
-.menu__sublist {
-  background: #0a0a0a;
-  border-left: 1px solid #1a1a1a;
-  margin-left: 8px;
-}
-
-.menu__sublist .menu__link {
-  font-size: 0.9rem;
-  padding: 6px 12px;
-  color: #999999;
-}
-
-.menu__sublist .menu__link:hover {
-  color: #00cc6a;
-}
-
-.menu__sublist .menu__link--active {
-  color: #00cc6a;
-  font-weight: 600;
-}
-
-.tableOfContents {
-  border-left: 1px solid #1a1a1a;
-}
-
-.tableOfContents__link {
-  color: #999999;
-}
-
-.tableOfContents__link:hover,
-.tableOfContents__link--active {
-  color: #00cc6a;
-  border-left-color: #00cc6a;
-}
-
+/* Hero */
 .hero {
   background: linear-gradient(180deg, #0a0a0a 0%, #0d0d0d 100%);
   border-bottom: 1px solid #1a1a1a;
@@ -345,43 +159,18 @@ body {
   font-weight: 400;
 }
 
-.hero__primaryButton {
-  background: #00cc6a;
-  border-color: #00cc6a;
-  color: #0a0a0a;
-  font-weight: 700;
-}
-
-.hero__primaryButton:hover {
-  background: #00b35f;
-  border-color: #00b35f;
-}
-
-.hero__secondaryButton {
-  border-color: #333333;
-  color: #ffffff;
-}
-
-.hero__secondaryButton:hover {
-  border-color: #00cc6a;
+/* Links */
+a {
   color: #00cc6a;
 }
 
-.docs-doc-title {
-  color: #ffffff;
-  font-weight: 700;
+a:hover {
+  color: #33e688;
 }
 
-.docs-doc-description {
-  color: #b3b3b3;
-}
-
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4 {
+/* Headings */
+.markdown h1, .markdown h2, .markdown h3, .markdown h4 {
   color: #ffffff;
-  font-weight: 600;
 }
 
 .markdown h1 {
@@ -389,44 +178,13 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.markdown a {
-  color: #00cc6a;
-  font-weight: 500;
-}
-
-.markdown a:hover {
-  color: #33e688;
-}
-
-.markdown code {
-  background: #111111;
-  color: #ff6b6b;
-  padding: 0.15rem 0.4rem;
-  border-radius: 3px;
-  font-size: 0.9em;
-}
-
-.markdown pre code {
-  background: transparent;
-  color: inherit;
-  padding: 0;
-}
-
-.markdown blockquote {
-  border-left: 3px solid #00cc6a;
-  background: #0d0d0d;
-  color: #b3b3b3;
-}
-
-.markdown hr {
-  border-color: #1a1a1a;
-}
-
+/* Selection */
 ::selection {
   background: rgba(0, 204, 106, 0.3);
   color: #ffffff;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -443,4 +201,61 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #00cc6a;
+}
+
+/* Table of Contents */
+.tableOfContents {
+  border-left: 1px solid #1a1a1a;
+}
+
+.tableOfContents__link {
+  color: #999999;
+}
+
+.tableOfContents__link:hover,
+.tableOfContents__link--active {
+  color: #00cc6a;
+  border-left-color: #00cc6a;
+}
+
+/* Dropdown menus */
+.dropdown__menu {
+  background: #111111;
+  border: 1px solid #1a1a1a;
+}
+
+.dropdown__link {
+  color: #ffffff;
+}
+
+.dropdown__link:hover {
+  background: #1a1a1a;
+  color: #00cc6a;
+}
+
+/* Inline code */
+.markdown code {
+  background: #111111;
+  color: #ff6b6b;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.markdown pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Blockquotes */
+.markdown blockquote {
+  border-left: 3px solid #00cc6a;
+  background: #0d0d0d;
+  color: #b3b3b3;
+}
+
+/* HR */
+.markdown hr {
+  border-color: #1a1a1a;
 }

@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'ResoluteRaccoon',
+  title: 'Resolute Raccoon',
   tagline: 'Blackhat-grade cybersecurity club',
   favicon: 'img/favicon.ico',
 
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/resoluteraccoon/website/tree/main/',
+            'https://github.com/resoluteraccoon/website/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/resoluteraccoon/website/tree/main/',
+            'https://github.com/resoluteraccoon/website/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -73,13 +73,15 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/resoluteraccoon-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'ResoluteRaccoon',
+      title: 'Resolute Raccoon',
       logo: {
         alt: 'Resolute Raccoon Logo',
-        src: 'img/logo.png',
+        src: 'img/logo.jpg',
       },
       items: [
         {
@@ -174,7 +176,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ResoluteRaccoon. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Resolute Raccoon. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
