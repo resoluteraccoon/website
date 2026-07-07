@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkresoluteraccoon_website=self.webpackChunkresoluteraccoon_website||[]).push([["1833"],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to Resolute Raccoon","permalink":"/blog/welcome-to-resolute-raccoon","unlisted":false,"date":"2025-01-07T00:00:00.000Z"}]}')}}]);

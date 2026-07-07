@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-site.example.com/blog</id>
+    <title>My Site Blog</title>
+    <updated>2025-01-07T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-site.example.com/blog"/>
+    <subtitle>My Site Blog</subtitle>
+    <icon>https://your-docusaurus-site.example.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to Resolute Raccoon]]></title>
+        <id>https://your-docusaurus-site.example.com/blog/welcome-to-resolute-raccoon</id>
+        <link href="https://your-docusaurus-site.example.com/blog/welcome-to-resolute-raccoon"/>
+        <updated>2025-01-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We're a community of elite student builders from Ozoro, Nigeria. We focus on:]]></summary>
+        <content type="html"><![CDATA[<p>We're a community of elite student builders from Ozoro, Nigeria. We focus on:</p>
+<ul>
+<li class=""><strong>Cybersecurity</strong> — Offensive, defensive, CTFs, bug bounties</li>
+<li class=""><strong>Systems Engineering</strong> — C/C++, Linux kernel, networking, distributed systems</li>
+<li class=""><strong>AI/ML Engineering</strong> — LLM ops, agentic systems, computer vision, MLOps</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-makes-us-different">What Makes Us Different<a href="https://your-docusaurus-site.example.com/blog/welcome-to-resolute-raccoon#what-makes-us-different" class="hash-link" aria-label="Direct link to What Makes Us Different" title="Direct link to What Makes Us Different" translate="no">​</a></h2>
+<p><strong>No tutorials. Just work.</strong></p>
+<p>We curate the best free platforms (pwn.college, TryHackMe, PortSwigger, CSAPP, Fast.ai) into locked progression paths. You don't advance until you prove it. No one gets left behind, and no one skips ahead.</p>
+<p><strong>Community over content.</strong></p>
+<p>Discord for daily comms. Weekly syncs every Sunday 7 PM WAT. Quarterly 48-hour hackathons. Bi-weekly movie nights with technical breakdowns. Readers Club for technical + human breadth.</p>
+<p><strong>Ship or it didn't happen.</strong></p>
+<p>Every member ships projects to GitHub. Our Hopper incubator runs 6-week cycles: Pitch → Spec → Build → Review → Ship → Retro.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="join-us">Join Us<a href="https://your-docusaurus-site.example.com/blog/welcome-to-resolute-raccoon#join-us" class="hash-link" aria-label="Direct link to Join Us" title="Direct link to Join Us" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Discord:</strong> <a href="https://discord.gg/resoluteraccoon" target="_blank" rel="noopener noreferrer" class="">discord.gg/resoluteraccoon</a></li>
+<li class=""><strong>GitHub:</strong> <a href="https://github.com/resoluteraccoon" target="_blank" rel="noopener noreferrer" class="">github.com/resoluteraccoon</a></li>
+<li class=""><strong>Newsletter:</strong> <a href="https://buttondown.email/resoluteraccoon" target="_blank" rel="noopener noreferrer" class="">buttondown.email/resoluteraccoon</a></li>
+</ul>
+<p>If you're ready to stop playing small, you're one of us.</p>]]></content>
+        <author>
+            <name>Miracle Omokaro</name>
+            <uri>https://github.com/miracleomokaro</uri>
+        </author>
+        <category label="announcement" term="announcement"/>
+        <category label="community" term="community"/>
+    </entry>
+</feed>
