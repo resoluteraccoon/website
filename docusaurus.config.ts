@@ -78,8 +78,8 @@ const config: Config = {
     navbar: {
       title: 'ResoluteRaccoon',
       logo: {
-        alt: 'ResoluteRaccoon Logo',
-        src: 'img/logo.svg',
+        alt: 'Resolute Raccoon Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
