@@ -14,7 +14,7 @@ This is not a casual group chat. This is where serious students train together.
 
 If you're ready to stop playing small, you're one of us.
 
-
+---
 
 ## What We Do
 
@@ -30,13 +30,13 @@ Movie nights picking apart real breaches. Hackathons where we break things and f
 
 Readers Club. Public Speaking. Real conversations about life outside the screen. Men's Health for the brothers who need space to be real. We push each other to be sharp technically and solid personally. Both matter.
 
-
+---
 
 ## Who Should Join
 
 ### Students who want to level up
 
-Whether you're 100L or 200L, if you're serious about cybersecurity and willing to commit, this is for you.
+Whether you're 100L or 400L, if you're serious about cybersecurity and willing to commit, this is for you.
 
 ### Students who want more than technical skills
 
