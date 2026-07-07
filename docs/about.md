@@ -36,7 +36,7 @@ Readers Club. Public Speaking. Real conversations about life outside the screen.
 
 ## Students who want to level up
 
-Whether you're 100L or 400L, if you're serious about cybersecurity and willing to commit, this is for you.
+Whether you're 100L or 200L, if you're serious about cybersecurity and willing to commit, this is for you.
 
 ## Students who want more than technical skills
 
