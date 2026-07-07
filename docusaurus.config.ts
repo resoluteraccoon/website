@@ -74,8 +74,8 @@ const config: Config = {
     image: 'img/resoluteraccoon-social-card.jpg',
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: true,
-      respectPrefersColorScheme: false,
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
     },
     navbar: {
       title: 'Resolute Raccoon',
