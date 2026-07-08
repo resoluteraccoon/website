@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: 'BlackHatDruk';
+  src: url('/fonts/BlackHatDruk-Medium-Web.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -19,14 +27,14 @@
 }
 
 /* ============================================
-   HOMEPAGE ONLY — Space Grotesk for hero + cards
+   HOMEPAGE ONLY — BlackHat Druk for hero + cards
    ============================================ */
 .homepage-hero h1,
 .homepage-hero h2,
 .homepage-hero .hero-title,
 .homepage-card .card-header,
 .homepage-card .lockup h2 {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -54,79 +62,41 @@
 }
 
 /* ============================================
-   FOOTER — LOGO AT TOP-LEFT, NO UNDERLINES
+   FOOTER — Minimal overrides, let Docusaurus handle layout
    ============================================ */
 .footer {
-  background-color: #0d0d0d !important;
-  padding: 4rem 2rem 2rem !important;
-}
-
-.footer .container,
-.footer .container-fluid {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
+  background-color: #0d0d0d;
 }
 
 .footer__logo {
-  display: block !important;
-  margin-bottom: 3rem !important;
-  margin-left: 0 !important;
-  margin-right: auto !important;
-  height: 80px !important;
-  width: 80px !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  order: -1 !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .footer__logo img {
-  height: 100% !important;
-  width: 100% !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.footer__links {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 3rem !important;
-  max-width: 800px !important;
-  margin: 0 !important;
-  text-align: left !important;
-  width: 100% !important;
-}
-
-/* NO UNDERLINES on footer links */
 .footer__link-item {
-  color: #e0e0e0 !important;
-  font-size: 1rem !important;
-  text-decoration: none !important;
-  line-height: 2.2 !important;
+  color: #e0e0e0;
 }
 
 .footer__link-item:hover {
-  color: #ffffff !important;
-  text-decoration: none !important;
+  color: #ffffff;
 }
 
 .footer__title {
-  color: #ffffff !important;
-  font-size: 0.875rem !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  margin-bottom: 1.5rem !important;
+  color: #ffffff;
 }
 
 .footer__bottom {
-  border-top: 1px solid #1a1a1a !important;
-  margin-top: 3rem !important;
-  padding-top: 2rem !important;
-  text-align: left !important;
-  color: #555555 !important;
-  font-size: 0.875rem !important;
-  width: 100% !important;
+  color: #555555;
 }
 
 /* ============================================
@@ -157,7 +127,6 @@
   z-index: 1;
 }
 
-/* Dark gradient overlay from left */
 .hero-slide::before {
   content: '';
   position: absolute;
@@ -175,7 +144,7 @@
 }
 
 .hero-caption h3 {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: clamp(2.5rem, 6vw, 5.5rem);
@@ -203,7 +172,6 @@
   background: #00e67a;
 }
 
-/* Carousel arrows */
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -218,7 +186,7 @@
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify_content: center;
   cursor: pointer;
   backdrop-filter: blur(4px);
   transition: all 0.3s ease;
@@ -232,7 +200,6 @@
 .carousel-arrow.prev { left: 2rem; }
 .carousel-arrow.next { right: 2rem; }
 
-/* Carousel indicators */
 .carousel-indicators {
   position: absolute;
   bottom: 40px;
@@ -281,6 +248,7 @@
   .featured-highlight .row {
     grid-template-columns: 1fr;
   }
+  .carousel-arrow { display: none !important; }
 }
 
 .featured-highlight .lockup {
@@ -288,7 +256,7 @@
 }
 
 .featured-highlight .lockup h2 {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
@@ -298,7 +266,6 @@
   margin: 0;
 }
 
-/* FAT GREEN UNDERLINE — Black Hat exact */
 .featured-highlight .lockup::after {
   content: '';
   display: block;
@@ -311,7 +278,7 @@
 }
 
 .featured-highlight .lockup p {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: clamp(1.5rem, 3vw, 2.5rem);
@@ -351,7 +318,6 @@
   --ifm-footer-background-color: #0d0d0d;
 }
 
-/* Hide arrows on mobile */
 @media (max-width: 768px) {
   .carousel-arrow { display: none !important; }
 }
