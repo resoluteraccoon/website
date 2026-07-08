@@ -1,0 +1,222 @@
+/* Hero carousel specific styles */
+.hero-carousel {
+  position: relative;
+  height: 85vh;
+  min-height: 500px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 0;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Dark gradient overlay from left */
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
+  z-index: 1;
+}
+
+.hero-caption {
+  position: relative;
+  z-index: 2;
+  padding-left: 8vw;
+  padding-right: 2rem;
+  max-width: 700px;
+}
+
+.hero-caption h3 {
+  font-family: 'BlackHatDruk', 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+}
+
+.hero-caption .more {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: #00cc6a;
+  color: #0a0a0a;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-caption .more:hover {
+  background: #00e67a;
+}
+
+/* Carousel arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.3);
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background: rgba(0,204,106,0.2);
+  border-color: #00cc6a;
+}
+
+.carousel-arrow.prev { left: 2rem; }
+.carousel-arrow.next { right: 2rem; }
+
+/* Carousel indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.4);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators li.active {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Featured highlight cards */
+.featured-highlight {
+  border-bottom: 1px solid #1a1a1a;
+  padding: 5rem 0;
+}
+
+.featured-highlight .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .featured-highlight .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featured-highlight .lockup {
+  position: relative;
+}
+
+.featured-highlight .lockup h2 {
+  font-family: 'BlackHatDruk', 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+/* FAT GREEN UNDERLINE — Black Hat exact */
+.featured-highlight .lockup::after {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 8px;
+  background: #00cc6a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.featured-highlight .lockup p {
+  font-family: 'BlackHatDruk', 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
+}
+
+.featured-highlight .description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #e0e0e0;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+}
+
+.featured-highlight .find-out-more {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #00cc6a;
+  text-decoration: none;
+}
+
+.featured-highlight .find-out-more:hover {
+  text-decoration: underline;
+}
+
+/* Card link hover */
+.find-out-more:hover {
+  text-decoration: underline !important;
+}
+
+/* Ensure smooth transitions */
+.hero-slide {
+  will-change: opacity;
+}
+
+/* Hide arrows on mobile */
+@media (max-width: 768px) {
+  .carousel-arrow { display: none !important; }
+}

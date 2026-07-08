@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
-/* === GLOBAL DEFAULTS (all pages except homepage hero/cards) === */
 :root {
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   --ifm-font-family-heading: 'Inter', sans-serif;
@@ -19,19 +18,24 @@
   --ifm-heading-color: #ffffff;
 }
 
-/* === HOMEPAGE ONLY — Space Grotesk for hero + card headers === */
+/* ============================================
+   HOMEPAGE ONLY — BlackHat Druk for hero + cards
+   ============================================ */
 .homepage-hero h1,
 .homepage-hero h2,
 .homepage-hero .hero-title,
-.homepage-card .card-header {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
-  font-weight: 700;
+.homepage-card .card-header,
+.homepage-card .lockup h2 {
+  font-family: 'BlackHatDruk', 'Space Grotesk', 'Inter', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   line-height: 0.9;
 }
 
-/* === NAVBAR LOGO === */
+/* ============================================
+   NAVBAR LOGO — 40px circular
+   ============================================ */
 .navbar__logo {
   height: 40px;
   width: 40px;
@@ -49,10 +53,19 @@
   border-radius: 50%;
 }
 
-/* === FOOTER — MATCH BLACK HAT EXACTLY === */
+/* ============================================
+   FOOTER — LOGO AT TOP-LEFT, NO UNDERLINES
+   ============================================ */
 .footer {
   background-color: #0d0d0d !important;
   padding: 4rem 2rem 2rem !important;
+}
+
+.footer .container,
+.footer .container-fluid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
 }
 
 .footer__logo {
@@ -64,6 +77,7 @@
   width: 80px !important;
   border-radius: 50% !important;
   overflow: hidden !important;
+  order: -1 !important;
 }
 
 .footer__logo img {
@@ -80,17 +94,20 @@
   max-width: 800px !important;
   margin: 0 !important;
   text-align: left !important;
+  width: 100% !important;
 }
 
+/* NO UNDERLINES on footer links */
 .footer__link-item {
   color: #e0e0e0 !important;
   font-size: 1rem !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
   line-height: 2.2 !important;
 }
 
 .footer__link-item:hover {
   color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 .footer__title {
@@ -109,219 +126,224 @@
   text-align: left !important;
   color: #555555 !important;
   font-size: 0.875rem !important;
-}
-
-/* === DARK THEME LOCK === */
-[data-theme='light'] {
-  --ifm-background-color: #0a0a0a;
-  --ifm-navbar-background-color: #0d0d0d;
-  --ifm-sidebar-background-color: #0d0d0d;
-  --ifm-footer-background-color: #0d0d0d;
-}
-
-/* === REMOVE PAGINATION ONLY ON ABOUT PAGE === */
-/* We handle this via frontmatter instead, see section 7 */
-
-/* === NAVBAR LOGO === */
-.navbar__logo {
-  height: 40px !important;
-  width: 40px !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.navbar__logo img {
-  height: 100% !important;
   width: 100% !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
 }
 
-/* === HOMEPAGE SLIDESHOW (min-height 70vh, content at bottom) === */
-.hero-slideshow {
-  height: 100vh;
-  min-height: 70vh;
+/* ============================================
+   HERO CAROUSEL — Black Hat exact style
+   ============================================ */
+.hero-carousel {
   position: relative;
+  height: 85vh;
+  min-height: 500px;
   overflow: hidden;
   background: #0a0a0a;
 }
 
 .hero-slide {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 70vh;
-  height: 100%;
-  opacity: 0;
-  transform: translateX(50px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  pointer-events: none;
+  inset: 0;
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: flex-end;
-  padding: 4rem 10vw;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 0;
 }
 
 .hero-slide.active {
   opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
   z-index: 1;
 }
 
+/* Dark gradient overlay from left */
 .hero-slide::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.hero-slide-content {
-  position: relative;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
   z-index: 1;
-  width: 100%;
-  max-width: 500px;
-  padding: 4rem 10vw;
 }
 
-.hero-slide-heading {
+.hero-caption {
+  position: relative;
+  z-index: 2;
+  padding-left: 8vw;
+  padding-right: 2rem;
+  max-width: 700px;
+}
+
+.hero-caption h3 {
   font-family: 'Space Grotesk', 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.1;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
   color: #ffffff;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
 }
 
-.hero-slide-subtitle {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: clamp(0.875rem, 1.2vw, 1rem);
-  line-height: 1.5;
-  color: #e0e0e0;
-  max-width: 500px;
-  margin-top: 1rem;
-  margin-bottom: 0;
+.hero-caption .more {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: #00cc6a;
+  color: #0a0a0a;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-.hero-slideshow-dots {
+.hero-caption .more:hover {
+  background: #00e67a;
+}
+
+/* Carousel arrows */
+.carousel-arrow {
   position: absolute;
-  bottom: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.3);
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background: rgba(0,204,106,0.2);
+  border-color: #00cc6a;
+}
+
+.carousel-arrow.prev { left: 2rem; }
+.carousel-arrow.next { right: 2rem; }
+
+/* Carousel indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 12px;
   z-index: 10;
-}
-
-.hero-slideshow-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #555555;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.hero-slideshow-dot.active {
-  background: #00cc6a;
-}
-
-/* === HOMEPAGE FEATURE CARDS (stacked vertical) === */
-.feature-cards-section {
-  background: #0a0a0a;
+  list-style: none;
   padding: 0;
-}
-
-.feature-cards-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.feature-card {
-  border-bottom: 1px solid #1a1a1a;
-  padding: 5rem 0;
-  width: 100%;
-}
-
-.feature-card:last-child {
-  border-bottom: none;
-}
-
-.feature-card-header {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
-  color: #ffffff;
   margin: 0;
 }
 
-.feature-card-accent {
-  width: 40px;
-  height: 3px;
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.4);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.30.3s ease;
+}
+
+.carousel-indicators li.active {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+/* ============================================
+   FEATURE CARDS — Black Hat "Sharpen Up" style
+   ============================================ */
+.featured-highlight {
+  border-bottom: 1px solid #1a1a1a;
+  padding: 5rem 0;
+}
+
+.featured-highlight .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .featured-highlight .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featured-highlight .lockup {
+  position: relative;
+}
+
+.featured-highlight .lockup h2 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+/* FAT WHITE UNDERLINE — Black Hat exact */
+.featured-highlight .lockup::after {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 8px;
   background: #00cc6a;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   margin-bottom: 0.75rem;
 }
 
-.feature-card-sub {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+.featured-highlight .lockup p {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 500;
-  text-transform: lowercase;
-  font-size: 0.75rem;
-  color: #888888;
-  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: #ffffff;
   margin: 0;
+  line-height: 1;
 }
 
-.feature-card-desc {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+.featured-highlight .description {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   color: #e0e0e0;
   line-height: 1.7;
-  max-width: 600px;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  margin: 0 0 1.5rem 0;
 }
 
-.feature-card-link {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+.featured-highlight .find-out-more {
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 1rem;
   color: #00cc6a;
-  margin-top: 2rem;
-  display: inline-block;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
-.feature-card-link:hover {
-  color: #33e688;
+.featured-highlight .find-out-more:hover {
   text-decoration: underline;
 }
 
-/* === PAGINATION HIDDEN ONLY ON ABOUT PAGE === */
-/* Handled via frontmatter in docs/about.md (pagination_next: null) */
-
-/* === DARK THEME FORCED === */
+/* ============================================
+   DARK THEME LOCK
+   ============================================ */
 [data-theme='light'] {
   --ifm-background-color: #0a0a0a;
   --ifm-navbar-background-color: #0d0d0d;
@@ -329,225 +351,7 @@
   --ifm-footer-background-color: #0d0d0d;
 }
 
-/* === BASE STYLES === */
-html, body {
-  background-color: #0a0a0a;
-  color: #e0e0e0;
-}
-
-.navbar {
-  background-color: #0d0d0d !important;
-  border-bottom: 1px solid #1a1a1a;
-}
-
-.navbar__brand {
-  font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
-  font-family: var(--ifm-font-family-heading);
-  text-transform: uppercase;
-}
-
-.navbar__link {
-  color: #ffffff !important;
-  font-weight: 500;
-}
-
-.navbar__link:hover {
-  color: #00cc6a !important;
-}
-
-.menu__link {
-  color: #b3b3b3 !important;
-  font-weight: 500;
-}
-
-.menu__link:hover {
-  color: #00cc6a !important;
-}
-
-.menu__link--active {
-  color: #00cc6a !important;
-  background: #1a1a1a !important;
-}
-
-.footer {
-  background-color: #0d0d0d !important;
-  border-top: 1px solid #1a1a1a;
-}
-
-.footer__link-item {
-  color: #e0e0e0 !important;
-  text-decoration: underline !important;
-}
-
-.footer__link-item:hover {
-  color: #ffffff !important;
-}
-
-.footer__title {
-  color: #ffffff !important;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 1.5rem;
-}
-
-.button--primary {
-  background: #00cc6a;
-  border-color: #00cc6a;
-  color: #0a0a0a;
-  font-weight: 600;
-}
-
-.button--primary:hover {
-  background: #00b35c;
-  border-color: #00b35c;
-}
-
-.button--secondary {
-  background: transparent;
-  border: 1px solid #333333;
-  color: #ffffff;
-}
-
-.button--secondary:hover {
-  border-color: #00cc6a;
-  color: #00cc6a;
-}
-
-.codeBlock {
-  background: #0d0d0d !important;
-  border: 1px solid #1a1a1a;
-  border-radius: 6px;
-}
-
-.codeBlockLines__content {
-  background: #0d0d0d !important;
-}
-
-.theme-code-block-highlighted-line {
-  background: rgba(0, 204, 106, 0.1) !important;
-}
-
-.card {
-  background: #111111;
-  border: 1px solid #1a1a1a;
-  border-radius: 8px;
-}
-
-.card:hover {
-  border-color: #00cc6a;
-  box-shadow: 0 4px 20px rgba(0, 204, 106, 0.1);
-}
-
-.hero {
-  background: linear-gradient(180deg, #0a0a0a 0%, #0d0d0d 100%);
-  border-bottom: 1px solid #1a1a1a;
-}
-
-.hero__title {
-  color: #ffffff;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  font-family: var(--ifm-font-family-heading);
-  text-transform: uppercase;
-}
-
-.hero__subtitle {
-  color: #b3b3b3;
-  font-weight: 400;
-}
-
-a {
-  color: #00cc6a;
-}
-
-a:hover {
-  color: #33e688;
-}
-
-.markdown h1, .markdown h2, .markdown h3, .markdown h4 {
-  color: #ffffff;
-}
-
-.markdown h1 {
-  border-bottom: 1px solid #1a1a1a;
-  padding-bottom: 0.5rem;
-}
-
-::selection {
-  background: rgba(0, 204, 106, 0.3);
-  color: #ffffff;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0a0a0a;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #333333;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #00cc6a;
-}
-
-.tableOfContents {
-  border-left: 1px solid #1a1a1a;
-}
-
-.tableOfContents__link {
-  color: #999999;
-}
-
-.tableOfContents__link:hover,
-.tableOfContents__link--active {
-  color: #00cc6a;
-  border-left-color: #00cc6a;
-}
-
-.dropdown__menu {
-  background: #111111;
-  border: 1px solid #1a1a1a;
-}
-
-.dropdown__link {
-  color: #ffffff;
-}
-
-.dropdown__link:hover {
-  background: #1a1a1a;
-  color: #00cc6a;
-}
-
-.markdown code {
-  background: #111111;
-  color: #ff6b6b;
-  padding: 0.15rem 0.4rem;
-  border-radius: 3px;
-  font-size: 0.9em;
-}
-
-.markdown pre code {
-  background: transparent;
-  color: inherit;
-  padding: 0;
-}
-
-.markdown blockquote {
-  border-left: 3px solid #00cc6a;
-  background: #0d0d0d;
-  color: #b3b3b3;
-}
-
-.markdown hr {
-  border-color: #1a1a1a;
+/* Hide arrows on mobile */
+@media (max-width: 768px) {
+  .carousel-arrow { display: none !important; }
 }
