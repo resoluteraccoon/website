@@ -8,7 +8,7 @@ const config = {
   tagline: 'A blackhat-grade cybersecurity club',
   favicon: 'img/logo.svg',
   url: 'https://resoluteraccoon.github.io',
-  baseUrl: '/',
+  baseUrl: '/website/',
   organizationName: 'resoluteraccoon',
   projectName: 'website',
   onBrokenLinks: 'throw',
