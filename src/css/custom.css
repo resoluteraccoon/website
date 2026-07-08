@@ -19,14 +19,14 @@
 }
 
 /* ============================================
-   HOMEPAGE ONLY — BlackHat Druk for hero + cards
+   HOMEPAGE ONLY — Space Grotesk for hero + cards
    ============================================ */
 .homepage-hero h1,
 .homepage-hero h2,
 .homepage-hero .hero-title,
 .homepage-card .card-header,
 .homepage-card .lockup h2 {
-  font-family: 'BlackHatDruk', 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -254,7 +254,7 @@
   background: transparent;
   cursor: pointer;
   padding: 0;
-  transition: all 0.30.3s ease;
+  transition: all 0.3s ease;
 }
 
 .carousel-indicators li.active {
@@ -298,7 +298,7 @@
   margin: 0;
 }
 
-/* FAT WHITE UNDERLINE — Black Hat exact */
+/* FAT GREEN UNDERLINE — Black Hat exact */
 .featured-highlight .lockup::after {
   content: '';
   display: block;
