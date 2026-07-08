@@ -60,7 +60,6 @@ const config: Config = {
       logo: {
         alt: 'Resolute Raccoon',
         src: 'img/logo.png',
-        target: '_self',
       },
       items: [
         { to: '/docs/about', label: 'About', position: 'left' },
@@ -76,8 +75,8 @@ const config: Config = {
       logo: {
         alt: 'Resolute Raccoon',
         src: 'img/logo.png',
-        height: 50,
-        width: 50,
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -91,15 +90,15 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Connect',
           items: [
+            { label: 'GitHub', href: 'https://github.com/resoluteraccoon' },
             { label: 'Discord', href: '#' },
             { label: 'X / Twitter', href: '#' },
-            { label: 'GitHub', href: 'https://github.com/resoluteraccoon' },
           ],
         },
       ],
-      copyright: 'Copyright © 2026 Resolute Raccoon. Built by students, for students.',
+      copyright: 'Copyright © 2026 Resolute Raccoon.',
     },
     prism: {
       theme: prismThemes.github,

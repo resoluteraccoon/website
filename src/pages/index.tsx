@@ -4,20 +4,26 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 
-import styles from './index.module.css';
-
 const slides = [
   {
-    headline: 'TRAIN. BREAK. BUILD.',
-    subtext: 'A blackhat-grade cybersecurity club',
+    main: 'TRAIN. BREAK. BUILD.',
+    sub: 'A blackhat-grade cybersecurity club',
   },
   {
-    headline: 'CURATED PATHS',
-    subtext: 'No scattered tutorials. Clear progression.',
+    main: 'CURATED PATHS',
+    sub: 'No scattered tutorials. Clear progression.',
   },
   {
-    headline: 'HYBRID BY DESIGN',
-    subtext: 'Technical skill + character growth',
+    main: 'HYBRID BY DESIGN',
+    sub: 'Technical skill + character growth',
+  },
+  {
+    main: 'LOCKED PROGRESSION',
+    sub: 'Prove it before you advance',
+  },
+  {
+    main: 'FORGED TOGETHER',
+    sub: 'No one trains alone here',
   },
 ];
 
@@ -38,26 +44,12 @@ function HeroSlideshow() {
   }, [nextSlide]);
 
   return (
-    <section className={styles.heroSlideshow} aria-label="Hero slideshow">
-      <div className={styles.slidesContainer}>
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
-            aria-hidden={index !== currentSlide}
-          >
-            <div className={styles.slideContent}>
-              <h1 className={styles.slideHeadline}>{slide.headline}</h1>
-              <p className={styles.slideSubtext}>{slide.subtext}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className={styles.dotIndicators} role="tablist" aria-label="Slide navigation">
+    <section className="homepage-slideshow" aria-label="Hero slideshow">
+      <div className="homepage-slide-dots" role="tablist" aria-label="Slide navigation">
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`${styles.dot} ${index === currentSlide ? styles.active : ''}`}
+            className={`homepage-slide-dot ${index === currentSlide ? 'active' : ''}`}
             onClick={() => goToSlide(index)}
             role="tab"
             aria-selected={index === currentSlide}
@@ -65,42 +57,55 @@ function HeroSlideshow() {
           />
         ))}
       </div>
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`homepage-slide ${index === currentSlide ? 'active' : ''}`}
+          aria-hidden={index !== currentSlide}
+        >
+          <div className="homepage-slide-content">
+            <h1 className="homepage-slide-main">{slide.main}</h1>
+            <p className="homepage-slide-sub">{slide.sub}</p>
+          </div>
+        </div>
+      ))}
     </section>
   );
 }
 
-function FeatureCards() {
-  const cards = [
-    {
-      title: 'TRAIN',
-      description: 'Locked learning paths from pwn.college, TryHackMe, PortSwigger',
-      link: '/docs/features/overview',
-    },
-    {
-      title: 'MEET',
-      description: 'Hackathons, movie nights, conferences, webinars',
-      link: '/docs/hacker-club/overview',
-    },
-    {
-      title: 'GROW',
-      description: 'Readers Club, Public Speaking, Real Conversations',
-      link: '/docs/community/overview',
-    },
-  ];
+const cards = [
+  {
+    header: 'TRAIN',
+    subLabel: 'resolute raccoon',
+    description: 'We curate the best free platforms in the world — pwn.college, TryHackMe, PortSwigger — and turn them into structured, locked learning paths. Each unit demands proof before you advance.',
+    link: '/docs/features/curated-learning',
+  },
+  {
+    header: 'MEET',
+    subLabel: 'resolute raccoon',
+    description: 'Movie nights dissecting real breaches. Hackathons where we break things and fix them. Conferences and webinars we attend as a crew. We present, we compete, we learn from each other.',
+    link: '/docs/hacker-club/overview',
+  },
+  {
+    header: 'GROW',
+    subLabel: 'resolute raccoon',
+    description: "Readers Club. Public Speaking. Real conversations about life outside the screen. Men's Health for the brothers who need space to be real. Technical skill and character growth. Both matter.",
+    link: '/docs/community/overview',
+  },
+];
 
+function FeatureCards() {
   return (
-    <section className={styles.featureCardsSection} aria-labelledby="feature-cards-heading">
-      <h2 id="feature-cards-heading" className={styles.visuallyHidden}>
-        What We Do
-      </h2>
-      <div className={styles.cardsGrid}>
+    <section className="homepage-cards-section">
+      <div className="homepage-cards-container">
         {cards.map((card, index) => (
-          <article key={index} className={styles.featureCard}>
-            <h3 className={styles.cardTitle}>{card.title}</h3>
-            <p className={styles.cardDescription}>{card.description}</p>
-            <Link to={card.link} className={styles.cardCTA}>
-              Find out more
-              <span aria-hidden="true">→</span>
+          <article key={index} className={`homepage-card ${index === cards.length - 1 ? 'last' : ''}`}>
+            <h3 className="homepage-card-header">{card.header}</h3>
+            <div className="homepage-card-accent" />
+            <p className="homepage-card-sub">{card.subLabel}</p>
+            <p className="homepage-card-desc">{card.description}</p>
+            <Link to={card.link} className="homepage-card-link">
+              Find out more →
             </Link>
           </article>
         ))}
