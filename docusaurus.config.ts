@@ -58,8 +58,8 @@ const config: Config = {
     navbar: {
       title: 'Resolute Raccoon',
       logo: {
-        alt: 'Resolute Raccoon',
-        src: 'img/logo.png',
+         alt: 'Resolute Raccoon',
+         src: 'img/logo.svg',  // ← change from logo.png to logo.svg
       },
       items: [
         { to: '/docs/about', label: 'About', position: 'left' },
@@ -71,13 +71,15 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
       logo: {
         alt: 'Resolute Raccoon',
-        src: 'img/logo.png',
-        height: 60,
-        width: 60,
-      },
+        src: 'img/logo.svg',  // ← change from logo.png to logo.svg
+        height: 80,
+        width: 80,
+       },
+      // ... rest of footer
+    },
+      favicon: 'img/logo.svg',  // ← change from favicon.ico to logo.svg
       links: [
         {
           title: 'Sitemap',
