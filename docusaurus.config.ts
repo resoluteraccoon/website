@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Resolute Raccoon',
   tagline: 'Blackhat-grade cybersecurity club',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   future: {
     v4: true,
@@ -58,8 +58,8 @@ const config: Config = {
     navbar: {
       title: 'Resolute Raccoon',
       logo: {
-         alt: 'Resolute Raccoon',
-         src: 'img/logo.svg',  // ← change from logo.png to logo.svg
+        alt: 'Resolute Raccoon',
+        src: 'img/logo.svg',
       },
       items: [
         { to: '/docs/about', label: 'About', position: 'left' },
@@ -67,19 +67,18 @@ const config: Config = {
         { to: '/docs/learnings/overview', label: 'Learnings', position: 'left' },
         { to: '/docs/community/overview', label: 'Community', position: 'left' },
         { to: '/docs/hacker-club/overview', label: 'Hacker Club', position: 'left' },
+        { to: '/login', label: 'Log in', position: 'right' },
         { href: 'https://github.com/resoluteraccoon', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
+      style: 'dark',
       logo: {
         alt: 'Resolute Raccoon',
-        src: 'img/logo.svg',  // ← change from logo.png to logo.svg
+        src: 'img/logo.svg',
         height: 80,
         width: 80,
-       },
-      // ... rest of footer
-    },
-      favicon: 'img/logo.svg',  // ← change from favicon.ico to logo.svg
+      },
       links: [
         {
           title: 'Sitemap',

@@ -49,61 +49,66 @@
   border-radius: 50%;
 }
 
-/* === FOOTER LOGO === */
+/* === FOOTER — MATCH BLACK HAT EXACTLY === */
+.footer {
+  background-color: #0d0d0d !important;
+  padding: 4rem 2rem 2rem !important;
+}
+
 .footer__logo {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 3rem;
+  display: block !important;
+  margin-bottom: 3rem !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  height: 80px !important;
+  width: 80px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
 }
 
 .footer__logo img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-/* === FOOTER LAYOUT === */
-.footer {
-  padding: 4rem 2rem 2rem;
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
 }
 
 .footer__links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 3rem !important;
+  max-width: 800px !important;
+  margin: 0 !important;
+  text-align: left !important;
 }
 
 .footer__link-item {
-  color: #888888;
-  font-size: 0.9375rem;
-  line-height: 2.2;
+  color: #e0e0e0 !important;
+  font-size: 1rem !important;
+  text-decoration: underline !important;
+  line-height: 2.2 !important;
 }
 
 .footer__link-item:hover {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .footer__title {
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 1.5rem;
+  color: #ffffff !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .footer__bottom {
-  border-top: 1px solid #1a1a1a;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  text-align: left;
-  color: #555555;
-  font-size: 0.875rem;
+  border-top: 1px solid #1a1a1a !important;
+  margin-top: 3rem !important;
+  padding-top: 2rem !important;
+  text-align: left !important;
+  color: #555555 !important;
+  font-size: 0.875rem !important;
 }
 
 /* === DARK THEME LOCK === */
@@ -114,68 +119,106 @@
   --ifm-footer-background-color: #0d0d0d;
 }
 
-/* === HOMEPAGE SLIDESHOW === */
-.homepage-slideshow {
+/* === REMOVE PAGINATION ONLY ON ABOUT PAGE === */
+/* We handle this via frontmatter instead, see section 7 */
+
+/* === NAVBAR LOGO === */
+.navbar__logo {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.navbar__logo img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+}
+
+/* === HOMEPAGE SLIDESHOW (min-height 70vh, content at bottom) === */
+.hero-slideshow {
   height: 100vh;
-  min-height: 600px;
+  min-height: 70vh;
   position: relative;
   overflow: hidden;
   background: #0a0a0a;
 }
 
-.homepage-slide {
+.hero-slide {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 70vh;
   height: 100%;
   opacity: 0;
   transform: translateX(50px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   pointer-events: none;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  align-items: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  max-width: 800px;
-  margin: 0 auto;
+  align-items: flex-end;
+  padding: 4rem 10vw;
 }
 
-.homepage-slide.active {
+.hero-slide.active {
   opacity: 1;
   transform: translateX(0);
   pointer-events: auto;
   z-index: 1;
 }
 
-.homepage-slide-content {
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.homepage-slide-main {
+.hero-slide-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+  padding: 4rem 10vw;
+}
+
+.hero-slide-heading {
   font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(3rem, 6vw, 6rem);
-  line-height: 0.9;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
   letter-spacing: -0.03em;
   color: #ffffff;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 
-.homepage-slide-sub {
+.hero-slide-subtitle {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
   line-height: 1.5;
   color: #e0e0e0;
-  margin-top: 1.5rem;
+  max-width: 500px;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
-.homepage-slide-dots {
+.hero-slideshow-dots {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -183,7 +226,7 @@
   z-index: 10;
 }
 
-.homepage-slide-dot {
+.hero-slideshow-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -193,33 +236,33 @@
   transition: background 0.3s ease;
 }
 
-.homepage-slide-dot.active {
+.hero-slideshow-dot.active {
   background: #00cc6a;
 }
 
-/* === HOMEPAGE FEATURE CARDS === */
-.homepage-cards-section {
+/* === HOMEPAGE FEATURE CARDS (stacked vertical) === */
+.feature-cards-section {
   background: #0a0a0a;
   padding: 0;
 }
 
-.homepage-cards-container {
+.feature-cards-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-.homepage-card {
+.feature-card {
   border-bottom: 1px solid #1a1a1a;
   padding: 5rem 0;
   width: 100%;
 }
 
-.homepage-card:last-child {
+.feature-card:last-child {
   border-bottom: none;
 }
 
-.homepage-card-header {
+.feature-card-header {
   font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -230,7 +273,7 @@
   margin: 0;
 }
 
-.homepage-card-accent {
+.feature-card-accent {
   width: 40px;
   height: 3px;
   background: #00cc6a;
@@ -238,7 +281,7 @@
   margin-bottom: 0.75rem;
 }
 
-.homepage-card-sub {
+.feature-card-sub {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: lowercase;
@@ -248,7 +291,7 @@
   margin: 0;
 }
 
-.homepage-card-desc {
+.feature-card-desc {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
@@ -259,7 +302,7 @@
   margin-bottom: 0;
 }
 
-.homepage-card-link {
+.feature-card-link {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -270,15 +313,13 @@
   transition: color 0.2s ease;
 }
 
-.homepage-card-link:hover {
+.feature-card-link:hover {
   color: #33e688;
   text-decoration: underline;
 }
 
-/* === PAGINATION HIDDEN (all pages) === */
-.pagination-nav {
-  display: none;
-}
+/* === PAGINATION HIDDEN ONLY ON ABOUT PAGE === */
+/* Handled via frontmatter in docs/about.md (pagination_next: null) */
 
 /* === DARK THEME FORCED === */
 [data-theme='light'] {
@@ -336,7 +377,8 @@ html, body {
 }
 
 .footer__link-item {
-  color: #888888 !important;
+  color: #e0e0e0 !important;
+  text-decoration: underline !important;
 }
 
 .footer__link-item:hover {
