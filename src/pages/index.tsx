@@ -3,12 +3,10 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import './index.css';
 
-// === BLACK HAT STYLE SLIDES ===
-// Upload Black Hat images to static/img/slides/ and reference as '/img/slides/filename.jpg'
 const slides = [
   {
     heading: 'TRAIN.\nBREAK.\nBUILD.',
-    subtitle: '',
+    subtitle: 'A blackhat-grade cybersecurity club',
     image: '/img/slides/slide1.jpg',
     link: '/docs/train',
     cta: 'Find out more',
@@ -38,12 +36,11 @@ const slides = [
     heading: 'FORGED\nTOGETHER',
     subtitle: 'No one trains alone here',
     image: '/img/slides/slide5.jpg',
-    link: '/docs/community',
+    link: '/docs/grow',
     cta: 'Find out more',
   },
 ];
 
-// === BLACK HAT "SHARPEN UP" CARDS ===
 const cards = [
   {
     header: 'TRAIN',
@@ -81,56 +78,47 @@ export default function Home() {
   return (
     <Layout title="Resolute Raccoon" description="Blackhat-grade cybersecurity club">
       {/* ============================================
-          HERO CAROUSEL — Black Hat Exact Structure
+          HERO CAROUSEL — Black Hat Bootstrap Exact
           ============================================ */}
-      <div className="hero-carousel homepage-hero">
-        {slides.map((slide, index) => (
-          <a
-            key={index}
-            href={slide.link}
-            className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-            style={{
-              backgroundImage: `url('${slide.image}')`,
-            }}
-          >
-            <div className="hero-caption">
-              <h3>
-                {slide.heading.split('\n').map((line, i) => (
-                  <React.Fragment key={i}>
-                    {line}
-                    {i < slide.heading.split('\n').length - 1 && <br />}
-                  </React.Fragment>
-                ))}
-              </h3>
-              {slide.subtitle && (
-                <p style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '1.125rem',
-                  color: '#aaaaaa',
-                  margin: '0 0 1.5rem 0',
-                }}>
-                  {slide.subtitle}
-                </p>
-              )}
-              {slide.cta && (
-                <span className="more">{slide.cta}</span>
-              )}
-            </div>
-          </a>
-        ))}
+      <div id="homepage-slider" className="carousel homepage-hero">
+        <div className="carousel-inner" role="listbox">
+          {slides.map((slide, index) => (
+            <a
+              key={index}
+              href={slide.link}
+              className={`carousel-item ${index === currentSlide ? 'active' : ''}`}
+              style={{
+                backgroundImage: `url('${slide.image}')`,
+              }}
+            >
+              <div className="carousel-caption">
+                <h3>
+                  {slide.heading.split('\n').map((line, i) => (
+                    <React.Fragment key={i}>
+                      {line}
+                      {i < slide.heading.split('\n').length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
+                </h3>
+                {slide.subtitle && <p>{slide.subtitle}</p>}
+                {slide.cta && <span className="more">{slide.cta}</span>}
+              </div>
+            </a>
+          ))}
+        </div>
 
-        {/* Left Arrow */}
-        <button className="carousel-arrow prev" onClick={goPrev} aria-label="Previous slide">
-          ‹
+        {/* Prev/Next Controls */}
+        <button className="carousel-control-prev" onClick={goPrev} aria-label="Previous">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </button>
+        <button className="carousel-control-next" onClick={goNext} aria-label="Next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
         </button>
 
-        {/* Right Arrow */}
-        <button className="carousel-arrow next" onClick={goNext} aria-label="Next slide">
-          ›
-        </button>
-
-        {/* Dot Indicators */}
-        <ul className="carousel-indicators">
+        {/* Indicators */}
+        <ol className="carousel-indicators">
           {slides.map((_, index) => (
             <li
               key={index}
@@ -138,30 +126,32 @@ export default function Home() {
               onClick={() => setCurrentSlide(index)}
             />
           ))}
-        </ul>
+        </ol>
       </div>
 
       {/* ============================================
-          FEATURE CARDS — Black Hat "Sharpen Up" Style
-          Two-column: Lockup left, Description right
+          FEATURE CARDS — Black Hat "Sharpen Up" Exact
           ============================================ */}
-      <section style={{ background: '#0a0a0a', padding: '0 2rem' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <section className="sharpen-up">
+        <div className="container">
           {cards.map((card, index) => (
-            <div key={index} className="featured-highlight homepage-card">
+            <div key={index} className="featured-highlight">
               <div className="row">
-                {/* LEFT COLUMN — Lockup */}
-                <div className="lockup">
-                  <h2 className="card-header">{card.header}</h2>
-                  <p>{card.sublabel}</p>
+                {/* LEFT: Lockup */}
+                <div className="col-md-6">
+                  <div className="lockup">
+                    <h2>{card.header}</h2>
+                    <p>{card.sublabel}</p>
+                  </div>
                 </div>
-
-                {/* RIGHT COLUMN — Description */}
-                <div>
-                  <p className="description">{card.description}</p>
-                  <Link to={card.link} className="find-out-more">
-                    Find out more →
-                  </Link>
+                {/* RIGHT: Description */}
+                <div className="col-md-6">
+                  <p>{card.description}</p>
+                  <p>
+                    <Link to={card.link} className="find-out-more">
+                      Find out more
+                    </Link>
+                  </p>
                 </div>
               </div>
             </div>

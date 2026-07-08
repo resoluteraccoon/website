@@ -41,6 +41,7 @@ const config = {
         { to: '/docs/about', label: 'About', position: 'left' },
         { to: '/docs/train', label: 'TRAIN', position: 'left' },
         { to: '/docs/meet', label: 'MEET', position: 'left' },
+        { to: '/docs/movie-saturdays', label: 'Movie Saturdays', position: 'left' },
         { to: '/docs/grow', label: 'GROW', position: 'left' },
         { href: 'https://github.com/resoluteraccoon', label: 'GitHub', position: 'right' },
       ],

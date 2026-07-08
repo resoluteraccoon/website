@@ -6,6 +6,7 @@ const sidebars = {
     { type: 'doc', id: 'about', label: 'About' },
     { type: 'doc', id: 'train', label: 'TRAIN' },
     { type: 'doc', id: 'meet', label: 'MEET' },
+    { type: 'doc', id: 'movie-saturdays', label: 'Movie Saturdays' },
     { type: 'doc', id: 'grow', label: 'GROW' },
   ],
 };

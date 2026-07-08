@@ -1,3 +1,6 @@
+/* ============================================
+   BLACKHAT DRUK FONT
+   ============================================ */
 @font-face {
   font-family: 'BlackHatDruk';
   src: url('/fonts/BlackHatDruk-Medium-Web.woff2') format('woff2');
@@ -27,31 +30,26 @@
 }
 
 /* ============================================
-   HOMEPAGE ONLY — BlackHat Druk for hero + cards
+   NAVBAR — DEFAULT DOCUSAURUS + SITE NAME
    ============================================ */
-.homepage-hero h1,
-.homepage-hero h2,
-.homepage-hero .hero-title,
-.homepage-card .card-header,
-.homepage-card .lockup h2 {
-  font-family: 'BlackHatDruk', 'Inter', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-  line-height: 0.9;
+.navbar {
+  background-color: #0d0d0d;
 }
 
-/* ============================================
-   NAVBAR LOGO — 40px circular
-   ============================================ */
+.navbar__title {
+  font-family: 'BlackHatDruk', 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #00cc6a;
+  letter-spacing: 0.05em;
+}
+
 .navbar__logo {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-right: 0.75rem;
 }
 
 .navbar__logo img {
@@ -61,26 +59,20 @@
   border-radius: 50%;
 }
 
+.navbar__link {
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.navbar__link:hover {
+  color: #ffffff;
+}
+
 /* ============================================
-   FOOTER — Minimal overrides, let Docusaurus handle layout
+   FOOTER — DEFAULT DOCUSAURUS
    ============================================ */
 .footer {
   background-color: #0d0d0d;
-}
-
-.footer__logo {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 2rem;
-}
-
-.footer__logo img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
 }
 
 .footer__link-item {
@@ -100,9 +92,21 @@
 }
 
 /* ============================================
-   HERO CAROUSEL — Black Hat exact style
+   HOMEPAGE ONLY — BlackHat Druk for hero + cards
    ============================================ */
-.hero-carousel {
+.carousel-caption h3,
+.lockup h2 {
+  font-family: 'BlackHatDruk', 'Inter', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+/* ============================================
+   CAROUSEL — Black Hat Bootstrap Exact
+   ============================================ */
+.carousel {
   position: relative;
   height: 85vh;
   min-height: 500px;
@@ -110,24 +114,45 @@
   background: #0a0a0a;
 }
 
-.hero-slide {
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
   position: absolute;
   inset: 0;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+  transition: opacity 0.6s ease-in-out;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+/* Fade transition instead of slide */
+.carousel-item {
   opacity: 0;
-  transition: opacity 0.6s ease-in-out;
   z-index: 0;
 }
 
-.hero-slide.active {
+.carousel-item.active {
   opacity: 1;
   z-index: 1;
 }
 
-.hero-slide::before {
+/* Dark overlay for text readability */
+.carousel-item::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -135,15 +160,19 @@
   z-index: 1;
 }
 
-.hero-caption {
-  position: relative;
-  z-index: 2;
-  padding-left: 8vw;
-  padding-right: 2rem;
+/* Caption — Black Hat exact positioning */
+.carousel-caption {
+  position: absolute;
+  left: 8vw;
+  bottom: 80px;
+  z-index: 10;
+  padding: 20px 0;
+  color: #ffffff;
+  text-align: left;
   max-width: 700px;
 }
 
-.hero-caption h3 {
+.carousel-caption h3 {
   font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -151,10 +180,17 @@
   line-height: 0.95;
   letter-spacing: -0.02em;
   color: #ffffff;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem;
 }
 
-.hero-caption .more {
+.carousel-caption p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  color: #aaaaaa;
+  margin: 0 0 1.5rem;
+}
+
+.carousel-caption .more {
   display: inline-block;
   padding: 0.875rem 2rem;
   background: #00cc6a;
@@ -168,70 +204,141 @@
   transition: background 0.3s ease;
 }
 
-.hero-caption .more:hover {
+.carousel-caption .more:hover {
   background: #00e67a;
 }
 
-.carousel-arrow {
+/* ============================================
+   CAROUSEL CONTROLS — Black Hat Exact
+   ============================================ */
+.carousel-control-prev,
+.carousel-control-next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  bottom: 0;
   z-index: 10;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.3);
-  background: rgba(0,0,0,0.3);
-  color: #ffffff;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
-  justify_content: center;
+  justify-content: center;
+  width: 60px;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.7;
   cursor: pointer;
-  backdrop-filter: blur(4px);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
-.carousel-arrow:hover {
-  background: rgba(0,204,106,0.2);
-  border-color: #00cc6a;
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  text-decoration: none;
 }
 
-.carousel-arrow.prev { left: 2rem; }
-.carousel-arrow.next { right: 2rem; }
+.carousel-control-prev {
+  left: 0;
+}
 
-.carousel-indicators {
+.carousel-control-next {
+  right: 0;
+}
+
+/* Arrow icons using CSS borders (Bootstrap style) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* CSS-only arrow icons */
+.carousel-control-prev-icon::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
+.carousel-control-next-icon::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
+.sr-only {
   position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 12px;
-  z-index: 10;
-  list-style: none;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  margin: 0;
-}
-
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.4);
-  background: transparent;
-  cursor: pointer;
-  padding: 0;
-  transition: all 0.3s ease;
-}
-
-.carousel-indicators li.active {
-  background: #ffffff;
-  border-color: #ffffff;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ============================================
-   FEATURE CARDS — Black Hat "Sharpen Up" style
+   CAROUSEL INDICATORS — Black Hat Exact
    ============================================ */
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 60px; /* Don't overlay controls */
+  list-style: none;
+}
+
+.carousel-indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.3;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-indicators li.active {
+  opacity: 1;
+}
+
+/* ============================================
+   SHARPEN UP CARDS — Black Hat Exact
+   ============================================ */
+.sharpen-up {
+  background: #0a0a0a;
+  padding: 0 2rem;
+}
+
+.sharpen-up .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .featured-highlight {
   border-bottom: 1px solid #1a1a1a;
   padding: 5rem 0;
@@ -248,14 +355,14 @@
   .featured-highlight .row {
     grid-template-columns: 1fr;
   }
-  .carousel-arrow { display: none !important; }
 }
 
-.featured-highlight .lockup {
+/* Lockup — Left column */
+.lockup {
   position: relative;
 }
 
-.featured-highlight .lockup h2 {
+.lockup h2 {
   font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -266,7 +373,8 @@
   margin: 0;
 }
 
-.featured-highlight .lockup::after {
+/* FAT GREEN UNDERLINE — Black Hat exact */
+.lockup::after {
   content: '';
   display: block;
   width: 100%;
@@ -277,26 +385,33 @@
   margin-bottom: 0.75rem;
 }
 
-.featured-highlight .lockup p {
-  font-family: 'BlackHatDruk', 'Inter', sans-serif;
+/* Sublabel — SMALL <p> tag */
+.lockup p {
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  text-transform: uppercase;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  color: #ffffff;
+  text-transform: lowercase;
+  font-size: 0.75rem;
+  color: #888888;
+  letter-spacing: 0.1em;
   margin: 0;
-  line-height: 1;
+  line-height: 1.5;
 }
 
-.featured-highlight .description {
+/* Right column — Description */
+.col-md-6 p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   color: #e0e0e0;
   line-height: 1.7;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.5rem;
 }
 
-.featured-highlight .find-out-more {
+.col-md-6 p:last-child {
+  margin-bottom: 0;
+}
+
+.find-out-more {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -304,8 +419,16 @@
   text-decoration: none;
 }
 
-.featured-highlight .find-out-more:hover {
+.find-out-more:hover {
   text-decoration: underline;
+}
+
+/* Hide controls on mobile */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
+  }
 }
 
 /* ============================================
@@ -316,8 +439,4 @@
   --ifm-navbar-background-color: #0d0d0d;
   --ifm-sidebar-background-color: #0d0d0d;
   --ifm-footer-background-color: #0d0d0d;
-}
-
-@media (max-width: 768px) {
-  .carousel-arrow { display: none !important; }
 }
