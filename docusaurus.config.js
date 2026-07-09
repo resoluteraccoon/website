@@ -49,12 +49,21 @@ const config = {
       title: 'RESOLUTE RACCOON',
       logo: { alt: 'Resolute Raccoon', src: 'img/logo.svg' },
       items: [
-        { to: '/docs/about', label: 'About Us', position: 'left' },
-        { to: '/docs/events', label: 'Events', position: 'left' },
-        { to: '/docs/blog', label: 'Blog', position: 'left' },
-        { to: '/docs/spaces', label: 'Spaces', position: 'left' },
-        { to: '/docs/rooms', label: 'Rooms', position: 'left' },
-        { href: 'https://github.com/resoluteraccoon', label: 'GitHub', position: 'right' },
+        {
+          type: 'dropdown',
+          label: 'Home',
+          position: 'left',
+          items: [
+            { to: '/docs/events', label: 'Events' },
+            { to: '/docs/blog', label: 'Blog' },
+            { to: '/docs/spaces', label: 'Spaces' },
+            { to: '/docs/rooms', label: 'Rooms' },
+            { to: '/docs/about', label: 'About Us' },
+          ],
+        },
+        { to: '/', label: 'Home', position: 'left' },
+        { href: 'https://github.com/resoluteraccoon', label: 'GitHub', position: 'left' },
+        { href: '#', label: 'Discord', position: 'left' },
       ],
     },
     footer: {
