@@ -34,6 +34,17 @@ const config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+    metadata: [
+      { name: 'og:title', content: 'Resolute Raccoon' },
+      { name: 'og:description', content: 'A blackhat-grade cybersecurity club. Train. Break. Build.' },
+      { name: 'og:image', content: 'https://resoluteraccoon.github.io/img/logo.svg' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:url', content: 'https://resoluteraccoon.github.io' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Resolute Raccoon' },
+      { name: 'twitter:description', content: 'A blackhat-grade cybersecurity club. Train. Break. Build.' },
+      { name: 'twitter:image', content: 'https://resoluteraccoon.github.io/img/logo.svg' },
+    ],
     navbar: {
       title: 'RESOLUTE RACCOON',
       logo: { alt: 'Resolute Raccoon', src: 'img/logo.svg' },
