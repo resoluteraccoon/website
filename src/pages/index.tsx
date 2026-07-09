@@ -26,7 +26,7 @@ const slides = [
     cta: 'FIND OUT MORE',
   },
   {
-    heading: 'REAL-LIFE\nCONVERSATIONS',
+    heading: 'CONVERSATIONS',
     subtitle: "Men's health, discipline, finance, leadership — we talk about it all",
     image: '/img/slides/slide4.jpg',
     link: '/docs/rooms/real-life-conversations',
