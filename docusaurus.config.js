@@ -61,9 +61,21 @@ const config = {
             { to: '/docs/about', label: 'About Us' },
           ],
         },
-        { to: '/', label: 'Home', position: 'left' },
-        { href: 'https://github.com/resoluteraccoon', label: 'GitHub', position: 'left' },
-        { href: '#', label: 'Discord', position: 'left' },
+        {
+          href: 'https://resoluteraccoon.github.io/',
+          label: 'Home',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/resoluteraccoon',
+          label: 'GitHub',
+          position: 'left',
+        },
+        {
+          href: '#',
+          label: 'Discord',
+          position: 'left',
+        },
       ],
     },
     footer: {
