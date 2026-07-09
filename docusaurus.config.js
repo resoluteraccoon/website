@@ -19,7 +19,7 @@ const config = {
       'classic',
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.ts'),
           editUrl: 'https://github.com/resoluteraccoon/website/tree/main/',
         },
         blog: false,

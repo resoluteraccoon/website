@@ -4,59 +4,71 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 /**
  * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
+ * - create an ordered group of docs
+ * - render a sidebar for each doc of that group
+ * - provide next/previous navigation
+ *
+ * Create as many sidebars as you want.
  */
 const sidebars: SidebarsConfig = {
-  // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
-    'about',
+    { type: 'doc', id: 'about', label: 'About Us' },
     {
       type: 'category',
-      label: 'Features',
+      label: 'Events',
+      link: { type: 'doc', id: 'events' },
       items: [
-        'features/overview',
-        'features/curated-learning',
-        'features/locked-progression',
-        'features/refinery-ai',
-        'features/thumbnail-cards',
-        'features/progress-tracker',
+        { type: 'doc', id: 'events/movie-nights', label: 'Movie Nights (Movie Saturdays)' },
+        { type: 'doc', id: 'events/hackathons', label: 'Hackathons' },
+        { type: 'doc', id: 'events/conferences', label: 'Conferences' },
+        { type: 'doc', id: 'events/webinars', label: 'Webinars' },
       ],
     },
     {
       type: 'category',
-      label: 'Learnings',
+      label: 'Blog',
+      link: { type: 'doc', id: 'blog' },
       items: [
-        'learnings/overview',
-        'learnings/mathematics-for-programmers',
-        'learnings/clean-code',
-        'learnings/java-for-beginners',
-        'learnings/readers-club',
+        { type: 'doc', id: 'blog/technical-articles', label: 'Technical Articles' },
+        { type: 'doc', id: 'blog/research', label: 'Research' },
+        { type: 'doc', id: 'blog/ctf-writeups', label: 'CTF Write-ups' },
+        { type: 'doc', id: 'blog/movie-night-writeups', label: 'Movie Night Write-Ups' },
+        { type: 'doc', id: 'blog/tool-reviews', label: 'Tool Reviews' },
       ],
     },
     {
       type: 'category',
-      label: 'Community',
+      label: 'Spaces',
+      link: { type: 'doc', id: 'spaces' },
       items: [
-        'community/overview',
-        'community/public-speaking',
-        'community/real-life-conversations',
-        'community/mens-health',
+        {
+          type: 'category',
+          label: 'Learning Hub',
+          link: { type: 'doc', id: 'spaces/learning-hub' },
+          items: [
+            { type: 'doc', id: 'spaces/learning-hub/features', label: 'Features' },
+          ],
+        },
+        { type: 'doc', id: 'spaces/skills-development', label: 'Skills Development' },
       ],
     },
     {
       type: 'category',
-      label: 'Hacker Club',
+      label: 'Rooms',
+      link: { type: 'doc', id: 'rooms' },
       items: [
-        'hacker-club/overview',
-        'hacker-club/movie-nights',
-        'hacker-club/hackathons',
-        'hacker-club/newsletter',
+        {
+          type: 'category',
+          label: 'Readers Club',
+          link: { type: 'doc', id: 'rooms/readers-club' },
+          items: [
+            { type: 'doc', id: 'rooms/readers-club/hacker-books', label: 'Hacker Books' },
+            { type: 'doc', id: 'rooms/readers-club/non-fiction', label: 'Non-fiction' },
+            { type: 'doc', id: 'rooms/readers-club/biographies', label: 'Biographies' },
+            { type: 'doc', id: 'rooms/readers-club/classics', label: 'Classics' },
+          ],
+        },
+        { type: 'doc', id: 'rooms/real-life-conversations', label: 'Real-Life Conversations' },
       ],
     },
   ],
