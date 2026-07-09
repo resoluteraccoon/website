@@ -151,13 +151,15 @@
 /* Caption — Black Hat exact positioning */
 .carousel-caption {
   position: absolute;
-  left: 8vw;
-  bottom: 80px;
+  left: 5%;
+  right: 5%;
+  bottom: 20%;
   z-index: 10;
-  padding: 20px 0;
+  padding: 0 1rem;
   color: #ffffff;
   text-align: left;
-  max-width: 700px;
+  max-width: 90vw;
+  box-sizing: border-box;
 }
 
 .carousel-caption h3 {
@@ -165,15 +167,16 @@
   font-weight: 500;
   text-transform: uppercase;
   font-size: clamp(2.5rem, 6vw, 5.5rem);
-  line-height: 0.95;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: #ffffff;
   margin: 0 0 1rem;
+  white-space: pre-line;
 }
 
 .carousel-caption p {
   font-family: 'Inter', sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
   color: #aaaaaa;
   margin: 0 0 1.5rem;
 }
@@ -194,6 +197,26 @@
 
 .carousel-caption .more:hover {
   background: #00e67a;
+}
+
+/* Mobile — Prevent text from falling off screen */
+@media (max-width: 768px) {
+  .carousel-caption {
+    left: 5%;
+    right: 5%;
+    bottom: 15%;
+  }
+  .carousel-caption h3 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+    line-height: 1.2;
+  }
+  .carousel-caption p {
+    font-size: clamp(0.9rem, 3vw, 1.1rem) !important;
+  }
+  .carousel-caption .more {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
 /* ============================================
@@ -343,17 +366,20 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .lockup h3 {
   font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   color: #ffffff;
   letter-spacing: -0.02em;
-  line-height: 0.95;
+  line-height: 1.1;
   margin: 0;
+  word-break: break-word;
 }
 
 /* FAT GREEN UNDERLINE — Black Hat exact */
