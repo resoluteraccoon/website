@@ -35,13 +35,14 @@ const config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: '',
+      title: 'RESOLUTE RACCOON',
       logo: { alt: 'Resolute Raccoon', src: 'img/logo.svg' },
       items: [
-        { to: '/docs/about', label: 'About', position: 'left' },
-        { to: '/docs/train', label: 'TRAIN', position: 'left' },
-        { to: '/docs/meet', label: 'MEET', position: 'left' },
-        { to: '/docs/grow', label: 'GROW', position: 'left' },
+        { to: '/docs/about', label: 'About Us', position: 'left' },
+        { to: '/docs/events', label: 'Events', position: 'left' },
+        { to: '/docs/blog', label: 'Blog', position: 'left' },
+        { to: '/docs/spaces', label: 'Spaces', position: 'left' },
+        { to: '/docs/rooms', label: 'Rooms', position: 'left' },
         { href: 'https://github.com/resoluteraccoon', label: 'GitHub', position: 'right' },
       ],
     },
@@ -51,10 +52,11 @@ const config = {
         {
           title: 'Sitemap',
           items: [
-            { label: 'About', to: '/docs/about' },
-            { label: 'TRAIN', to: '/docs/train' },
-            { label: 'MEET', to: '/docs/meet' },
-            { label: 'GROW', to: '/docs/grow' },
+            { label: 'About Us', to: '/docs/about' },
+            { label: 'Events', to: '/docs/events' },
+            { label: 'Blog', to: '/docs/blog' },
+            { label: 'Spaces', to: '/docs/spaces' },
+            { label: 'Rooms', to: '/docs/rooms' },
           ],
         },
         {

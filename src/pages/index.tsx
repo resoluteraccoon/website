@@ -8,57 +8,57 @@ const slides = [
     heading: 'TRAIN.\nBREAK.\nBUILD.',
     subtitle: 'A blackhat-grade cybersecurity club',
     image: '/img/slides/slide1.jpg',
-    link: '/docs/train',
-    cta: 'Find out more',
+    link: '/docs/about',
+    cta: 'FIND OUT MORE',
   },
   {
-    heading: 'CURATED\nPATHS',
-    subtitle: 'No scattered tutorials. Clear progression.',
+    heading: 'SPACES',
+    subtitle: 'Take the best resources in the world and we bring them to you',
     image: '/img/slides/slide2.jpg',
-    link: '/docs/train',
-    cta: 'Find out more',
+    link: '/docs/about',
+    cta: 'FIND OUT MORE',
   },
   {
-    heading: 'HYBRID\nBY DESIGN',
-    subtitle: 'Technical skill + character growth',
+    heading: 'MOVIE NIGHTS',
+    subtitle: 'Hacking and life-themed films dissected as a crew',
     image: '/img/slides/slide3.jpg',
-    link: '/docs/grow',
-    cta: 'Find out more',
+    link: '/docs/events/movie-nights',
+    cta: 'FIND OUT MORE',
   },
   {
-    heading: 'LOCKED\nPROGRESSION',
-    subtitle: 'Prove it before you advance',
+    heading: 'REAL-LIFE\nCONVERSATIONS',
+    subtitle: "Men's health, discipline, finance, leadership — we talk about it all",
     image: '/img/slides/slide4.jpg',
-    link: '/docs/train',
-    cta: 'Find out more',
+    link: '/docs/rooms/real-life-conversations',
+    cta: 'FIND OUT MORE',
   },
   {
-    heading: 'FORGED\nTOGETHER',
-    subtitle: 'No one trains alone here',
+    heading: 'BLOG',
+    subtitle: 'Technical articles, research, CTF write-ups, and tool reviews',
     image: '/img/slides/slide5.jpg',
-    link: '/docs/grow',
-    cta: 'Find out more',
+    link: '/docs/blog',
+    cta: 'FIND OUT MORE',
   },
 ];
 
 const cards = [
   {
-    header: 'TRAIN',
+    header: 'SPACES',
     sublabel: 'resolute raccoon',
-    description: 'We curate the best free platforms in the world — pwn.college, TryHackMe, PortSwigger — and turn them into structured, locked learning paths. Each unit demands proof before you advance.',
-    link: '/docs/train',
+    description: 'We curate the best free platforms in the world — pwn.college, TryHackMe, PortSwigger — and turn them into structured, locked learning paths. Each unit demands proof before you advance. Hand-picked resources. Locked progressive modules. Deep university integration. AI Refinery that continuously updates content.',
+    link: '/docs/spaces',
   },
   {
-    header: 'MEET',
+    header: 'EVENTS',
     sublabel: 'resolute raccoon',
     description: 'Movie nights dissecting real breaches. Hackathons where we break things and fix them. Conferences and webinars we attend as a crew. We present, we compete, we learn from each other.',
-    link: '/docs/meet',
+    link: '/docs/events',
   },
   {
-    header: 'GROW',
+    header: 'ROOMS',
     sublabel: 'resolute raccoon',
-    description: "Readers Club. Public Speaking. Real conversations about life outside the screen. Men's Health for the brothers who need space to be real. Technical skill and character growth. Both matter.",
-    link: '/docs/grow',
+    description: "Readers Club. Public Speaking. Real conversations about life outside the screen. Men's Health. Ladies Health. Discipline. Marriage. Business. Finance. Leadership. Investing. Technical skill and character growth. Both matter.",
+    link: '/docs/rooms',
   },
 ];
 
@@ -140,7 +140,7 @@ export default function Home() {
                 {/* LEFT: Lockup */}
                 <div className="col-md-6">
                   <div className="lockup">
-                    <h2>{card.header}</h2>
+                    <h3>{card.header}</h3>
                     <p>{card.sublabel}</p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export default function Home() {
                   <p>{card.description}</p>
                   <p>
                     <Link to={card.link} className="find-out-more">
-                      Find out more
+                      Find out more →
                     </Link>
                   </p>
                 </div>

@@ -1,0 +1,55 @@
+---
+sidebar_position: 1
+pagination_next: events/hackathons
+---
+
+# Movie Nights (Movie Saturdays)
+
+## 24-Month Movie Night Curriculum
+
+We dissect real breaches on screen. Every Saturday, we gather to watch, pause, analyze, and debate. Hacking and life-themed films dissected as a crew.
+
+### Year 1: Foundations & Awakenings
+
+| Month | Film | Theme | Focus |
+|-------|------|-------|-------|
+| 1 | **The Social Dilemma** | Attention Economy & Manipulation | How platforms engineer addiction; data as currency |
+| 2 | **Citizenfour** | Mass Surveillance & Whistleblowing | Snowden, NSA, global dragnet; encryption as resistance |
+| 3 | **The Great Hack** | Data Weaponization & Democracy | Cambridge Analytica; psychographic targeting; electoral integrity |
+| 4 | **Zero Days** | Nation-State Cyber Warfare | Stuxnet; cyber-physical attacks; attribution dilemmas |
+| 5 | **We Are Legion** | Hacktivism & Collective Action | Anonymous; operations Payback, Tunisia, Sony; ethics of vigilantism |
+| 6 | **Terms and Conditions May Apply** | Privacy Erosion | Corporate data harvesting; policy loopholes; consent theater |
+| 7 | **Deep Web** | Darknet Markets & Anonymity | Silk Road; Tor; crypto; law enforcement infiltration |
+| 8 | **The Internet's Own Boy** | Open Access & Prosecutorial Overreach | Aaron Swartz; CFAA abuse; academic liberation |
+| 9 | **Hacking Democracy** | Election Infrastructure Vulnerability | Diebold machines; memory card exploits; paper trail necessity |
+| 10 | **Code 2600** | Hacker History & Culture | Phone phreaking → BBS → early internet; community evolution |
+| 11 | **TPB AFK** | Copyright Wars & Distributed Resilience | The Pirate Bay trial; legal vs. technical enforcement |
+| 12 | **In the Realm of the Hackers** | Teen Prodigies & Systemic Failure | Mendax, Prime Suspect; Australian telecom breach; juvenile justice |
+
+### Year 2: Technical Depth & Modern Threats
+
+| Month | Film | Theme | Focus |
+|-------|------|-------|-------|
+| 13 | **The Defenders** | Blue Team Operations | SOC workflows; incident response; threat hunting |
+| 14 | **Tracked** | Mobile Surveillance & Spyware | Pegasus; zero-click exploits; forensic detection |
+| 15 | **Coded Bias** | Algorithmic Fairness & Accountability | Facial recognition bias; regulatory gaps; audit methodology |
+| 16 | **The Creepy Line** | Search Manipulation & Election Integrity | Google autocomplete; ephemeral experiences; behavioral drift |
+| 17 | **Social Engineering** | Human Layer Exploitation | Pretexting; vishing; physical penetration testing |
+| 18 | **Ransomware: The Movie** | Extortion Economy | Conti, LockBit; affiliate models; negotiation; backup strategy |
+| 18 | **Kernel Panic** | OS Internals & Rootkits | Ring 0; DKOM; eBPF; modern detection |
+| 19 | **Supply Chain** | Third-Party Risk | SolarWinds, Kaseya, Log4j; SBOM; reproducible builds |
+| 20 | **Crypto Wars II** | Encryption Policy | EARN IT Act; client-side scanning; backdoor fallacies |
+| 21 | **AI Red Team** | ML Model Attacks | Prompt injection; data poisoning; model extraction; defenses |
+| 22 | **Hardware Hacking** | Firmware & Side-Channels | JTAG, UART, SPI; Spectre/Meltdown; Rowhammer; glitching |
+| 23 | **Quantum Threat** | Post-Quantum Cryptography | Shor's algorithm; NIST PQC standards; migration timeline |
+| 24 | **The Next Frontier** | Emerging Paradigms | Space systems, bio-cyber, neurotech, autonomous agents |
+
+### How Movie Nights Work
+
+1. **Watch** — Full documentary/movie. No interruptions. Absorb the story.
+2. **Pause** — Key moments get paused. We break down what just happened technically.
+3. **Debate** — Could it have been prevented? What would you have done differently?
+
+---
+
+**Next:** [Hackathons →](/docs/events/hackathons)
