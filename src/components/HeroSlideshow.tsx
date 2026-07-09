@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from '@docusaurus/Link';
 
 const slides = [
   {
@@ -12,7 +13,7 @@ const slides = [
     heading: 'SPACES',
     subtitle: 'Take the best resources in the world and we bring them to you',
     image: '/img/slides/slide2.jpg',
-    link: '/docs/spaces',
+    link: '/docs/about',
     cta: 'FIND OUT MORE',
   },
   {
@@ -54,9 +55,9 @@ export default function HeroSlideshow(): JSX.Element {
     <div id="homepage-slider" className="carousel homepage-hero">
       <div className="carousel-inner" role="listbox">
         {slides.map((slide, index) => (
-          <a
+          <Link
             key={index}
-            href={slide.link}
+            to={slide.link}
             className={`carousel-item ${index === currentSlide ? 'active' : ''}`}
             style={{
               backgroundImage: `url('${slide.image}')`,
@@ -74,7 +75,7 @@ export default function HeroSlideshow(): JSX.Element {
               {slide.subtitle && <p>{slide.subtitle}</p>}
               {slide.cta && <span className="more">{slide.cta}</span>}
             </div>
-          </a>
+          </Link>
         ))}
       </div>
 
