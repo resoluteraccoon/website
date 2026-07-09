@@ -73,7 +73,6 @@ export default function Home() {
   }, []);
 
   const goNext = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
-  const goPrev = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <Layout title="Resolute Raccoon" description="Blackhat-grade cybersecurity club">
@@ -107,11 +106,8 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Right-side navigation controls */}
+        {/* Single right-side next arrow only */}
         <div className="carousel-controls-right">
-          <button className="carousel-control-prev" onClick={goPrev} aria-label="Previous">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
           <button className="carousel-control-next" onClick={goNext} aria-label="Next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
           </button>
