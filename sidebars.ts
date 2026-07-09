@@ -18,7 +18,7 @@ const sidebars: SidebarsConfig = {
       label: 'Events',
       link: { type: 'doc', id: 'events' },
       items: [
-        { type: 'doc', id: 'events/movie-nights', label: 'Movie Nights (Movie Saturdays)' },
+        { type: 'doc', id: 'events/movie-nights', label: 'Movie Nights' },
         { type: 'doc', id: 'events/hackathons', label: 'Hackathons' },
         { type: 'doc', id: 'events/conferences', label: 'Conferences' },
         { type: 'doc', id: 'events/webinars', label: 'Webinars' },
