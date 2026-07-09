@@ -141,7 +141,7 @@ export default function Home() {
                 <div className="col-md-6">
                   <div className="lockup">
                     <h3>{card.header}</h3>
-                    <p>{card.sublabel}</p>
+                    <p className="lockup-sublabel">{card.sublabel}</p>
                   </div>
                 </div>
                 {/* RIGHT: Description */}
