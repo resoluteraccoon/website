@@ -15,7 +15,7 @@ const slides = [
     heading: 'SPACES',
     subtitle: 'Take the best resources in the world and we bring them to you',
     image: '/img/slides/slide2.jpg',
-    link: '/docs/about',
+    link: '/docs/spaces',
     cta: 'FIND OUT MORE',
   },
   {
