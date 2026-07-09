@@ -1,0 +1,1 @@
+# Getting Started\n\nWelcome to Resolute Raccoon. Start here to learn about our mission and how to get involved.
