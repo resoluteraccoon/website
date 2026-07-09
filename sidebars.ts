@@ -49,9 +49,18 @@ const sidebars: SidebarsConfig = {
             { type: 'doc', id: 'spaces/learning-hub/features', label: 'Features' },
           ],
         },
-        { type: 'doc', id: 'spaces/skills-development', label: 'Skills Development' },
-      ],
-    },
+        
+        {
+          type: 'category',
+          label: 'Skills Development',
+          link: { type: 'doc', id: 'spaces/Skills Development' },
+          items: [
+            { type: 'doc', id: 'spaces/Skills Development/Cooking', label: 'Cooking' },
+            { type: 'doc', id: 'spaces/Skills Development/Videography', label: 'Videography' },
+            { type: 'doc', id: 'spaces/Skills Development/Public Speaking', label: 'Public Speaking' },
+            { type: 'doc', id: 'spaces/Skills Development/Deep Technical Communication', label: 'Deep Technical Communication' },
+          ],
+        },
     {
       type: 'category',
       label: 'Rooms',
