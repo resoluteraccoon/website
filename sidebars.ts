@@ -53,12 +53,12 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Skills Development',
-          link: { type: 'doc', id: 'spaces/Skills Development' },
+          link: { type: 'doc', id: 'spaces/skills-development' },
           items: [
-            { type: 'doc', id: 'spaces/Skills Development/Cooking', label: 'Cooking' },
-            { type: 'doc', id: 'spaces/Skills Development/Videography', label: 'Videography' },
-            { type: 'doc', id: 'spaces/Skills Development/Public Speaking', label: 'Public Speaking' },
-            { type: 'doc', id: 'spaces/Skills Development/Deep Technical Communication', label: 'Deep Technical Communication' },
+            { type: 'doc', id: 'spaces/skills development/cooking', label: 'Cooking' },
+            { type: 'doc', id: 'spaces/skills development/videography', label: 'Videography' },
+            { type: 'doc', id: 'spaces/skills development/public-speaking', label: 'Public Speaking' },
+            { type: 'doc', id: 'spaces/skills development/deep-technical-Communication', label: 'Deep Technical Communication' },
           ],
         },
     {
