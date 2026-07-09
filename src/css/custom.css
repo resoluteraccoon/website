@@ -301,18 +301,18 @@
 }
 
 /* ============================================
-   CAROUSEL INDICATORS — Black Hat Exact
+   CAROUSEL INDICATORS — Left Aligned
    ============================================ */
 .carousel-indicators {
   position: absolute;
-  right: 0;
+  right: auto !important;
   bottom: 20px;
-  left: 0;
+  left: 5% !important;
   z-index: 15;
   display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin: 0 60px;
+  justify-content: flex-start !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
   list-style: none;
 }
 
@@ -322,10 +322,10 @@
   width: 10px;
   height: 10px;
   margin-right: 8px;
-  margin-left: 8px;
+  margin-left: 0;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -336,6 +336,15 @@
 
 .carousel-indicators li.active {
   opacity: 1;
+  background-color: #00cc6a;
+}
+
+/* Mobile — adjust position */
+@media (max-width: 768px) {
+  .carousel-indicators {
+    bottom: 10px;
+    left: 5%;
+  }
 }
 
 /* ============================================
