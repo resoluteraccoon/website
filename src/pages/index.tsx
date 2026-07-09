@@ -107,15 +107,15 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Prev/Next Controls */}
-        <button className="carousel-control-prev" onClick={goPrev} aria-label="Previous">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only">Previous</span>
-        </button>
-        <button className="carousel-control-next" onClick={goNext} aria-label="Next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only">Next</span>
-        </button>
+        {/* Right-side navigation controls */}
+        <div className="carousel-controls-right">
+          <button className="carousel-control-prev" onClick={goPrev} aria-label="Previous">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button className="carousel-control-next" onClick={goNext} aria-label="Next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
 
         {/* Indicators */}
         <ol className="carousel-indicators">

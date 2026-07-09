@@ -228,26 +228,42 @@
 }
 
 /* ============================================
-   CAROUSEL CONTROLS — Black Hat Exact
+   CAROUSEL CONTROLS — Right Side Only
    ============================================ */
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-controls-right {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   z-index: 10;
+}
+
+.carousel-controls-right button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  padding: 0;
-  color: #ffffff;
-  text-align: center;
-  background: none;
-  border: 0;
-  opacity: 0.7;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.carousel-controls-right button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #ffffff;
+  opacity: 0.7;
   transition: opacity 0.3s ease;
+  padding: 0;
 }
 
 .carousel-control-prev:hover,
@@ -256,24 +272,7 @@
   text-decoration: none;
 }
 
-.carousel-control-prev {
-  left: 0;
-}
-
-.carousel-control-next {
-  right: 0;
-}
-
 /* Arrow icons using CSS borders (Bootstrap style) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-}
-
 .carousel-control-prev-icon::after {
   content: '';
   display: block;
@@ -294,16 +293,11 @@
   transform: rotate(45deg);
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+/* Mobile — hide arrows, rely on swipe/dots */
+@media (max-width: 768px) {
+  .carousel-controls-right {
+    display: none;
+  }
 }
 
 /* ============================================
@@ -466,4 +460,44 @@
   --ifm-navbar-background-color: #0d0d0d;
   --ifm-sidebar-background-color: #0d0d0d;
   --ifm-footer-background-color: #0d0d0d;
+}
+
+/* ============================================
+   SIDEBAR COLLAPSE BUTTON — Default Docusaurus
+   ============================================ */
+.expandButton_TmdG {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+.expandButton_TmdG:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.collapseSidebarButton_PEFL {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  padding: 8px;
+  background: #0d0d0d;
+  border-top: 1px solid #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.collapseSidebarButton_PEFL:hover {
+  background: #1a1a1a;
 }
