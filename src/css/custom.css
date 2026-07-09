@@ -164,14 +164,22 @@
 
 .carousel-caption h3 {
   font-family: 'BlackHatDruk', 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
-  line-height: 1.2;
+  font-size: 52px;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: #ffffff;
-  margin: 0 0 1rem;
+  margin: 0;
+  margin-block-end: 30px;
+  text-size-adjust: 100%;
   white-space: pre-line;
+}
+
+@media (min-width: 769px) {
+  .carousel-caption h3 {
+    font-size: 52px;
+  }
 }
 
 .carousel-caption p {
@@ -396,7 +404,7 @@
 
 /* Sublabel — "resolute raccoon" below the green line */
 .lockup-sublabel {
-  font-family: 'Inter', sans-serif;
+  font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-size: 17.5px;
   font-weight: 400;
   height: 38.5px;
