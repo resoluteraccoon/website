@@ -12,7 +12,6 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
-    { type: 'doc', id: 'about', label: 'About Us' },
     {
       type: 'category',
       label: 'Events',
@@ -77,6 +76,7 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', id: 'rooms/real-life-conversations', label: 'Real-Life Conversations' },
       ],
     },
+    { type: 'doc', id: 'about', label: 'About Us' },
   ],
 };
 
