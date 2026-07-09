@@ -3,7 +3,7 @@ sidebar_position: 1
 pagination_next: events/hackathons
 ---
 
-# Movie Nights (Movie Saturdays)
+# Movie Nights
 
 ## 24-Month Movie Night Curriculum
 
