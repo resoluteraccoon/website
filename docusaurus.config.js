@@ -5,7 +5,7 @@ const { github: lightCodeTheme, dracula: darkCodeTheme } = require('prism-react-
 const config = {
   title: 'Resolute Raccoon',
   tagline: 'A blackhat-grade cybersecurity club',
-  favicon: 'img/logo.svg',
+  favicon: 'img/favicon.ico',
   url: 'https://resoluteraccoon.github.io',
   baseUrl: '/website/',
   organizationName: 'resoluteraccoon',

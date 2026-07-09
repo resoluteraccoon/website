@@ -42,6 +42,22 @@
   font-size: 1.25rem;
   color: #00cc6a;
   letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+/* Tablet and below — shrink to fit */
+@media (max-width: 768px) {
+  .navbar__title {
+    font-size: clamp(0.7rem, 3.5vw, 1rem);
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Small phones — hide text, show only logo */
+@media (max-width: 480px) {
+  .navbar__title {
+    display: none;
+  }
 }
 
 .navbar__logo {
