@@ -39,24 +39,46 @@
 .navbar__title {
   font-family: 'BlackHatDruk', 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
   color: #00cc6a;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: clamp(0.65rem, 2.5vw, 1.25rem);
 }
 
-/* Tablet and below — shrink to fit */
-@media (max-width: 768px) {
+/* On very small screens (below 400px), reduce letter-spacing aggressively 
+   so the full 16 characters fit without truncation */
+@media (max-width: 400px) {
   .navbar__title {
-    font-size: clamp(0.7rem, 3.5vw, 1rem);
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
+    font-size: clamp(0.55rem, 3.2vw, 0.75rem);
   }
 }
 
-/* Small phones — hide text, show only logo */
-@media (max-width: 480px) {
+/* On small phones (401px - 480px) */
+@media (min-width: 401px) and (max-width: 480px) {
   .navbar__title {
-    display: none;
+    letter-spacing: 0.01em;
+    font-size: clamp(0.6rem, 3vw, 0.85rem);
+  }
+}
+
+/* On tablets and small laptops (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar__title {
+    letter-spacing: 0.03em;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+  }
+}
+
+/* Desktop (769px and up) — full size */
+@media (min-width: 769px) {
+  .navbar__title {
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
   }
 }
 
