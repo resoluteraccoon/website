@@ -696,3 +696,52 @@
 .collapseSidebarButton_PEFL:hover {
   background: #1a1a1a;
 }
+
+/* === INLINE PAGINATION BUTTONS === */
+/* Targets the arrow links inside docs content, NOT the Docusaurus footer pagination */
+
+.markdown a[href^="/docs/"],
+.markdown a[href^="/website/docs/"] {
+  display: inline-block;
+  background-color: #00cc6a;
+  color: #0a0a0a !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 24px;
+  border-radius: 0; /* sharp corners like homepage button */
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.markdown a[href^="/docs/"]:hover,
+.markdown a[href^="/website/docs/"]:hover {
+  background-color: #00e67a;
+  color: #0a0a0a !important;
+  text-decoration: none;
+}
+
+/* Exclude regular inline links (not arrow/pagination buttons) */
+.markdown p a:not(:only-child),
+.markdown li a {
+  /* Keep regular links as they are — green text, no button */
+  background-color: transparent;
+  color: #00cc6a !important;
+  padding: 0;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* The arrow character styling inside the button */
+.markdown a[href^="/docs/"] strong,
+.markdown a[href^="/website/docs/"] strong {
+  color: #0a0a0a;
+  font-weight: 600;
+}

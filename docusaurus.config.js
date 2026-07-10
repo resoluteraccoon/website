@@ -64,20 +64,20 @@ const config = {
           ],
         },
         {
-          href: 'https://resoluteraccoon.github.io/',
-          label: 'Home',
-          position: 'left',
-        },
-        {
-          href: 'https://github.com/resoluteraccoon',
-          label: 'GitHub',
-          position: 'left',
-        },
-        {
-          href: '#',
-          label: 'Discord',
-          position: 'left',
-        },
+                to: '/',
+                label: 'Home',
+                position: 'left',
+              },
+              {
+                href: 'https://github.com/resoluteraccoon',
+                label: 'GitHub',
+                position: 'left',
+              },
+              {
+                href: 'https://discord.gg/resoluteraccoon',
+                label: 'Discord',
+                position: 'left',
+              },
       ],
     },
     footer: {

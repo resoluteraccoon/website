@@ -27,7 +27,7 @@ const slides = [
     heading: 'ROOMS',
     subtitle: "Men's health, discipline, finance, leadership — we talk about it all",
     image: '/img/slides/slide4.jpg',
-    link: '/docs/rooms/real-life-conversations',
+    link: '/docs/rooms',
     cta: 'FIND OUT MORE',
   },
   {
