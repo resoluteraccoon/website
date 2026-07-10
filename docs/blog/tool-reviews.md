@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 pagination_prev: blog/movie-night-writeups
+pagination_next: null
 ---
 
 # Tool Reviews
