@@ -60,10 +60,12 @@ export default function MovieNightsSlideshow(): React.ReactElement {
             key={index}
             to={slide.link}
             className={`carousel-item ${index === currentSlide ? 'active' : ''}`}
-            style={{
-              backgroundImage: `url('${slide.image}')`,
-            }}
           >
+            <img
+              src={slide.image}
+              alt={slide.heading}
+              className="d-block w-100"
+            />
             <div className="carousel-caption">
               <h3>{slide.heading}</h3>
               {slide.subtitle && <p>{slide.subtitle}</p>}
@@ -73,7 +75,6 @@ export default function MovieNightsSlideshow(): React.ReactElement {
         ))}
       </div>
 
-      {/* Arrows - hidden via CSS for movie-nights-slideshow, but kept for structure */}
       <div className="carousel-controls-right">
         <button className="carousel-control-prev" onClick={goPrev} aria-label="Previous">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,7 +84,6 @@ export default function MovieNightsSlideshow(): React.ReactElement {
         </button>
       </div>
 
-      {/* Indicators */}
       <ol className="carousel-indicators">
         {movieSlides.map((_, index) => (
           <li
