@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
-pagination_prev: spaces
+pagination_prev: spaces/learning-hub
+pagination_next: null
 ---
 
 # Learning Hub

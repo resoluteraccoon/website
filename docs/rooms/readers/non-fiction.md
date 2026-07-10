@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
-pagination_prev: rooms/readers-club/hacker-books
-pagination_next: rooms/readers-club/biographies
+pagination_prev: rooms/readers/hacker-books
+pagination_next: rooms/readers/biographies
 ---
 
 # Non-fiction

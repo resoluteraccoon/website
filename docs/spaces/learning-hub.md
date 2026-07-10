@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 pagination_prev: spaces
-pagination_next: spaces/first-principles
+pagination_next: spaces/learning-hub/features
 ---
 
 # Learning Hub

@@ -13,6 +13,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
+    { type: 'doc', id: 'about', label: 'About Us' },
     {
       type: 'category',
       label: 'Events',
@@ -70,19 +71,33 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'category',
-          label: 'Readers Club',
-          link: { type: 'doc', id: 'rooms/readers-club' },
+          label: 'Readers',
+          link: { type: 'doc', id: 'rooms/readers' },
           items: [
-            { type: 'doc', id: 'rooms/readers-club/hacker-books', label: 'Hacker Books' },
-            { type: 'doc', id: 'rooms/readers-club/non-fiction', label: 'Non-fiction' },
-            { type: 'doc', id: 'rooms/readers-club/biographies', label: 'Biographies' },
-            { type: 'doc', id: 'rooms/readers-club/classics', label: 'Classics' },
+            { type: 'doc', id: 'rooms/readers/hacker-books', label: 'Hacker Books' },
+            { type: 'doc', id: 'rooms/readers/non-fiction', label: 'Non-fiction' },
+            { type: 'doc', id: 'rooms/readers/biographies', label: 'Biographies' },
+            { type: 'doc', id: 'rooms/readers/classics', label: 'Classics' },
           ],
         },
-        { type: 'doc', id: 'rooms/real-life-conversations', label: 'Real-Life Conversations' },
+        {
+          type: 'category',
+          label: 'Labour Market',
+          link: { type: 'doc', id: 'rooms/labour-market' },
+          items: [
+            { type: 'doc', id: 'rooms/labour-market/deep-conversations', label: 'Deep Conversations' },
+            { type: 'doc', id: 'rooms/labour-market/gentle-mens-health', label: "Gentle Men's Health Session" },
+            { type: 'doc', id: 'rooms/labour-market/ladies-health', label: 'Ladies Health Session' },
+            { type: 'doc', id: 'rooms/labour-market/discipline', label: 'Discipline' },
+            { type: 'doc', id: 'rooms/labour-market/marriage', label: 'Marriage' },
+            { type: 'doc', id: 'rooms/labour-market/business', label: 'Business' },
+            { type: 'doc', id: 'rooms/labour-market/finance', label: 'Finance' },
+            { type: 'doc', id: 'rooms/labour-market/leadership', label: 'Leadership' },
+            { type: 'doc', id: 'rooms/labour-market/investing', label: 'Investing' },
+          ],
+        },
       ],
     },
-    { type: 'doc', id: 'about', label: 'About Us' },
   ],
 };
 

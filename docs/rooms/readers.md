@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
 pagination_prev: rooms
-pagination_next: rooms/readers-club/hacker-books
+pagination_next: rooms/readers/hacker-books
 ---
 
-# Readers Club
+# Readers
 
 ## The Standard: Deep, Not Wide.
 
@@ -59,3 +59,6 @@ If you cannot do these, you re-read. You re-implement. You re-teach.
 There is no "I read it once." There is only "I own it" or "I don't."
 
 ---
+
+**Previous:** [Rooms →](/docs/rooms)  
+**Next:** [Hacker Books →](/docs/rooms/readers/hacker-books)

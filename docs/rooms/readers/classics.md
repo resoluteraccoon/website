@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
-pagination_prev: rooms/readers-club/biographies
+pagination_prev: rooms/readers/biographies
+pagination_next: null
 ---
 
 # Classics
