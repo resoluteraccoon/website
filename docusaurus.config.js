@@ -21,6 +21,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           editUrl: 'https://github.com/resoluteraccoon/website/tree/main/',
+          sidebarCollapsed: false,
         },
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },

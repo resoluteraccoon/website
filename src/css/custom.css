@@ -643,6 +643,37 @@
 }
 
 /* ============================================
+   SIDEBAR — Ensure complete navigation visibility
+   ============================================ */
+
+.theme-doc-sidebar-menu {
+  display: block !important;
+}
+
+.theme-doc-sidebar-item-category {
+  display: block !important;
+}
+
+.theme-doc-sidebar-item-link {
+  display: block !important;
+}
+
+/* Ensure nested items are visible when expanded */
+.theme-doc-sidebar-item-category > .theme-doc-sidebar-menu {
+  display: block !important;
+  padding-left: 1rem;
+}
+
+/* Ensure category labels are clickable and visible */
+.theme-doc-sidebar-item-category > .theme-doc-sidebar-item-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* ============================================
    SLIDESHOW NO ARROWS — Utility class
    ============================================ */
 .slideshow-no-arrows .carousel-control-next,
