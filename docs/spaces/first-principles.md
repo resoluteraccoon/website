@@ -63,6 +63,3 @@ If you already know it, prove it. Submit the derivation, the demo, the teaching 
 The graph respects competence. It does not respect time served.
 
 ---
-
-**Previous:** [Learning Hub →](/docs/spaces/learning-hub)
-**Next:** [AI Refinery →](/docs/spaces/ai-refinery)
