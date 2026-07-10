@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 pagination_prev: spaces/skills-development/public-speaking
+pagination_next: null
 ---
 
 # Deep Technical Communication
