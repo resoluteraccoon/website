@@ -474,63 +474,52 @@
 }
 
 /* ============================================
-   MOVIE NIGHTS SLIDESHOW — DStv-style banner (uses <img> tags)
+   MOVIE NIGHTS SLIDESHOW — CLEAN FIXED BANNER
    ============================================ */
-/* Outer container — rounded corners, like a card */
+
+/* Outer container — NO border, NO padding, clean edge-to-edge */
 .movie-nights-slideshow {
   width: 100%;
-  border-radius: 12px; /* rounded rectangular corners */
+  border-radius: 12px;
   overflow: hidden;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* subtle depth */
+  /* NO border, NO box-shadow, NO padding */
 }
 
-/* Each slide — fixed banner height */
+/* The carousel itself */
 .movie-nights-slideshow .carousel {
   position: relative;
-  height: 280px; /* compact rectangular banner */
-  background: #0a0a0a;
+  width: 100%;
 }
 
+/* Inner track — NO padding/margin */
 .movie-nights-slideshow .carousel-inner {
   position: relative;
   width: 100%;
-  height: 100%;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
+/* Each slide item — fixed rectangular height, NO padding */
 .movie-nights-slideshow .carousel-item {
   position: relative;
   width: 100%;
-  height: 100%;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-  z-index: 0;
+  height: 280px; /* desktop */
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-.movie-nights-slideshow .carousel-item.active {
-  display: block;
-  opacity: 1;
-  z-index: 1;
-}
-
-/* Image fills the rounded rectangle */
+/* The image — fills the slide completely, NO border, NO padding */
 .movie-nights-slideshow .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   display: block;
-}
-
-/* Dark overlay for text readability */
-.movie-nights-slideshow .carousel-item::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, transparent 100%);
-  z-index: 1;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* Caption overlay at bottom-left */
@@ -543,46 +532,39 @@
   text-align: left;
   z-index: 2;
   max-width: 60%;
-  color: #ffffff;
+  padding: 0;
 }
 
+/* Heading */
 .movie-nights-slideshow .carousel-caption h3 {
-  font-family: 'BlackHatDruk', 'Inter', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: "Black Hat Druk Web", sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.5rem);
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.9);
   color: #ffffff;
-  margin: 0 0 8px 0;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  text-transform: uppercase;
 }
 
+/* Subtitle */
 .movie-nights-slideshow .carousel-caption p {
-  font-family: 'Inter', sans-serif;
   font-size: clamp(0.8rem, 2vw, 1rem);
-  color: #cccccc;
-  margin: 0 0 12px 0;
+  margin-bottom: 12px;
   line-height: 1.4;
   text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  color: #e0e0e0;
 }
 
-.movie-nights-slideshow .carousel-caption .more {
-  display: inline-block;
-  background: #00cc6a;
-  color: #0a0a0a;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+/* CTA button */
+.movie-nights-slideshow .carousel-caption .btn {
   font-size: 0.8rem;
   padding: 8px 16px;
-  letter-spacing: 0.05em;
+  background-color: #00cc6a;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 0;
   text-transform: uppercase;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.movie-nights-slideshow .carousel-caption .more:hover {
-  background: #00e67a;
+  font-weight: 600;
 }
 
 /* === CENTERED INDICATORS === */
@@ -643,15 +625,15 @@
     margin-bottom: 8px;
   }
   
-  .movie-nights-slideshow .carousel-caption .more {
+  .movie-nights-slideshow .carousel-caption .btn {
     font-size: 0.75rem;
     padding: 6px 12px;
   }
 }
 
-  /* ============================================
-     SLIDESHOW NO ARROWS — Utility class
-     ============================================ */
+/* ============================================
+   SLIDESHOW NO ARROWS — Utility class
+   ============================================ */
 .slideshow-no-arrows .carousel-control-next,
 .slideshow-no-arrows .carousel-control-prev {
   display: none !important;

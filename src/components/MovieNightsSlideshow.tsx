@@ -1,45 +1,47 @@
 import React, { useState, useEffect } from 'react';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const movieSlides = [
   {
     heading: 'THE SOCIAL NETWORK',
     subtitle: 'The story of how a lonely genius built a billion-dollar empire — and burned every bridge along the way.',
-    image: '/website/img/movie-slides/social-network.jpg',
+    image: '/img/movie-slides/social-network.jpg',
     link: '/website/docs/events/movie-nights',
     cta: 'DISCUSS THIS FILM',
   },
   {
     heading: 'MR. ROBOT',
     subtitle: 'A vigilante hacker fights corporate greed while battling his own fractured mind. Who is real? Who is control?',
-    image: '/website/img/movie-slides/mr-robot.jpg',
+    image: '/img/movie-slides/mr-robot.jpg',
     link: '/website/docs/events/movie-nights',
     cta: 'DISCUSS THIS FILM',
   },
   {
     heading: 'THE MATRIX',
     subtitle: 'What if everything you know is a simulation? Red pill. Blue pill. The choice that changed cinema forever.',
-    image: '/website/img/movie-slides/matrix.jpg',
+    image: '/img/movie-slides/matrix.jpg',
     link: '/website/docs/events/movie-nights',
     cta: 'DISCUSS THIS FILM',
   },
   {
     heading: 'CITIZENFOUR',
     subtitle: 'The real-time documentary of Edward Snowden leaking NSA secrets. Truth, surveillance, and the cost of courage.',
-    image: '/website/img/movie-slides/citizenfour.jpg',
+    image: '/img/movie-slides/citizenfour.jpg',
     link: '/website/docs/events/movie-nights',
     cta: 'DISCUSS THIS FILM',
   },
   {
     heading: 'EX MACHINA',
     subtitle: 'A young programmer is invited to test an AI with consciousness. But who is really being tested?',
-    image: '/website/img/movie-slides/ex-machina.jpg',
+    image: '/img/movie-slides/ex-machina.jpg',
     link: '/website/docs/events/movie-nights',
     cta: 'DISCUSS THIS FILM',
   },
 ];
 
 export default function MovieNightsSlideshow(): React.ReactElement {
+  const baseUrl = useBaseUrl('/');
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -62,7 +64,7 @@ export default function MovieNightsSlideshow(): React.ReactElement {
             className={`carousel-item ${index === currentSlide ? 'active' : ''}`}
           >
             <img
-              src={slide.image}
+              src={`${baseUrl}${slide.image}`}
               alt={slide.heading}
               className="d-block w-100"
             />
