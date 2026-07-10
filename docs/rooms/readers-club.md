@@ -46,14 +46,17 @@ One book per month. Selected by the criteria:
 
 ## Current Cycle
 
-| Month | Book | Style | Status |
-|-------|------|-------|--------|
-| 2025-01 | *Designing Data-Intensive Applications* — Martin Kleppmann | Hybrid | Active |
-| 2025-02 | *Computer Systems: A Programmer's Perspective* — Bryant & O'Hallaron | Modern | Planned |
-| 2025-03 | *The Art of Computer Programming, Vol 1* — Donald Knuth | Classic | Planned |
-| 2025-04 | *Database Internals* — Alex Petrov | Modern | Planned |
-| 2025-05 | *Operating Systems: Three Easy Pieces* — Arpaci-Dusseau | Hybrid | Planned |
-| 2025-06 | *Crafting Interpreters* — Robert Nystrom | Modern | Planned |
+**Month 1 — Designing Data-Intensive Applications (Martin Kleppmann)**  \nThe modern bible for distributed systems. Covers storage engines, replication, partitioning, transactions, and stream processing. Every concept grounded in real systems — Kafka, Cassandra, DynamoDB, PostgreSQL. If you build backend systems, this is your textbook.
+
+**Month 2 — Computer Systems: A Programmer's Perspective (Bryant & O'Hallaron)**  \nThe bridge from code to silicon. Memory hierarchy, linking, exceptions, virtual memory, concurrency. The labs (bomb lab, attack lab, malloc lab) are legendary. You don't just read this — you survive it.
+
+**Month 3 — The Art of Computer Programming, Vol 1 (Donald Knuth)**  \nThe foundation. Mathematical preliminaries, data structures, algorithms. Not for reading cover-to-cover — for living in. You return to this for decades.
+
+**Month 4 — Database Internals (Alex Petrov)**  \nLSM trees, B-trees, WALs, compaction, replication. The mechanics beneath every database you use. If you don't understand the storage engine, you don't understand the database.
+
+**Month 5 — Operating Systems: Three Easy Pieces (Arpaci-Dusseau)**  \nVirtualization, concurrency, persistence. The three pillars. Conversational style, but zero fluff. The homework projects (xv6, threads, fs) cement it.
+
+**Month 6 — Crafting Interpreters (Robert Nystrom)**  \nFrom tokens to bytecode VM. Two implementations: a tree-walking interpreter in Java, a bytecode VM in C. The best way to understand how languages actually run.
 
 ## The Standard
 
