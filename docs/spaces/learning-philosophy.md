@@ -1,11 +1,9 @@
 ---
-sidebar_position: 1
-pagination_next: spaces/learning-philosophy
+sidebar_position: 2
+pagination_next: spaces/first-principles
 ---
 
-# Spaces
-
-We don't just collect resources. We engineer learning pathways.
+# Learning Philosophy
 
 ## The Refinery
 
@@ -39,22 +37,24 @@ Our AI searches the web 24/7 at breakneck speed — sorting, sourcing, grading, 
 
 This system is built, maintained, and secured by our own members. They apply their security knowledge to protect the very infrastructure that feeds them.
 
-## [Learning Philosophy →](/docs/spaces/learning-philosophy)
+## School of Life
 
-Deep dive into the Refinery, first principles, the AI Refinery, School of Life, and the hybrid model.
+Technical skill without character is dangerous. We train both.
 
-## [First Principles →](/docs/spaces/first-principles)
+**School of Cybersecurity** — Technical mastery. The Refinery. First principles. Active verification.
 
-The atomic unit of our learning. How to strip away assumptions and rebuild knowledge from fundamental truths.
+**School of Life** — Character formation. Technical skill without character is dangerous. We train both. Men's health. Ladies health. Discipline. Marriage. Business. Finance. Leadership. Raising children. Running a home. We have real conversations that shape us — "Hey, you are over-talking." "Hey, you are beginning to say nonsense." We hold each other accountable because we respect each other enough to be honest.
 
-## [Skills Development →](/docs/spaces/skills-development)
+## The Hybrid Model
 
-Beyond code: Cooking. Videography. Public Speaking. Deep Technical Communication. Why a Cybersecuritist who cannot cook is fragile.
+We meet online and physically. The digital layer scales. The physical layer deepens. Both are necessary.
 
-## [Research →](/docs/spaces/research)
+## Rejection of Specialization
 
-Systematic capability expansion. Vulnerability discovery, exploit development, detection engineering. Every project produces a tool, a report, a teaching session, and a defense.
+We reject the modern lie that you must pick one thing and do it forever. A Cybersecuritist who cannot cook is fragile. A Cybersecuritist who cannot speak is invisible. A Cybersecuritist who cannot manage money is a vulnerability. We build exceptional humans who happen to be exceptional hackers.
 
-## [Public Speaking →](/docs/spaces/public-speaking)
+## The Commitment
 
-Not conventional public speaking. Real hard work. Technical topics presented to simulated mixed audiences. Bug bounty strategies. Research presentations. Clarity as a discipline.
+Two years. Until graduation. Maximal skill. Maximum impact. We have resolved to plug our very Brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
+
+We hope this club becomes a direct plug into society — where our research moves civilization forward in geometric progressions.

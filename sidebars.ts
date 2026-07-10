@@ -18,9 +18,6 @@ const sidebars: SidebarsConfig = {
       link: { type: 'doc', id: 'events' },
       items: [
         { type: 'doc', id: 'events/movie-nights', label: 'Movie Nights' },
-        { type: 'doc', id: 'events/hackathons', label: 'Hackathons' },
-        { type: 'doc', id: 'events/conferences', label: 'Conferences' },
-        { type: 'doc', id: 'events/webinars', label: 'Webinars' },
       ],
     },
     {
@@ -48,7 +45,7 @@ const sidebars: SidebarsConfig = {
             { type: 'doc', id: 'spaces/learning-hub/features', label: 'Features' },
           ],
         },
-        
+
         {
           type: 'category',
           label: 'Skills Development',
@@ -73,7 +70,6 @@ const sidebars: SidebarsConfig = {
             { type: 'doc', id: 'rooms/readers-club/classics', label: 'Classics' },
           ],
         },
-        { type: 'doc', id: 'rooms/real-life-conversations', label: 'Real-Life Conversations' },
       ],
     },
     { type: 'doc', id: 'about', label: 'About Us' },
