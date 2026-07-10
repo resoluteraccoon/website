@@ -97,7 +97,9 @@ const config = {
         {
           title: 'Community',
           items: [
-            { label: 'GitHub', href: 'https://github.com/resoluteraccoon' }
+            { href: 'https://resoluteraccoon.github.io/website/', label: 'Home' },
+            { href: 'https://github.com/resoluteraccoon', label: 'GitHub' },
+            { href: '#', label: 'Discord' }
           ]
         }
       ],
