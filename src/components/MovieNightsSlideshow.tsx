@@ -66,24 +66,14 @@ export default function MovieNightsSlideshow(): React.ReactElement {
             <img
               src={`${baseUrl}${slide.image}`}
               alt={slide.heading}
-              className="d-block w-100"
             />
             <div className="carousel-caption">
               <h3>{slide.heading}</h3>
               {slide.subtitle && <p>{slide.subtitle}</p>}
-              {slide.cta && <span className="more">{slide.cta}</span>}
+              {slide.cta && <span className="btn">{slide.cta}</span>}
             </div>
           </Link>
         ))}
-      </div>
-
-      <div className="carousel-controls-right">
-        <button className="carousel-control-prev" onClick={goPrev} aria-label="Previous">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button className="carousel-control-next" onClick={goNext} aria-label="Next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
       </div>
 
       <ol className="carousel-indicators">

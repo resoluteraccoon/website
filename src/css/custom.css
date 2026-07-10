@@ -474,160 +474,149 @@
 }
 
 /* ============================================
-   MOVIE NIGHTS SLIDESHOW — CLEAN FIXED BANNER
+   MOVIE NIGHTS SLIDESHOW — COMPLETELY SEPARATE
    ============================================ */
 
-/* Outer container — NO border, NO padding, clean edge-to-edge */
 .movie-nights-slideshow {
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 2rem;
-  /* NO border, NO box-shadow, NO padding */
+  position: relative;
 }
 
-/* The carousel itself */
 .movie-nights-slideshow .carousel {
   position: relative;
   width: 100%;
 }
 
-/* Inner track — NO padding/margin */
 .movie-nights-slideshow .carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
 }
 
-/* Each slide item — fixed rectangular height, NO padding */
+/* Each slide — fixed height banner */
 .movie-nights-slideshow .carousel-item {
   position: relative;
   width: 100%;
-  height: 280px; /* desktop */
-  padding: 0 !important;
-  margin: 0 !important;
+  height: 300px; /* desktop */
+  display: block;
 }
 
-/* The image — fills the slide completely, NO border, NO padding */
+.movie-nights-slideshow .carousel-item.active {
+  display: block;
+}
+
+/* Image fills entire slide area */
 .movie-nights-slideshow .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  display: block;
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  z-index: 1;
 }
 
-/* Caption overlay at bottom-left */
+/* Dark gradient overlay for text readability */
+.movie-nights-slideshow .carousel-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Caption positioned over the image */
 .movie-nights-slideshow .carousel-caption {
   position: absolute;
-  bottom: 25px;
+  bottom: 40px;
   left: 20px;
-  right: auto;
-  top: auto;
+  right: 20px;
   text-align: left;
-  z-index: 2;
-  max-width: 60%;
+  z-index: 3;
   padding: 0;
 }
 
-/* Heading */
 .movie-nights-slideshow .carousel-caption h3 {
   font-family: "Black Hat Druk Web", sans-serif;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
   font-weight: 700;
-  margin-bottom: 8px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.9);
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 8px;
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Subtitle */
 .movie-nights-slideshow .carousel-caption p {
-  font-size: clamp(0.8rem, 2vw, 1rem);
-  margin-bottom: 12px;
-  line-height: 1.4;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
   color: #e0e0e0;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  max-width: 500px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-/* CTA button */
 .movie-nights-slideshow .carousel-caption .btn {
-  font-size: 0.8rem;
-  padding: 8px 16px;
+  display: inline-block;
   background-color: #00cc6a;
   color: #0a0a0a;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
   border: none;
   border-radius: 0;
-  text-transform: uppercase;
-  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* === CENTERED INDICATORS === */
+/* Centered indicators */
 .movie-nights-slideshow .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 4;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
   list-style: none;
-  z-index: 10;
 }
 
-.movie-nights-slideshow .carousel-indicators li,
-.movie-nights-slideshow .carousel-indicators button {
+.movie-nights-slideshow .carousel-indicators li {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.4);
-  border: none;
+  background-color: rgba(255,255,255,0.4);
   cursor: pointer;
-  padding: 0;
-  margin: 0;
+  border: none;
 }
 
 .movie-nights-slideshow .carousel-indicators li.active {
   background-color: #00cc6a;
 }
 
-/* No arrows - hidden via CSS */
-.movie-nights-slideshow .carousel-controls-right {
-  display: none !important;
-}
-
-/* Mobile adjustments */
+/* Mobile */
 @media (max-width: 768px) {
-  .movie-nights-slideshow .carousel {
-    height: 220px;
+  .movie-nights-slideshow .carousel-item {
+    height: 240px;
   }
   
   .movie-nights-slideshow .carousel-caption {
-    bottom: 20px;
+    bottom: 30px;
     left: 15px;
-    max-width: 80%;
-  }
-  
-  .movie-nights-slideshow .carousel-caption h3 {
-    font-size: clamp(1.2rem, 5vw, 1.8rem);
-    margin-bottom: 6px;
-  }
-  
-  .movie-nights-slideshow .carousel-caption p {
-    font-size: clamp(0.75rem, 3vw, 0.85rem);
-    margin-bottom: 8px;
-  }
-  
-  .movie-nights-slideshow .carousel-caption .btn {
-    font-size: 0.75rem;
-    padding: 6px 12px;
+    right: 15px;
   }
 }
 
@@ -679,9 +668,11 @@
   background: #1a1a1a;
 }
 
-/* === INLINE PAGINATION BUTTONS === */
-/* Targets the arrow links inside docs content, NOT the Docusaurus footer pagination */
-
+/* ============================================
+   INLINE PAGINATION BUTTONS — REMOVED PER TASK 31
+   Keep only default Docusaurus pagination
+   ============================================ */
+/*
 .markdown a[href^="/docs/"],
 .markdown a[href^="/website/docs/"] {
   display: inline-block;
@@ -693,7 +684,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 10px 24px;
-  border-radius: 0; /* sharp corners like homepage button */
+  border-radius: 0;
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -709,10 +700,8 @@
   text-decoration: none;
 }
 
-/* Exclude regular inline links (not arrow/pagination buttons) */
 .markdown p a:not(:only-child),
 .markdown li a {
-  /* Keep regular links as they are — green text, no button */
   background-color: transparent;
   color: #00cc6a !important;
   padding: 0;
@@ -721,9 +710,9 @@
   letter-spacing: normal;
 }
 
-/* The arrow character styling inside the button */
 .markdown a[href^="/docs/"] strong,
 .markdown a[href^="/website/docs/"] strong {
   color: #0a0a0a;
   font-weight: 600;
 }
+*/

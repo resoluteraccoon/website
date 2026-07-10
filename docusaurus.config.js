@@ -48,38 +48,66 @@ const config = {
       { name: 'twitter:image', content: 'https://resoluteraccoon.github.io/website/img/og-logo.png' },
     ],
     navbar: {
-      title: 'RESOLUTE RACCOON',
-      logo: { alt: 'Resolute Raccoon', src: 'img/logo.svg' },
-      items: [
-        {
-            type: 'dropdown',
-            label: 'Home',
-            position: 'left',
-            items: [
-              { to: '/docs/events', label: 'Events' },
-              { to: '/docs/blog', label: 'Blog' },
-              { to: '/docs/spaces', label: 'Spaces' },
-              { to: '/docs/rooms', label: 'Rooms' },
-              { to: '/docs/about', label: 'About Us' },
-            ],
-          },
-          {
-            to: '/',
-            label: 'Home',
-            position: 'left',
-          },
-          {
-            href: 'https://github.com/resoluteraccoon',
-            label: 'GitHub',
-            position: 'left',
-          },
-          {
-            href: 'https://discord.gg/resoluteraccoon',
-            label: 'Discord',
-            position: 'left',
-          },
-      ],
-    },
+          title: 'RESOLUTE RACCOON',
+          logo: { alt: 'Resolute Raccoon', src: 'img/logo.svg' },
+          items: [
+            {
+              type: 'dropdown',
+              label: 'Home',
+              position: 'left',
+              items: [
+                // Events section
+                { type: 'html', value: '<div style="font-weight:600;color:#888;padding:4px 16px;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;">Events</div>' },
+                { to: '/docs/events/movie-nights', label: 'Movie Nights' },
+                { to: '/docs/events/hackathons', label: 'Hackathons' },
+                { to: '/docs/events/conferences', label: 'Conferences' },
+                { to: '/docs/events/webinars', label: 'Webinars' },
+            
+                // Blog section
+                { type: 'html', value: '<div style="font-weight:600;color:#888;padding:4px 16px;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;margin-top:8px;">Blog</div>' },
+                { to: '/docs/blog/technical-articles', label: 'Technical Articles' },
+                { to: '/docs/blog/research', label: 'Research' },
+                { to: '/docs/blog/ctf-writeups', label: 'CTF Write-ups' },
+                { to: '/docs/blog/movie-night-writeups', label: 'Movie Night Write-ups' },
+                { to: '/docs/blog/tool-reviews', label: 'Tool Reviews' },
+            
+                // Spaces section
+                { type: 'html', value: '<div style="font-weight:600;color:#888;padding:4px 16px;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;margin-top:8px;">Spaces</div>' },
+                { to: '/docs/spaces/learning-hub', label: 'Learning Hub' },
+                { to: '/docs/spaces/learning-hub/features', label: 'Features' },
+                { to: '/docs/spaces/skills-development', label: 'Skills Development' },
+            
+                // Rooms section
+                { type: 'html', value: '<div style="font-weight:600;color:#888;padding:4px 16px;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;margin-top:8px;">Rooms</div>' },
+                { to: '/docs/rooms/readers-club', label: 'Readers Club' },
+                { to: '/docs/rooms/readers-club/hacker-books', label: 'Hacker Books' },
+                { to: '/docs/rooms/readers-club/non-fiction', label: 'Non-fiction' },
+                { to: '/docs/rooms/readers-club/biographies', label: 'Biographies' },
+                { to: '/docs/rooms/readers-club/classics', label: 'Classics' },
+                { to: '/docs/rooms/real-life-conversations', label: 'Real-Life Conversations' },
+            
+                // About Us
+                { type: 'html', value: '<div style="font-weight:600;color:#888;padding:4px 16px;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;margin-top:8px;">More</div>' },
+                { to: '/docs/about', label: 'About Us' },
+              ],
+            },
+            {
+              to: '/',
+              label: 'Home',
+              position: 'left',
+            },
+            {
+              href: 'https://github.com/resoluteraccoon',
+              label: 'GitHub',
+              position: 'left',
+            },
+            {
+              href: 'https://discord.gg/resoluteraccoon',
+              label: 'Discord',
+              position: 'left',
+            },
+          ],
+        },
     footer: {
       style: 'dark',
       links: [
