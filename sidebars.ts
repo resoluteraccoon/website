@@ -18,6 +18,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Events',
       link: { type: 'doc', id: 'events' },
+      collapsed: true,
       items: [
         { type: 'doc', id: 'events/movie-nights', label: 'Movie Nights' },
         { type: 'doc', id: 'events/hackathons', label: 'Hackathons' },
@@ -29,6 +30,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Blog',
       link: { type: 'doc', id: 'blog' },
+      collapsed: true,
       items: [
         { type: 'doc', id: 'blog/technical-articles', label: 'Technical Articles' },
         { type: 'doc', id: 'blog/research', label: 'Research' },
@@ -41,11 +43,13 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Spaces',
       link: { type: 'doc', id: 'spaces' },
+      collapsed: true,
       items: [
         {
           type: 'category',
           label: 'Learning Hub',
           link: { type: 'doc', id: 'spaces/learning-hub' },
+          collapsed: true,
           items: [
             { type: 'doc', id: 'spaces/learning-hub/features', label: 'Features' },
           ],
@@ -55,6 +59,7 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Skills Development',
           link: { type: 'doc', id: 'spaces/skills-development' },
+          collapsed: true,
           items: [
             { type: 'doc', id: 'spaces/skills-development/cooking', label: 'Cooking' },
             { type: 'doc', id: 'spaces/skills-development/videography', label: 'Videography' },
@@ -68,11 +73,13 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Rooms',
       link: { type: 'doc', id: 'rooms' },
+      collapsed: true,
       items: [
         {
           type: 'category',
           label: 'Readers',
           link: { type: 'doc', id: 'rooms/readers' },
+          collapsed: true,
           items: [
             { type: 'doc', id: 'rooms/readers/hacker-books', label: 'Hacker Books' },
             { type: 'doc', id: 'rooms/readers/non-fiction', label: 'Non-fiction' },
@@ -84,6 +91,7 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Labour Market',
           link: { type: 'doc', id: 'rooms/labour-market' },
+          collapsed: true,
           items: [
             { type: 'doc', id: 'rooms/labour-market/deep-conversations', label: 'Deep Conversations' },
             { type: 'doc', id: 'rooms/labour-market/gentle-mens-health', label: "Gentle Men's Health Session" },

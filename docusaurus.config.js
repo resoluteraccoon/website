@@ -75,7 +75,7 @@ const config = {
           position: 'left',
         },
         {
-          href: '#',
+          href: 'https://discord.gg/resoluteraccoon',
           label: 'Discord',
           position: 'left',
         },
