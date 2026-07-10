@@ -586,38 +586,14 @@
   background-color: #00e67a;
 }
 
-/* Centered indicators */
-.movie-nights-slideshow .carousel-indicators {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 3;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.movie-nights-slideshow .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #fff;
-  cursor: pointer;
-  border: none;
-  opacity: 0.4;
-}
-
-.movie-nights-slideshow .carousel-indicators li.active {
-  background-color: #00cc6a;
-  opacity: 1;
-}
-
 /* NO arrows */
 .movie-nights-slideshow .carousel-control-prev,
 .movie-nights-slideshow .carousel-control-next {
+  display: none !important;
+}
+
+/* NO indicators - removed per TASK 46 */
+.movie-nights-slideshow .carousel-indicators {
   display: none !important;
 }
 

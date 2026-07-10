@@ -75,16 +75,6 @@ export default function MovieNightsSlideshow(): React.ReactElement {
           </Link>
         ))}
       </div>
-
-      <ol className="carousel-indicators">
-        {movieSlides.map((_, index) => (
-          <li
-            key={index}
-            className={index === currentSlide ? 'active' : ''}
-            onClick={() => setCurrentSlide(index)}
-          />
-        ))}
-      </ol>
     </div>
   );
 }
