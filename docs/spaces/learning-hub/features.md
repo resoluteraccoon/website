@@ -4,7 +4,7 @@ pagination_prev: spaces/learning-hub
 pagination_next: null
 ---
 
-# Learning Hub
+# Features 
 
 Every resource in our Learning Hub is hand-picked against a gold-standard criteria. We don't collect links — we curate pathways. Each module is locked until you prove mastery through labs and tests. No skipping. No shortcuts. Only forward.
 
