@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-pagination_prev: spaces/learning-hub
+pagination_prev: spaces
 pagination_next: spaces/skills-development/cooking
 ---
 
