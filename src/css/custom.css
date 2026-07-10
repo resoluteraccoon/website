@@ -696,3 +696,69 @@
 .collapseSidebarButton_PEFL:hover {
   background: #1a1a1a;
 }
+
+/* ============================================
+   TASK 24 — Pagination Links as Buttons (CSS Only)
+   ============================================ */
+/* Target only markdown content links that point to docs pages */
+/* These are the inline "Next →" / "← Prev" style links on overview pages */
+
+.markdown a[href^="/docs/"],
+.markdown a[href^="/website/docs/"] {
+  display: inline-block;
+  background: #00cc6a;
+  color: #0a0a0a;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.875rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 0;
+  transition: background 0.3s ease;
+  margin: 1rem 0;
+}
+
+.markdown a[href^="/docs/"]:hover,
+.markdown a[href^="/website/docs/"]:hover {
+  background: #00e67a;
+}
+
+/* Ensure the text inside stays dark */
+.markdown a[href^="/docs/"] *,
+.markdown a[href^="/website/docs/"] * {
+  color: #0a0a0a;
+}
+
+/* But regular inline links in paragraphs/lists should stay as green text, not buttons */
+/* Override for links inside paragraphs */
+.markdown p a[href^="/docs/"],
+.markdown p a[href^="/website/docs/"],
+.markdown li a[href^="/docs/"],
+.markdown li a[href^="/website/docs/"],
+.markdown td a[href^="/docs/"],
+.markdown td a[href^="/website/docs/"] {
+  background-color: transparent !important;
+  color: #00cc6a !important;
+  padding: 0 !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  display: inline !important;
+  margin: 0 !important;
+}
+
+.markdown p a[href^="/docs/"]:hover,
+.markdown p a[href^="/website/docs/"]:hover,
+.markdown li a[href^="/docs/"]:hover,
+.markdown li a[href^="/website/docs/"]:hover,
+.markdown td a[href^="/docs/"]:hover,
+.markdown td a[href^="/website/docs/"]:hover {
+  background-color: transparent !important;
+  color: #00e67a !important;
+  text-decoration: underline !important;
+}
+
+/* The auto-generated Docusaurus DocPaginator at bottom of pages should stay unchanged */
+/* It uses different classes, not plain markdown links */
