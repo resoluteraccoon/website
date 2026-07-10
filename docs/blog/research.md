@@ -1,7 +1,9 @@
 ---
-sidebar_position: 1
-pagination_next: blog/research
+sidebar_position: 2
+pagination_prev: blog/technical-articles
+pagination_next: blog/ctf-writeups
 ---
+
 
 # Technical Articles
 

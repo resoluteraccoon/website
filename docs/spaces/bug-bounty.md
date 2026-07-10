@@ -1,7 +1,7 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
+pagination_prev: spaces/research
 ---
-
 # Bug Bounty
 
 ## Why Bug Bounty

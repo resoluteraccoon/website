@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
-pagination_next: spaces/research
+sidebar_position: 3
+pagination_prev: spaces/learning-hub
+pagination_next: spaces/ai-refinery
 ---
-
 # First Principles
 
 ## The Atomic Unit of Our Learning
@@ -64,5 +64,5 @@ The graph respects competence. It does not respect time served.
 
 ---
 
-**Previous:** [Spaces →](/docs/spaces)
-**Next:** [Skills Development →](/docs/spaces/skills-development)
+**Previous:** [Learning Hub →](/docs/spaces/learning-hub)
+**Next:** [AI Refinery →](/docs/spaces/ai-refinery)

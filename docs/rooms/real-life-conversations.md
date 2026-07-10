@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+pagination_prev: rooms/readers-club
 ---
 
 # Real-Life Conversations

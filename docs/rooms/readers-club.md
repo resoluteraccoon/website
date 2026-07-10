@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_prev: rooms
+pagination_next: rooms/readers-club/hacker-books
 ---
 
 # Readers Club

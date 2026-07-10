@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
-pagination_next: spaces/learning-philosophy
+pagination_next: spaces/learning-hub
 ---
-
 # Spaces
 
 We don't just collect resources. We engineer learning pathways.
@@ -38,10 +37,6 @@ Inspired by X (formerly Twitter) with Grok deeply integrated — but reversed. T
 Our AI searches the web 24/7 at breakneck speed — sorting, sourcing, grading, reading papers and blogs, evaluating quality resources, and actively updating our learning ecosystem and roadmap. It doesn't just find content. It grades it. It maps it. It detects when a resource becomes obsolete. It detects when a new gold-standard emerges.
 
 This system is built, maintained, and secured by our own members. They apply their security knowledge to protect the very infrastructure that feeds them.
-
-## [Learning Philosophy →](/docs/spaces/learning-philosophy)
-
-Deep dive into the Refinery, first principles, the AI Refinery, School of Life, and the hybrid model.
 
 ## [First Principles →](/docs/spaces/first-principles)
 

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
-pagination_next: spaces/research
+sidebar_position: 5
+pagination_prev: spaces/ai-refinery
+pagination_next: spaces/public-speaking
 ---
-
 # Skills Development
 
 ## Beyond Code

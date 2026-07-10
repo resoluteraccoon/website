@@ -1,7 +1,9 @@
 ---
 sidebar_position: 4
+pagination_prev: blog/ctf-writeups
 pagination_next: blog/tool-reviews
 ---
+
 
 # Movie Night Write-Ups
 

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
+pagination_prev: spaces/first-principles
 pagination_next: spaces/skills-development
 ---
-
 # AI Refinery
 
 ## The Inspiration: X and Grok
@@ -87,5 +87,5 @@ And the members will verify. And the Refinery will learn.
 
 ---
 
-**Previous:** [Learning Philosophy →](/docs/spaces/learning-philosophy)
+**Previous:** [First Principles →](/docs/spaces/first-principles)
 **Next:** [Skills Development →](/docs/spaces/skills-development)

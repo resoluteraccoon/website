@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
-pagination_next: spaces/skills-development
+sidebar_position: 7
+pagination_prev: spaces/public-speaking
+pagination_next: spaces/bug-bounty
 ---
-
 # Research
 
 ## Why We Research

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
+pagination_prev: spaces/skills-development
 pagination_next: spaces/research
 ---
-
 # Public Speaking
 
 ## The Standard: Can a Non-Technical Audience Understand?

@@ -1,7 +1,9 @@
 ---
 sidebar_position: 3
-pagination_next: blog/ctf-writeups
+pagination_prev: blog/research
+pagination_next: blog/movie-night-writeups
 ---
+
 
 # CTF Write-Ups
 

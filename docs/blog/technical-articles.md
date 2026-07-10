@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
+pagination_prev: blog
 pagination_next: blog/research
 ---
+
 
 # Technical Articles
 

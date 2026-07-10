@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+pagination_prev: rooms/readers-club/non-fiction
 pagination_next: rooms/readers-club/classics
 ---
 

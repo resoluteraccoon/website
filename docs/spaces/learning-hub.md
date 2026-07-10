@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
-pagination_next: spaces/learning-philosophy
+pagination_prev: spaces
+pagination_next: spaces/first-principles
 ---
 
 # Learning Hub
@@ -77,4 +78,4 @@ We also have **[Research](/docs/spaces/research)** — where every project must 
 ---
 
 **Previous:** [Spaces →](/docs/spaces)
-**Next:** [Learning Philosophy →](/docs/spaces/learning-philosophy)
+**Next:** [First Principles →](/docs/spaces/first-principles)
