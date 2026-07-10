@@ -19,5 +19,3 @@ We do not publish summaries of papers we have not implemented. We do not specula
 3. **Extension** — What did they miss? What assumptions break? What new primitives emerge?
 4. **Documentation** — Write the technical report. Include code. Include detection/mitigation.
 5. **Injection** — Push findings into the Refinery. Update the curriculum.
-
-**[→ CTF Write-Ups →](/docs/blog/ctf-writeups)**

@@ -73,8 +73,3 @@ Knowing is not enough. Doing is not enough. You must be able to explain it to a 
 This is why we have **[Public Speaking](/docs/spaces/public-speaking)** — where members present technical topics to simulated mixed audiences. The test: Can a non-technical person understand what you did, why it mattered, and how you did it?
 
 We also have **[Research](/docs/spaces/research)** — where every project must produce a teaching session, a technical report, and a detection/mitigation component.
-
----
-
-**Previous:** [Spaces →](/docs/spaces)  
-**Next:** [Learning Hub →](/docs/spaces/learning-hub)

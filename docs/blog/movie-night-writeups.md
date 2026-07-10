@@ -20,5 +20,3 @@ Every write-up follows this structure:
 2. **The Reality** — What actually works, what's fictional, what's exaggerated
 3. **The Lessons** — What we can actually use. Detection ideas. Defense strategies. Mental models.
 4. **The Scene-by-Scene** — Timestamped breakdown of key technical moments
-
-**[→ Tool Reviews →](/docs/blog/tool-reviews)**

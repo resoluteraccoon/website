@@ -34,8 +34,3 @@ Cash flow nightmares. The lawsuit. The waffle iron. The brand built on sweat. Da
 4. **Transfer** — Map to your context. "Mitnick's pretexting" → "My phishing campaign." "Musk's first principles" → "My exploit architecture."
 
 A biography on this shelf is not "done" until you have written the one-page pattern extraction and taught it to the group.
-
----
-
-**Previous:** [Non-fiction →](/docs/rooms/readers-club/non-fiction)  
-**Next:** [Classics →](/docs/rooms/readers-club/classics)

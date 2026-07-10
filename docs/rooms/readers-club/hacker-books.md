@@ -38,8 +38,3 @@ Not reference shelves. **Workbenches.**
 5. **Document.** Write the detection rule. Write the mitigation. Teach it to the group.
 
 A book on this shelf is not "done" until you have a working exploit, a detection rule, and a teaching session for each major technique.
-
----
-
-**Previous:** [Readers Club →](/docs/rooms/readers-club)  
-**Next:** [Non-fiction →](/docs/rooms/readers-club/non-fiction)

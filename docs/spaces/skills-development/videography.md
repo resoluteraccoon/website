@@ -39,8 +39,3 @@ You must produce a 5-minute technical video explaining a vulnerability you found
 ## Integration
 
 Feeds **Blog** and **Events**. A conference talk recorded becomes a webinar. A hackathon demo becomes a tutorial. A tool walkthrough becomes documentation. Video scales knowledge beyond the room. One recording teaches the next cohort, the remote member, the future you.
-
----
-
-**Previous:** [Cooking →](/docs/spaces/skills-development/cooking)  
-**Next:** [Public Speaking →](/docs/spaces/skills-development/public-speaking)

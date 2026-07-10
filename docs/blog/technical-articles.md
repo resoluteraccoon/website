@@ -18,5 +18,3 @@ We publish when we have something that changes how the reader thinks — not jus
 - **Include code** — Reproducible snippets, not screenshots
 - **Cite sources** — Link to RFCs, CVEs, papers, vendor advisories
 - **Prerequisites** — State what the reader needs to know first
-
-**[→ Research →](/docs/blog/research)**

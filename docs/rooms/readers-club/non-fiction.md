@@ -39,8 +39,3 @@ The collaborative genesis of the digital age. Not lone geniuses. Teams. Women. I
 3. **Apply** — Write the integration note. Teach the mental model in 10 minutes to the group. Show how it changes a decision you made last week.
 
 A non-fiction book on this shelf is not "done" until you have used its lens to solve a real problem you're facing.
-
----
-
-**Previous:** [Hacker Books →](/docs/rooms/readers-club/hacker-books)  
-**Next:** [Biographies →](/docs/rooms/readers-club/biographies)

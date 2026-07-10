@@ -48,7 +48,3 @@ We discuss:
 - **Leadership** — Not titles. Influence. The ability to inspire action in others without relying on authority.
 
 **The Standard:** Every conversation has a purpose. Every voice is heard, but no voice is unchecked. We challenge. We sharpen. We do not leave the room the same way we entered it.
-
----
-
-**Start Here:** [Readers Club →](/docs/rooms/readers-club)

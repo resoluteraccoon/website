@@ -22,5 +22,3 @@ Every write-up follows this structure:
 4. **Payload & Execution** — Final exploit chain, flag capture
 5. **Mitigation & Detection** — How to patch, how to detect, Sigma/YARA rules
 6. **Lessons Learned** — What this teaches about the vulnerability class
-
-**[→ Movie Night Write-Ups →](/docs/blog/movie-night-writeups)**

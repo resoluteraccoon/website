@@ -20,7 +20,3 @@ Every tool is evaluated on:
 3. **Integration** — CI/CD pipeline compatibility. API availability. Output formats.
 4. **Maintenance** — Release cadence. Issue response. Backward compatibility.
 5. **Cost** — Not just money. Time to value. Operational overhead.
-
----
-
-**Back to Blog:** [Blog →](/docs/blog)

@@ -34,7 +34,3 @@ The bible of vulnerability research. Heavy. Dense. Essential. 1,200 pages of: me
 ## Why These Still Matter
 
 Modern tools abstract the machine. These books un-abstract it. When the abstraction leaks — and it will — you need the mental model underneath. That is what these give you. Not syntax. Not APIs. The architecture of computation itself.
-
----
-
-**Back to Readers Club →** [Readers Club →](/docs/rooms/readers-club)

@@ -39,7 +39,3 @@ You must be able to feed yourself and two others a nutritionally complete, delic
 ## Integration
 
 Feeds into **Deep Technical Communication**. A recipe is an algorithm. A kitchen is a system. Teaching someone to cook forces you to articulate process, handle edge cases, explain *why* not just *how*. The same skill that writes a vulnerability report the triager doesn't need to ask questions about.
-
----
-
-**Next:** [Videography →](/docs/spaces/skills-development/videography)

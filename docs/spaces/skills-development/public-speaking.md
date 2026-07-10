@@ -48,8 +48,3 @@ Capstone of the learning model. Theory → Practice → Communication.
 You found the bug (Practice). You understand the root cause (Theory). You explain it to the CISO so they fund the fix, to the dev so they implement it correctly, to the lawyer so they understand the liability, to the junior so they learn the pattern (Communication).
 
 Remove communication, and the bug stays unfixed. The knowledge dies with you.
-
----
-
-**Previous:** [Videography →](/docs/spaces/skills-development/videography)  
-**Next:** [Deep Technical Communication →](/docs/spaces/skills-development/deep-technical-communication)

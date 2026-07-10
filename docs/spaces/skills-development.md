@@ -18,8 +18,3 @@ Skills Development is where we train the disciplines that make us **complete**:
 - **[→ Deep Technical Communication](/docs/spaces/skills-development/deep-technical-communication)** — Translation without loss, leadership through clarity.
 
 Each skill is not an elective. It is a **pillar**. Remove one, and the structure weakens.
-
----
-
-**Previous:** [Learning Hub →](/docs/spaces/learning-hub)  
-**Next:** [Cooking →](/docs/spaces/skills-development/cooking)

@@ -69,8 +69,3 @@ Final pillar. Connects Learning Hub → Skills → Blog → Events.
 You learn a technique (Learning Hub). You practice it in a cook-off/hackathon/video (Skills). You write the article/report/rule (Communication). You present it at Movie Night/webinar/conference (Events). The loop closes. The next cohort enters with better prerequisites.
 
 Remove communication, and the loop breaks. Knowledge stays local. Impact stays small.
-
----
-
-**Previous:** [Public Speaking →](/docs/spaces/skills-development/public-speaking)  
-**Next:** [Spaces →](/docs/spaces)
