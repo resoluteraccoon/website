@@ -59,6 +59,3 @@ If you cannot do these, you re-read. You re-implement. You re-teach.
 There is no "I read it once." There is only "I own it" or "I don't."
 
 ---
-
-**Previous:** [Rooms →](/docs/rooms)  
-**Next:** [Hacker Books →](/docs/rooms/readers-club/hacker-books)
