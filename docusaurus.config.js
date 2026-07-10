@@ -99,7 +99,7 @@ const config = {
           items: [
             { href: 'https://resoluteraccoon.github.io/website/', label: 'Home' },
             { href: 'https://github.com/resoluteraccoon', label: 'GitHub' },
-            { href: '#', label: 'Discord' }
+            { href: 'https://discord.gg/resoluteraccoon', label: 'Discord' }
           ]
         }
       ],
