@@ -13,32 +13,19 @@ Technical security books that build real capability. Not certification prep. Not
 We select for **exploit development depth**, **reverse engineering rigor**, and **systems understanding**. Every book here has been implemented from — not just read.
 
 ### Exploit Development & Memory Corruption
-- **The Art of Exploitation (Jon Erickson)** — Stack, heap, format strings, shellcode. The gateway.
-- **Hacking: The Art of Exploitation (2nd Ed)** — Same author, deeper. GDB, assembly, network exploits.
-- **Practical Binary Analysis (Dennis Andriesse)** — ELF, PE, disassembly, control flow, obfuscation, instrumentation.
-- **Advanced Windows Exploitation (Tarjei Mandt et al.)** — Kernel pool, UAF, type confusion, CFG, ACG, VBS.
-- **Mac OS X and iOS Internals (Jonathan Levin)** — XNU, Mach, IOKit, sandbox, kernel exploitation on Apple Silicon.
+Books covering stack, heap, format strings, shellcode, GDB, assembly, network exploits. The gateway and the deep end.
 
 ### Reverse Engineering & Malware Analysis
-- **Practical Malware Analysis (Sikorski & Honig)** — Static, dynamic, behavioral, anti-analysis, unpacking. The lab manual.
-- **The IDA Pro Book (Chris Eagle)** — The disassembler. Graphs, FLIRT, scripting, decompiler, processor modules.
-- **Ghidra Book (NCC Group)** — The NSA's RE platform. Decompiler, p-code, scripting, headless, extensions.
-- **Rootkits and Bootkits (Matrosov et al.)** — UEFI, bootkits, firmware persistence, hardware implants.
+Books covering static analysis, dynamic analysis, behavioral analysis, anti-analysis, unpacking. The lab manuals for the RE platforms professionals use.
 
 ### Cryptography Engineering
-- **Serious Cryptography (Jean-Philippe Aumasson)** — AES, ChaCha20, Poly1305, RSA, ECC, TLS, Noise, post-quantum. Implementation-focused.
-- **Real-World Cryptography (David Wong)** — Protocols, PAKE, OPRF, threshold signatures, secure messaging. What goes wrong in practice.
-- **Cryptography Engineering (Ferguson, Schneier, Kohno)** — Design, protocols, side channels, random generation, key management.
+Books covering AES, ChaCha20, Poly1305, RSA, ECC, TLS, Noise, post-quantum. Implementation-focused. Protocols, PAKE, OPRF, threshold signatures, secure messaging. What goes wrong in practice.
 
 ### Network & Protocol Security
-- **TCP/IP Illustrated, Vol 1 (Stevens)** — The protocol stack. Packet capture. Congestion. The foundation.
-- **The Tangled Web (Michal Zalewski)** — Browser security model. Same-origin. CSP. CORS. HSTS. The web's immune system.
-- **HTTP/2 & HTTP/3 Explained (Daniel Stenberg)** — Multiplexing, header compression, QUIC, 0-RTT. The modern transport.
+Books covering the protocol stack, packet capture, congestion, browser security model, same-origin, CSP, CORS, HSTS, multiplexing, header compression, QUIC, 0-RTT. The foundations and the modern transport.
 
 ### Specialized Domains
-- **IoT Hacking (Various)** — Firmware extraction, UART/JTAG/SPI, radio protocols, BLE, Zigbee, LoRa.
-- **Hardware Hacking (Huang, Grand, etc.)** — Glitching, fault injection, side channels, EM analysis, microprobing.
-- **Cloud Security (Various)** — IAM, Kubernetes, serverless, container escape, supply chain, CSPM.
+Books covering firmware extraction, UART/JTAG/SPI, radio protocols, glitching, fault injection, side channels, EM analysis, microprobing, IAM, Kubernetes, serverless, container escape, supply chain, CSPM.
 
 ## How We Use These
 

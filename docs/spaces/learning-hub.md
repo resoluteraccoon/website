@@ -55,7 +55,7 @@ This system is built, maintained, and secured by our own members. They apply the
 
 The path is not a suggestion. It is a lock.
 
-You cannot access *Advanced ROP* until you have passed *Basic Stack Overflow*, *Shellcoding*, and *ASLR Bypass*. The system enforces this. The AI Refinery tracks your verification artifacts — the exploit code, the teaching session recording, the defense code — and unlocks the next node only when the cryptographic hash of your proof matches the expected standard.
+You cannot access advanced material until you have mastered the prerequisites. The system enforces this. The AI Refinery tracks your verification artifacts — the exploit code, the teaching session recording, the defense code — and unlocks the next node only when the cryptographic hash of your proof matches the expected standard.
 
 This is not gatekeeping. It is protection against the illusion of competence.
 
@@ -63,9 +63,7 @@ This is not gatekeeping. It is protection against the illusion of competence.
 
 We do not exist in a vacuum. We map our roadmap to the university curriculum — the student handbook, the course outlines, the credit requirements.
 
-Every CS course, every Cybersecurity elective, every lab session — we map it. If your Operating Systems course covers process scheduling this week, our roadmap has a node for *scheduler internals* and *priority inversion* that week. If your Network Security course covers TLS, we have *TLS 1.3 internals*, *certificate transparency*, *certificate pinning* ready.
-
-Theory and practice are not separate tracks. They are the same track, traversed together, so knowledge is cemented and soldered into memory.
+Every CS course, every Cybersecurity elective, every lab session — we map it. Theory and practice are not separate tracks. They are the same track, traversed together, so knowledge is cemented and soldered into memory.
 
 ## Communication Mastery
 

@@ -8,13 +8,9 @@ pagination_next: blog/movie-night-writeups
 
 Step-by-step solutions. Not just flags — the methodology.
 
-## Recent Write-Ups
+## Our Approach
 
-**DEF CON 31 Quals — `heap_golf`** — Heap exploitation with limited allocations. Freelist corruption, size manipulation, arbitrary write primitive construction.
-
-**HTB University CTF — `kernel_rop`** — Kernel ROP chain construction on Ubuntu 22.04. KPTI bypass, cred struct location, commit_creds preparation.
-
-**Google CTF 2024 — `wasm_escape`** — WebAssembly sandbox escape via type confusion. Module linking, memory.grow, table manipulation.
+Every write-up is a teaching artifact. We do not post solutions to brag about flags. We post them to document the thinking process so others can learn the methodology. If the reader cannot reproduce the exploit from our explanation, the write-up has failed.
 
 ## Format
 

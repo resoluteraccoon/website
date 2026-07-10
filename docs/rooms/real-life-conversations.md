@@ -7,7 +7,7 @@ pagination_prev: rooms/readers-club
 
 **The School of Life.**
 
-We discuss:
+We discuss what matters beyond the screen.
 
 ### How Do We Raise Our Children?
 Not just feed and clothe them — but instill discipline, curiosity, resilience. How do we teach them to think critically, to question, to build, to protect themselves in a world that will try to exploit them?

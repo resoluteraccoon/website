@@ -18,9 +18,7 @@ The vision was never just a club. Expand to all departments in the Faculty of Co
 
 ## "Vague, But Exciting"
 
-This idea feels like Tim Berners-Lee's boss's response to the World Wide Web proposal: *vague, but exciting.* We carry that oxymoronic tension — foolishness and conviction in the same breath. We've given ourselves two years, the time between now and graduation, to become maximally skilled and make this succeed. To impact as many as we can. To spread this to every target audience we've named.
-
-We have resolved to plug our very Brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
+This idea feels like Tim Berners-Lee's boss's response to the World Wide Web proposal: *vague, but exciting.* We carry that oxymoronic tension — foolishness and conviction in the same breath. We have resolved to plug our very Brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
 
 ## The AI Refinery
 
@@ -44,6 +42,6 @@ We reject the modern lie that you must pick one thing and do it forever. A Cyber
 
 ## The Commitment
 
-Two years. Until graduation. Maximal skill. Maximum impact. We have resolved to plug our very Brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
+We have resolved to plug our very Brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
 
 We hope this club becomes a direct plug into society — where our research moves civilization forward in geometric progressions.

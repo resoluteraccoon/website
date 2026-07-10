@@ -6,15 +6,11 @@ pagination_next: blog/ctf-writeups
 
 # Research
 
-Original findings, novel techniques, and academic paper summaries.
+Original findings, novel techniques, and academic paper summaries — when they meet our standard.
 
-## Recent Research
+## Our Standard
 
-**ARM64 PAC Bypass Analysis** — A deep dive into Pointer Authentication Codes, their threat model, and practical bypass techniques on Apple Silicon.
-
-**Kernel Heap Grooming via SLUB** — Systematic approaches to heap feng shui in modern Linux kernels. Freelist manipulation, page ordering, and cross-cache attacks.
-
-**Post-Quantum Migration Pathways** — Evaluating NIST PQC finalists (CRYSTALS-Kyber, CRYSTALS-Dilithium, SPHINCS+, FALCON) for protocol integration. Performance benchmarks and deployment strategies.
+We do not publish summaries of papers we have not implemented. We do not speculate on techniques we have not tested. Every research piece on this site has been reproduced, extended, and validated in our environment. If it has not been built, it does not go live.
 
 ## Methodology
 

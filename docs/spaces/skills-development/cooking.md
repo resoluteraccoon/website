@@ -8,40 +8,37 @@ pagination_next: spaces/skills-development/videography
 
 ## Philosophy
 
-Precision. Self-sufficiency. Resource management. Mise en place = everything in its place.
+Precision. Self-sufficiency. Resource management. Mise en place — everything in its place.
 
 A Cybersecuritist understands systems. A kitchen is a system. Inputs (ingredients), process (recipe + technique), output (meal). Variables: heat, time, acid, fat, salt, Maillard reaction, emulsification, gelatinization.
 
 We do not follow recipes. We understand them. Then we improvise.
 
-A recipe is an algorithm. The kitchen is the runtime. The ingredients are the inputs. The cook is the interpreter. If you do not understand the algorithm, you cannot debug the output. You cannot optimize. You cannot adapt when the oven runs hot, the produce is seasonal, the guest has an allergy.
+Cooking teaches you to work with constraints. A budget. A timeline. A stove with two burners. A dull knife. You still produce. You adapt. You execute. This is the same mindset that writes a reliable exploit under time pressure, that builds a detection rule with limited telemetry, that responds to an incident at 3 AM with incomplete data.
 
 ## Practice
 
-**Monthly Cook-Offs** — One theme. One budget. One hour. Five people fed.
-- Budget constraint: ₦2,000 for 5 people. No exceptions.
-- Documentation: Recipe card written during cook. Photos of each stage. Tasting notes.
-- Peer review: Every dish tasted by all. Feedback documented. Iteration expected.
+**Cook-Offs** — Theme announced in advance. Budget constrained. Multiple people fed. No recipes allowed. Documentation mandatory: photos, ingredient weights, timing, technique notes, failure analysis.
 
-**Core Curriculum** (rotating quarterly):
-- Knife skills — the debugger of the kitchen. Julienne, brunoise, batonnet, chiffonade. Speed and uniformity.
-- Mother sauces — the standard library of French cuisine. Béchamel, velouté, espagnole, tomate, hollandaise. Derivatives from each.
-- Butchery — memory management for protein. Whole chicken, fish, beef primal. Yield calculation. Waste minimization.
-- Fermentation — supply chain security for flavor. Lacto-fermentation, koji, vinegar, garum. Time as an ingredient.
-- Bread — the CI/CD pipeline of the kitchen. Ferment, proof, bake, validate. Sourdough starter = living dependency.
-- Nutrition — fuel for the brain that does the hacking. Macro/micro balance. Meal prep as batch processing.
+**Knife Skills** — The debugger of the kitchen. You cannot cook well with a dull knife. You cannot hack well with a dull mind. Regular sharpening. Daily drills: julienne, brunoise, batonnet, tournée.
 
-**The Standard:** You must be able to feed yourself and two others a nutritionally complete, delicious meal from scratch in 45 minutes, with only a knife, a pan, and a heat source. No recipes. No meal kits. No takeout.
+**Mother Sauces** — The standard library of French cuisine. Béchamel, Velouté, Espagnole, Sauce Tomate, Hollandaise. Master these, you derive hundreds. Same as mastering heap exploitation primitives — you derive every technique.
+
+**Butchery** — Memory management for protein. Breaking down whole animals. Understanding anatomy. Waste nothing. Every trim becomes stock. Every bone becomes collagen. This is resource optimization at the physical layer.
+
+**Fermentation** — Supply chain security for flavor. Lactobacillus, Aspergillus, Saccharomyces. You cultivate the right culture, suppress the wrong one. Time and temperature are your access controls. One contamination ruins the batch.
+
+**Bread** — The CI/CD pipeline of the kitchen. Ferment, proof, bake, validate. Crumb structure = test coverage. Crust color = deployment health. Sourdough starter = your build server — feed it daily or it dies.
+
+**Nutrition** — Fuel for the brain that does the hacking. Macronutrient tracking. Micronutrient density. Meal prep as infrastructure automation. You do not "eat healthy." You engineer nutrition.
+
+## Standard
+
+You must be able to feed yourself and two others a nutritionally complete, delicious meal from scratch in 45 minutes, with only a knife, a pan, and a heat source. No recipes. No meal kits. No takeout.
 
 ## Integration
 
-Feeds into **Deep Technical Communication**.
-
-Recipe = algorithm. Kitchen = system. Mise en place = environment setup. Tasting = testing. Plating = UI/UX. Service = deployment.
-
-When you write a vulnerability report, you are writing a recipe for reproduction. When you design a detection rule, you are defining the ingredients and the heat. When you present a finding, you are plating the dish.
-
-The discipline transfers directly. The cook who cannot explain why the sauce broke cannot explain why the exploit failed. The cook who improvises under budget pressure improvises under time pressure in a CTF.
+Feeds into **Deep Technical Communication**. A recipe is an algorithm. A kitchen is a system. Teaching someone to cook forces you to articulate process, handle edge cases, explain *why* not just *how*. The same skill that writes a vulnerability report the triager doesn't need to ask questions about.
 
 ---
 

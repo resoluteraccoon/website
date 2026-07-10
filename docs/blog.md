@@ -25,7 +25,7 @@ Step-by-step solutions. Not just flags — the methodology.
 **[→ CTF Write-Ups](/docs/blog/ctf-writeups)**
 
 ### Movie Night Write-Ups
-Technical breakdowns of films we watch. What the movie got right (and wrong).
+Technical breakdowns of films we watch. What the film got right (and wrong).
 
 **[→ Movie Night Write-Ups](/docs/blog/movie-night-writeups)**
 

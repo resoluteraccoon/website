@@ -18,7 +18,7 @@ The camera does not lie. Bad audio makes footage unusable. Bad lighting hides th
 
 ## Practice
 
-**Monthly 5-Minute Videos** — Phone, laptop, free software (DaVinci Resolve, OBS, CapCut). One vulnerability explained. One tool demonstrated. One concept taught. Peer reviewed before publish.
+**Technical Videos** — Phone, laptop, free software. One vulnerability explained. One tool demonstrated. One concept taught. Peer reviewed before publish.
 
 **Camera Operation** — Exposure triangle (aperture, shutter, ISO) as threat model. You balance three variables to get the image. Same as balancing stealth, speed, and coverage in a recon operation.
 
@@ -30,7 +30,7 @@ The camera does not lie. Bad audio makes footage unusable. Bad lighting hides th
 
 **Editing** — Premiere, DaVinci, CapCut — the compiler for visual code. Cut on action. J-cuts for context. L-cuts for continuity. Color grading = post-exploitation. You enhance what matters, suppress what doesn't.
 
-**Publishing** — YouTube (unlisted for internal), peer review, internal archive. Thumbnail that does not lie. Title that describes the technical content. Description with timestamps, links, commands.
+**Publishing** — Internal archive, peer review. Thumbnail that does not lie. Title that describes the technical content. Description with timestamps, links, commands.
 
 ## Standard
 

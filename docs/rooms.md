@@ -24,7 +24,7 @@ This is not a vague covenant group. This is not feel-good talk with no teeth. We
 ## The Rooms
 
 ### [Readers Club →](/docs/rooms/readers-club)
-**1 book per month. Deep, not wide.**
+**Deep, not wide.**
 
 Quality criteria: state-of-the-art, great pedagogy, "hold-my-hand" technical depth.
 
@@ -40,11 +40,11 @@ We don't just read. We discuss. We implement. We teach each other.
 
 We discuss:
 - **How do we raise our children?** Not just feed and clothe them — but instill discipline, curiosity, resilience. How do we teach them to think critically, to question, to build, to protect themselves in a world that will try to exploit them?
-- **How does a Cybersecuritist run his home?** What are the standards? What is non-negotiable? How do we balance the intensity of our work with the presence our families need?
+- **How does a Cybersecurist run their home?** What are the standards? What is non-negotiable? How do we balance the intensity of our work with the presence our families need?
 - **Physical Health** — A broken body cannot build. Physical health is the foundation of mental performance. Real protocols, not gym-bro mythology.
 - **Discipline** — The ability to do what needs to be done, regardless of motivation. The gap between amateurs and professionals.
 - **Partnership** — Marriage as a long-term security operation. Trust, communication, shared vision.
-- **Business / Finance / Investing** — Understanding value creation, resource allocation, compound growth. A Cybersecuritist who cannot manage money is a vulnerability waiting to be exploited.
+- **Business / Finance / Investing** — Understanding value creation, resource allocation, compound growth. A Cybersecurist who cannot manage money is a vulnerability waiting to be exploited.
 - **Leadership** — Not titles. Influence. The ability to inspire action in others without relying on authority.
 
 **The Standard:** Every conversation has a purpose. Every voice is heard, but no voice is unchecked. We challenge. We sharpen. We do not leave the room the same way we entered it.

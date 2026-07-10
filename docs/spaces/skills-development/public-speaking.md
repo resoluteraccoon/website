@@ -17,13 +17,13 @@ This is not "soft skills." This is the hardest technical skill there is. If you 
 ## Practice
 
 ### Technical Translation
-Every session: present a technical topic to a simulated mixed audience. The test: Can the non-technical person explain it back to you?
+Present a technical topic to a simulated mixed audience. The test: Can the non-technical person explain it back to you?
 
 You present a heap overflow. The lawyer summarizes: "So the program asked for a small box, got a big box, and the extra stuff spilled into where the program keeps its secrets?" **Pass.**  
 The lawyer summarizes: "You hacked the memory?" **Fail.** You try again.
 
-### Bug Bounty Debriefs
-"Here's the vulnerability I found in [target]. Here's the impact. Here's the payload. Here's the bypass. Here's what I learned."
+### Vulnerability Debriefs
+"Here's the vulnerability I found. Here's the impact. Here's the payload. Here's the bypass. Here's what I learned."
 
 No vendor names until disclosure. No bounty amounts. Pure technical substance. The room tears apart your logic. You defend or you refine.
 

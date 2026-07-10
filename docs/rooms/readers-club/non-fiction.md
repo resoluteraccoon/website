@@ -13,40 +13,22 @@ General non-fiction that expands how you think. History, science, philosophy, ps
 We select for **conceptual leverage** — ideas that explain large swathes of reality with few principles. Books that give you new lenses. Books that change how you see the world, not just what you know about it.
 
 ### Systems & Complexity
-- **Thinking in Systems (Donella Meadows)** — Stocks, flows, feedback loops, leverage points. The grammar of complex systems.
-- **The Systems View of Life (Capra & Luisi)** — Biology, cognition, ecology, organizations as living networks.
-- **Complexity (Melanie Mitchell)** — Emergence, adaptation, self-organization. The science at the edge of order and chaos.
-- **Antifragile (Nassim Taleb)** — Things that gain from disorder. The opposite of fragile is not robust — it's antifragile.
+Understanding feedback loops, emergence, adaptation, self-organization. The science at the edge of order and chaos. The grammar of complex systems.
 
 ### History & Strategy
-- **The Lessons of History (Will & Ariel Durant)** — 5,000 years in 100 pages. Cycles, patterns, the constants of human nature.
-- **Strategy (B.H. Liddell Hart)** — The indirect approach. The psychological dimension. The history of maneuver.
-- **On War (Clausewitz)** — War as politics by other means. Friction. Fog. The trinity. Still the strategic bible.
-- **The Art of War (Sun Tzu)** — Deception. Economy of force. Knowing the enemy. Knowing yourself.
+Cycles, patterns, the constants of human nature. The indirect approach. The psychological dimension. War as politics by other means. Friction. Fog. Deception. Economy of force.
 
 ### Psychology & Decision-Making
-- **Thinking, Fast and Slow (Kahneman)** — System 1, System 2. Biases. Heuristics. The architecture of human judgment.
-- **The Psychology of Intelligence Analysis (Heuer)** — Structured analytic techniques. Cognitive traps. Competing hypotheses. Written for CIA, applicable everywhere.
-- **Sources of Power (Gary Klein)** — Naturalistic decision-making. Recognition-primed decisions. How experts actually decide under pressure.
-- **Influence (Cialdini)** — Reciprocity, commitment, social proof, authority, liking, scarcity, unity. The weapons of social engineering.
+System 1, System 2. Biases. Heuristics. The architecture of human judgment. Structured analytic techniques. Cognitive traps. Competing hypotheses. How experts actually decide under pressure. The weapons of social engineering.
 
 ### Science & First Principles
-- **The Feynman Lectures on Physics** — Not for the physics. For the *thinking*. How to derive from fundamentals. How to spot cargo cult science.
-- **A Brief History of Time (Hawking)** — Cosmology as a model for theoretical reasoning. Singularities. Entropy. The arrow of time.
-- **The Selfish Gene (Dawkins)** — Gene's-eye view. Replicators, vehicles, memes. Evolution as an algorithm.
-- **Gödel, Escher, Bach (Hofstadter)** — Strange loops. Self-reference. Consciousness as formal system. The deepest play.
+Not for the domain knowledge. For the *thinking*. How to derive from fundamentals. How to spot cargo cult science. Cosmology as a model for theoretical reasoning. Evolution as an algorithm. Strange loops. Self-reference. Consciousness as formal system.
 
 ### Economics & Incentives
-- **The Wealth of Nations (Smith)** — Division of labor. Invisible hand. The pin factory. The origin of market thinking.
-- **Human Action (Mises)** — Praxeology. Action axiom. Subjective value. The logic of choice.
-- **Capitalism and Freedom (Friedman)** — Economic freedom, political freedom. Monetary history. School vouchers. Negative income tax.
-- **The Bitcoin Standard (Ammous)** — Hard money, time preference, sound money as civilizational infrastructure.
+Division of labor. Invisible hand. The logic of choice. Praxeology. Subjective value. Economic freedom, political freedom. Monetary history. Hard money, time preference, sound money as civilizational infrastructure.
 
 ### Technology & Society
-- **The Innovators (Isaacson)** — The collaborative genesis of digital age. Not lone geniuses. Teams. Women. Institutions.
-- **Code (Petzold)** — From relays to CPUs. The beautiful stack. Every software engineer should read this.
-- **The Cathedral and the Bazaar (Raymond)** — Open source as gift economy. Linus's Law. Release early, release often.
-- **Weapons of Math Destruction (O'Neil)** — Algorithms that encode bias. Opacity. Scale. Damage. The audit trail we need.
+The collaborative genesis of the digital age. Not lone geniuses. Teams. Women. Institutions. From relays to CPUs. The beautiful stack. Open source as gift economy. Linus's Law. Release early, release often. Algorithms that encode bias. Opacity. Scale. Damage. The audit trail we need.
 
 ## How We Use These
 

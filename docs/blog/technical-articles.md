@@ -8,13 +8,9 @@ pagination_next: blog/research
 
 Deep dives into vulnerabilities, protocols, and techniques. Written to teach.
 
-## Recent Articles
+## Our Approach
 
-**Understanding the Linux Kernel Heap** — SLUB allocator internals, freelist randomization, heap feng shui. The mechanics beneath every kernel exploit.
-
-**TLS 1.3 Deep Dive** — Handshake, 0-RTT, key schedule, traffic secrets. The protocol that secures the modern web, dissected.
-
-**eBPF for Security Monitoring** — XDP, kprobes, uprobes, ring buffers, CO-RE. Turning the kernel into a programmable sensor.
+We publish when we have something that changes how the reader thinks — not just a writeup of a known vulnerability. Every article starts from first principles and builds to practical application. We do not chase trends. We chase understanding.
 
 ## Writing Guidelines
 
