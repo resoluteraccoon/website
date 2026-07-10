@@ -8,6 +8,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  * - render a sidebar for each doc of that group
  * - provide next/previous navigation
  *
+ * The sidebars can be generated from the filesystem, or explicitly defined here.
  * Create as many sidebars as you want.
  */
 const sidebars: SidebarsConfig = {
@@ -18,6 +19,9 @@ const sidebars: SidebarsConfig = {
       link: { type: 'doc', id: 'events' },
       items: [
         { type: 'doc', id: 'events/movie-nights', label: 'Movie Nights' },
+        { type: 'doc', id: 'events/hackathons', label: 'Hackathons' },
+        { type: 'doc', id: 'events/conferences', label: 'Conferences' },
+        { type: 'doc', id: 'events/webinars', label: 'Webinars' },
       ],
     },
     {
@@ -50,7 +54,12 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Skills Development',
           link: { type: 'doc', id: 'spaces/skills-development' },
-          items: [],
+          items: [
+            { type: 'doc', id: 'spaces/skills-development/cooking', label: 'Cooking' },
+            { type: 'doc', id: 'spaces/skills-development/videography', label: 'Videography' },
+            { type: 'doc', id: 'spaces/skills-development/public-speaking', label: 'Public Speaking' },
+            { type: 'doc', id: 'spaces/skills-development/deep-technical-communication', label: 'Deep Technical Communication' },
+          ],
         },
       ],
     },
@@ -70,6 +79,7 @@ const sidebars: SidebarsConfig = {
             { type: 'doc', id: 'rooms/readers-club/classics', label: 'Classics' },
           ],
         },
+        { type: 'doc', id: 'rooms/real-life-conversations', label: 'Real-Life Conversations' },
       ],
     },
     { type: 'doc', id: 'about', label: 'About Us' },

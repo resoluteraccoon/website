@@ -28,10 +28,10 @@ This is not a vague covenant group. This is not feel-good talk with no teeth. We
 
 Quality criteria: state-of-the-art, great pedagogy, "hold-my-hand" technical depth.
 
-Three styles:
-- **Classics** — The books that built the field. Knuth. Tanenbaum. Stevens. The Dragon Book. SICP.
-- **Hybrid** — Theory + practice. *Computer Systems: A Programmer's Perspective*. *The Art of Software Security Assessment*. *Practical Malware Analysis*.
-- **Modern** — Cutting edge. *Designing Data-Intensive Applications*. *Real-World Cryptography*. *Site Reliability Engineering*.
+Three styles guide our selection:
+- **Classics** — The books that built the field. The foundations that define how we think.
+- **Hybrid** — Theory married to practice. The bridge between academic rigor and operational reality.
+- **Modern** — The current gold standard. The books defining the frontier now.
 
 We don't just read. We discuss. We implement. We teach each other.
 
@@ -41,9 +41,9 @@ We don't just read. We discuss. We implement. We teach each other.
 We discuss:
 - **How do we raise our children?** Not just feed and clothe them — but instill discipline, curiosity, resilience. How do we teach them to think critically, to question, to build, to protect themselves in a world that will try to exploit them?
 - **How does a Cybersecuritist run his home?** What are the standards? What is non-negotiable? How do we balance the intensity of our work with the presence our families need?
-- **Men's Health / Ladies Health** — A broken body cannot build. Physical health is the foundation of mental performance. Real protocols, not gym-bro mythology.
+- **Physical Health** — A broken body cannot build. Physical health is the foundation of mental performance. Real protocols, not gym-bro mythology.
 - **Discipline** — The ability to do what needs to be done, regardless of motivation. The gap between amateurs and professionals.
-- **Marriage** — Partnership as a long-term security operation. Trust, communication, shared vision.
+- **Partnership** — Marriage as a long-term security operation. Trust, communication, shared vision.
 - **Business / Finance / Investing** — Understanding value creation, resource allocation, compound growth. A Cybersecuritist who cannot manage money is a vulnerability waiting to be exploited.
 - **Leadership** — Not titles. Influence. The ability to inspire action in others without relying on authority.
 

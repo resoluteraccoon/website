@@ -4,25 +4,27 @@ pagination_prev: blog/ctf-writeups
 pagination_next: blog/tool-reviews
 ---
 
-
 # Movie Night Write-Ups
 
 Technical breakdowns of films we watch. What the movie got right (and wrong).
 
 ## Recent Write-Ups
 
-| Film | Date | Focus |
-|------|------|-------|
-| **Zero Days** | 2025-01 | Stuxnet architecture, PLC infection, centrifuge physics |
-| **The Social Dilemma** | 2024-12 | Recommendation algorithms, attention economy, dopamine loops |
-| **Citizenfour** | 2024-12 | XKEYSCORE, PRISM, TAO, encryption bypass |
-| **We Are Legion** | 2024-11 | LOIC, DDoS coordination, IRC command structures |
+**The Social Network — The Psychology of Scale** — Not a hacking movie. A systems movie. The architecture of a social graph. The race condition in friendship. The privacy model that wasn't.
+
+**Mr. Robot S1E1 — The Social Engineering Stack** — Laptop drop, Bluetooth enumeration, METASPLOIT payload, persistence via cron. What works. What's Hollywood. The real `ssh -R` tunnel.
+
+**Citizenfour — The OPSEC Protocol** — Air-gapped laptop. Tails OS. GPG keys on USB. The meeting in Hong Kong. The journalist's threat model. The source's threat model. Where they overlapped. Where they didn't.
+
+**The Matrix — Simulation as Threat Model** — Red pill = privilege escalation. Blue pill = user-mode. The Agents = kernel-mode rootkit. Neo = the exploit that writes its own shellcode.
 
 ## Format
 
-1. **Premise** — What the film claims
-2. **Technical Reality** — What actually happens
-3. **Accuracy Score** — Where Hollywood diverges from truth
-4. **Lessons Learned** — Actionable takeaways
+Every write-up follows this structure:
+
+1. **The Premise** — What the film presents as its technical reality
+2. **The Reality** — What actually works, what's fictional, what's exaggerated
+3. **The Lessons** — What we can actually use. Detection ideas. Defense strategies. Mental models.
+4. **The Scene-by-Scene** — Timestamped breakdown of key technical moments
 
 **[→ Tool Reviews →](/docs/blog/tool-reviews)**

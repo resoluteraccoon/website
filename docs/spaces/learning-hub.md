@@ -10,7 +10,7 @@ pagination_next: spaces/first-principles
 
 Most platforms give you content. We give you a process.
 
-The materials we use are not created by us. We source them from the highest-quality free resources online — pwn.college, TryHackMe, PortSwigger Academy, MIT OpenCourseWare, Stanford CS, NIST publications, RFCs, vendor documentation. But raw gold is useless until it's refined.
+The materials we use are not created by us. We source them from the highest-quality free resources online — university courseware, security training platforms, standards bodies, vendor documentation, RFCs. But raw gold is useless until it's refined.
 
 Our **Refinery** is a multi-stage pipeline:
 
@@ -77,5 +77,5 @@ We also have **[Research](/docs/spaces/research)** — where every project must 
 
 ---
 
-**Previous:** [Spaces →](/docs/spaces)
+**Previous:** [Spaces →](/docs/spaces)  
 **Next:** [First Principles →](/docs/spaces/first-principles)

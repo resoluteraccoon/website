@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-pagination_next: null
 pagination_prev: null
+pagination_next: null
 ---
 
 # About Us

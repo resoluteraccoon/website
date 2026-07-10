@@ -4,24 +4,24 @@ pagination_prev: blog/technical-articles
 pagination_next: blog/ctf-writeups
 ---
 
+# Research
 
-# Technical Articles
+Original findings, novel techniques, and academic paper summaries.
 
-Deep dives into vulnerabilities, protocols, and techniques. Written to teach.
+## Recent Research
 
-## Recent Articles
+**ARM64 PAC Bypass Analysis** — A deep dive into Pointer Authentication Codes, their threat model, and practical bypass techniques on Apple Silicon.
 
-| Title | Author | Date | Summary |
-|-------|--------|------|---------|
-| **Understanding the Linux Kernel Heap** | @member | 2025-01 | SLUB allocator internals, freelist randomization, heap feng shui |
-| **TLS 1.3 Deep Dive** | @member | 2025-01 | Handshake, 0-RTT, key schedule, traffic secrets |
-| **eBPF for Security Monitoring** | @member | 2024-12 | XDP, kprobes, uprobes, ring buffers, CO-RE |
+**Kernel Heap Grooming via SLUB** — Systematic approaches to heap feng shui in modern Linux kernels. Freelist manipulation, page ordering, and cross-cache attacks.
 
-## Writing Guidelines
+**Post-Quantum Migration Pathways** — Evaluating NIST PQC finalists (CRYSTALS-Kyber, CRYSTALS-Dilithium, SPHINCS+, FALCON) for protocol integration. Performance benchmarks and deployment strategies.
 
-- **Teach, don't just show** — Explain the *why*, not just the *how*
-- **Include code** — Reproducible snippets, not screenshots
-- **Cite sources** — Link to RFCs, CVEs, papers, vendor advisories
-- **Prerequisites** — State what the reader needs to know first
+## Methodology
 
-**[→ Research →](/docs/blog/research)**
+1. **Literature Survey** — Map the prior art. Read the papers. Understand the assumptions.
+2. **Reproduction** — Build the environment. Run the exploit. Verify the claims.
+3. **Extension** — What did they miss? What assumptions break? What new primitives emerge?
+4. **Documentation** — Write the technical report. Include code. Include detection/mitigation.
+5. **Injection** — Push findings into the Refinery. Update the curriculum.
+
+**[→ CTF Write-Ups →](/docs/blog/ctf-writeups)**
