@@ -18,7 +18,7 @@ The vision was never just a club. Expand to all departments in the Faculty of Co
 
 ## "Vague, But Exciting"
 
-This idea feels like Tim Berners-Lee's boss's response to the World Wide Web proposal: *vague, but exciting.* We carry that oxymoronic tension — foolishness and conviction in the same breath. We have resolved to plug our very Brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
+This idea feels like Tim Berners-Lee's boss's response to the World Wide Web proposal: *vague, but exciting.* We carry that oxymoronic tension — foolishness and conviction in the same breath. We have resolved to plug our very brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
 
 ## The AI Refinery
 
@@ -30,7 +30,7 @@ Our AI searches the web 24/7 at breakneck speed — sorting, sourcing, grading, 
 
 **School of Cybersecurity** — Technical mastery. We don't collect tutorials. We engineer pathways. Every resource is vetted, graded, mapped to first principles, and integrated with real-world practice.
 
-**School of Life** — Character formation. Technical skill without character is dangerous. We train both. Men's health. Ladies health. Discipline. Marriage. Business. Finance. Leadership. Raising children. Running a home. We have real conversations that shape us — "Hey, you are over-talking." "Hey, you are beginning to say nonsense." We hold each other accountable because we respect each other enough to be honest.
+**School of Life** — Character formation. Technical skill without character is dangerous. We train both. Men's health. Ladies' health. Discipline. Marriage. Business. Finance. Leadership. Raising children. Running a home. We have real conversations that shape us — "Hey, you are over-talking." "Hey, you are beginning to say nonsense." We hold each other accountable because we respect each other enough to be honest.
 
 ## The Hybrid Model
 
@@ -42,6 +42,6 @@ We reject the modern lie that you must pick one thing and do it forever. A Cyber
 
 ## The Commitment
 
-We have resolved to plug our very Brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
+We have resolved to plug our very brains into this as the fuel for this idea, and our hearts into this very work, with God as our strength.
 
 We hope this club becomes a direct plug into society — where our research moves civilization forward in geometric progressions.

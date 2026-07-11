@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
+pagination_prev: null
+pagination_next: spaces/learning-hub
 ---
 
-# GROW
+# Grow
 
 Technical skill opens doors. Character keeps them open. Our spaces are designed to grow both.
 
@@ -25,3 +27,7 @@ For the brothers who need space to be real. Mental health, physical fitness, rel
 **What happens here stays here.** No screenshots. No gossip. No using vulnerability against each other.
 
 Technical skill and character growth. Both matter. We don't choose — we build both.
+
+---
+
+**Next:** [Spaces →](/docs/spaces)

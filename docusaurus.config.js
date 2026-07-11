@@ -35,6 +35,11 @@ const config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
+    },
     metadata: [
       { name: 'og:title', content: 'Resolute Raccoon' },
       { name: 'og:description', content: 'A blackhat-grade cybersecurity club. Train. Break. Build.' },

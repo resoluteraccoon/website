@@ -8,29 +8,34 @@ pagination_next: spaces/learning-hub
 
 We don't just collect resources. We engineer learning pathways.
 
-## The Refinery
+## The Philosophy: Pathways Over Piles
 
-Most platforms give you content. We give you a process.
+Most platforms give you content. We give you a **process**.
 
 The materials we use are not created by us. We source them from the highest-quality free resources online — university courseware, security training platforms, standards bodies, vendor documentation, RFCs. But raw gold is useless until it's refined.
 
-Our **Refinery** is a multi-stage pipeline:
+Our **Refinery** is a multi-stage pipeline that turns raw resources into locked, sequenced, verified learning paths.
+
+## The Refinery Pipeline
 
 ### 1. Sourcing — Gold Standard Only
 We search for gold-standard resources. These are materials with the highest standard of content that actually build real skill. No shallow tutorials. No "learn X in 10 minutes." We want the sources that professionals reference.
 
 ### 2. Grading — Every Resource Evaluated
-Every resource is evaluated:
-- **Technical Accuracy** — Zero tolerance for factual errors
-- **Depth & First Principles** — Must derive from atomic truths
-- **Pedagogical Quality** — Must teach, not just inform
-- **Prerequisite Clarity** — Must declare its dependencies
-- **Currency** — Must be current or explicitly versioned
+Every resource is evaluated against five criteria:
+
+| Criterion | Weight | Threshold |
+|-----------|--------|-----------|
+| Technical Accuracy | 30% | Zero tolerance for factual errors |
+| Depth & First Principles | 25% | Must derive from atomic truths |
+| Pedagogical Quality | 20% | Must teach, not just inform |
+| Prerequisite Clarity | 15% | Must declare its dependencies |
+| Currency | 10% | Must be current or explicitly versioned |
 
 Resources below threshold are discarded. Resources at threshold are queued for human review.
 
 ### 3. Sequencing — True Dependencies, Not Arbitrary Difficulty
-Resources are ordered by true dependencies, not arbitrary difficulty. You cannot understand buffer overflows without understanding memory layout. You cannot understand memory layout without understanding the stack. The graph is explicit.
+Resources are ordered by **true dependencies**, not arbitrary difficulty. You cannot understand buffer overflows without understanding memory layout. You cannot understand memory layout without understanding the stack. The dependency graph is explicit and enforced.
 
 ### 4. First-Principles Integration — The Only Way We Learn
 We don't just tell you *what*. We force you to derive *why*.
@@ -43,7 +48,7 @@ We apply this to every concept. You don't memorize "buffer overflow = overwrite 
 Every unit demands proof before you advance. Not multiple choice. Not "I read it." You exploit the vulnerability. You write the script. You explain the concept to a non-technical person. If you cannot teach it, you do not know it.
 
 ### 6. Continuous Updating — The AI Refinery
-The AI Refinery (see below) monitors sources 24/7. When a CVE drops, when a paper publishes, when a tool updates — the pathway adapts.
+The AI Refinery monitors sources 24/7. When a CVE drops, when a paper publishes, when a tool updates — the pathway adapts.
 
 ## The AI Refinery
 
@@ -74,3 +79,20 @@ Knowing is not enough. Doing is not enough. You must be able to explain it to a 
 This is why we have **[Public Speaking](/docs/spaces/public-speaking)** — where members present technical topics to simulated mixed audiences. The test: Can a non-technical person understand what you did, why it mattered, and how you did it?
 
 We also have **[Research](/docs/spaces/research)** — where every project must produce a teaching session, a technical report, and a detection/mitigation component.
+
+## Spaces Structure
+
+Our spaces are organized into three domains:
+
+### [Learning Hub →](/docs/spaces/learning-hub)
+The core technical curriculum. The Refinery pipeline, first-principles thinking, AI Refinery, locked progression, university integration.
+
+### [Skills Development →](/docs/spaces/skills-development)
+The supporting pillars that make us whole humans. Cooking, videography, public speaking, deep technical communication. Technical skill without these is a narrow blade — sharp but brittle.
+
+### [Specialized Tracks →](/docs/spaces/bug-bounty)
+Focused capability tracks. Bug Bounty methodology, Research process, and emerging domains.
+
+---
+
+**Start Here:** [Learning Hub →](/docs/spaces/learning-hub)

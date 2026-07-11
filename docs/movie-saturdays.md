@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+pagination_prev: null
+pagination_next: events/movie-nights
 ---
 
 # Movie Saturdays
@@ -26,4 +28,6 @@ Every Saturday, we gather to dissect real breaches on screen. We watch, pause, a
 2. **Pause** — We stop at key moments to break down the technical details
 3. **Debate** — Could it have been prevented? What would you have done differently?
 
-[← Back to MEET](/docs/meet)
+---
+
+**Back to Events:** [Events →](/docs/events)

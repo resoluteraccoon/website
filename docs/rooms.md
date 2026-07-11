@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-pagination_prev: null
+pagination_prev: spaces
 pagination_next: rooms/readers
 ---
 

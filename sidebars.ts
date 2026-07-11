@@ -1,7 +1,5 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 /**
  * Creating a sidebar enables you to:
  * - create an ordered group of docs
@@ -9,7 +7,6 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  * - provide next/previous navigation
  *
  * The sidebars can be generated from the filesystem, or explicitly defined here.
- * Create as many sidebars as you want.
  */
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
@@ -94,7 +91,7 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           items: [
             { type: 'doc', id: 'rooms/labour-market/deep-conversations', label: 'Deep Conversations' },
-            { type: 'doc', id: 'rooms/labour-market/gentle-mens-health', label: "Gentle Men's Health Session" },
+            { type: 'doc', id: "rooms/labour-market/gentle-mens-health", label: "Gentle Men\u2019s Health Session" },
             { type: 'doc', id: 'rooms/labour-market/ladies-health', label: 'Ladies Health Session' },
             { type: 'doc', id: 'rooms/labour-market/discipline', label: 'Discipline' },
             { type: 'doc', id: 'rooms/labour-market/marriage', label: 'Marriage' },
@@ -104,6 +101,69 @@ const sidebars: SidebarsConfig = {
             { type: 'doc', id: 'rooms/labour-market/investing', label: 'Investing' },
           ],
         },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Hacker Club',
+      link: { type: 'doc', id: 'hacker-club/overview' },
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'hacker-club/movie-nights', label: 'Movie Nights' },
+        { type: 'doc', id: 'hacker-club/hackathons', label: 'Hackathons' },
+        { type: 'doc', id: 'hacker-club/newsletter', label: 'Newsletter' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Learnings',
+      link: { type: 'doc', id: 'learnings/overview' },
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'learnings/mathematics-for-programmers', label: 'Mathematics for Programmers' },
+        { type: 'doc', id: 'learnings/clean-code', label: 'Clean Code' },
+        { type: 'doc', id: 'learnings/java-for-beginners', label: 'Java for Beginners' },
+        { type: 'doc', id: 'learnings/readers-club', label: 'Readers Club' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Features',
+      link: { type: 'doc', id: 'features/overview' },
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'features/curated-learning', label: 'Curated Learning' },
+        { type: 'doc', id: 'features/locked-progression', label: 'Locked Progression' },
+        { type: 'doc', id: 'features/refinery-ai', label: 'Refinery AI' },
+        { type: 'doc', id: 'features/thumbnail-cards', label: 'Thumbnail Cards' },
+        { type: 'doc', id: 'features/progress-tracker', label: 'Progress Tracker' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Getting Started',
+      link: { type: 'doc', id: 'getting-started/quickstart' },
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'getting-started/quickstart', label: 'Quick Start' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'User Guide',
+      link: { type: 'doc', id: 'user-guide/cli' },
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'user-guide/cli', label: 'CLI Reference' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Reference',
+      link: { type: 'doc', id: 'reference/cli-commands' },
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'reference/cli-commands', label: 'CLI Commands' },
       ],
     },
   ],
