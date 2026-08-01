@@ -73,13 +73,13 @@ Everything in this club runs on **two tools**. Master them first.
 ---
 
 ### Step 1: GitHub
-[**→ Set Up GitHub Account (Phone Only)**](./github-setup)
+[**Set Up GitHub Account (Phone Only)**](./github-setup)
 
 ### Step 2: Discord
-[**→ Set Up Discord Account (Phone Only)**](./discord-setup)
+[**Set Up Discord Account (Phone Only)**](./discord-setup)
 
 ---
 
 **Start with GitHub.** It's your portfolio. Your proof of work. Your identity as a builder.
 
-[**→ Set Up GitHub Account (Phone Only)**](./github-setup)
+[**Set Up GitHub Account (Phone Only)**](./github-setup)
