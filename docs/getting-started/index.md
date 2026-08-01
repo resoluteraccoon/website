@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
 pagination_prev: null
-pagination_next: getting-started/quickstart
+pagination_next: getting-started/github-setup
 ---
 
-# Welcome to the Dojo — The Journey Starts Now
+# Welcome to the Dojo
 
 > **Resolute Raccoon Club** — A blackhat-grade cybersecurity club.  
 > **Club Email:** ResoluteRaccoonClub@proton.me  
@@ -61,60 +61,25 @@ We hope this club becomes a direct plug into society — where our research move
 
 ---
 
-## Your First Steps (Do These Today)
+## Two Tools to Start
 
-### 1. Join Discord → Get Verified
-[**Click here to join Discord**](https://discord.gg/resoluteraccoon) → Read `#rules-and-onboarding` → React with ✅ → You're in.
+Everything in this club runs on **two tools**. Master them first.
 
-### 2. Set Up GitHub → Clone the Repo
-```bash
-# Create GitHub account → Enable 2FA → Add SSH key
-git clone git@github.com:resoluteraccoon/website.git
-cd website
-```
-
-### 3. Read the Crash Course
-[**Full Discord + GitHub Crash Course →**](./discord-github-crash-course)
-
-### 4. Do Day 1 Assignments
-- [ ] Post in `#introductions` (use template)
-- [ ] Adjust Discord settings (Privacy OFF, Notifications @mentions only)
-- [ ] GitHub: 2FA + SSH key done
-- [ ] Clone repo successfully
+| Tool | Purpose | Time to Setup |
+|------|---------|---------------|
+| **GitHub** | Code, projects, collaboration, portfolio | 5 minutes |
+| **Discord** | Communication, voice, community, events | 3 minutes |
 
 ---
 
-## Embedded Tutorials
+### Step 1: GitHub
+[**→ Set Up GitHub Account (Phone Only)**](./github-setup)
 
-### Discord Complete Guide (2024)
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/3-tZpxncemg" title="How to Use Discord Beginners Guide 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### GitHub Complete Tutorial (2024)
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/MuZySo5lF8E" title="Complete Git and GitHub Tutorial for Beginners 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Step 2: Discord
+[**→ Set Up Discord Account (Phone Only)**](./discord-setup)
 
 ---
 
-## Quick Start (5 Minutes)
-[**→ Quick Start Guide**](./quickstart) — One page, just the essentials.
+**Start with GitHub.** It's your portfolio. Your proof of work. Your identity as a builder.
 
----
-
-## Club Monetization (Future)
-
-> **Note:** We're building value first. Monetization comes from excellence.
-
-| Channel | Future Potential |
-|---------|-----------------|
-| **Discord** | Server Boosts → Level 3 perks (vanity URL, banner, emojis). Partner Program (if eligible). No direct ads. |
-| **Vimeo** | Pro/Business → Sell courses, subscription content, tip jar. |
-| **Vista** | Ad-supported or subscription video hosting. |
-| **Twitch** | Affiliate/Partner → Subs, bits, ads. Live CTF, workshops, coding sessions. |
-| **Website** | Sponsorships, job board, course sales, merch. |
-| **YouTube** | AdSense, sponsorships, memberships. |
-
-**Current priority:** Build the best cybersecurity club in Africa. Everything else follows.
-
----
-
-## Next
-[**Quick Start Guide →**](./quickstart) | [**Full Crash Course →**](./discord-github-crash-course)
+[**→ Set Up GitHub Account (Phone Only)**](./github-setup)

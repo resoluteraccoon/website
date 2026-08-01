@@ -17,8 +17,8 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         { type: 'doc', id: 'getting-started/index', label: 'Welcome to the Dojo' },
-        { type: 'doc', id: 'getting-started/quickstart', label: 'Quick Start (5 min)' },
-        { type: 'doc', id: 'getting-started/discord-github-crash-course', label: 'Discord + GitHub Crash Course' },
+        { type: 'doc', id: 'getting-started/github-setup', label: 'GitHub Setup (Phone)' },
+        { type: 'doc', id: 'getting-started/discord-setup', label: 'Discord Setup (Phone)' },
       ],
     },
     { type: 'doc', id: 'about', label: 'About Us' },
