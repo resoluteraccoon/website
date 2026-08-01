@@ -10,6 +10,17 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      link: { type: 'doc', id: 'getting-started/index' },
+      collapsed: false,
+      items: [
+        { type: 'doc', id: 'getting-started/index', label: 'Welcome to the Dojo' },
+        { type: 'doc', id: 'getting-started/quickstart', label: 'Quick Start (5 min)' },
+        { type: 'doc', id: 'getting-started/discord-github-crash-course', label: 'Discord + GitHub Crash Course' },
+      ],
+    },
     { type: 'doc', id: 'about', label: 'About Us' },
     {
       type: 'category',
