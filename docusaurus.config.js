@@ -17,7 +17,7 @@ const config = {
   presets: [
     [
       'classic',
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           editUrl: 'https://github.com/resoluteraccoon/website/tree/main/',
@@ -25,7 +25,7 @@ const config = {
         },
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
-      }),
+      },
     ],
   ],
 
@@ -84,6 +84,11 @@ const config = {
           label: 'Discord',
           position: 'left',
         },
+        {
+          href: 'https://x.com/ResoluteRC',
+          label: 'X',
+          position: 'left',
+        },
       ],
     },
     footer: {
@@ -104,11 +109,12 @@ const config = {
           items: [
             { href: 'https://resoluteraccoon.github.io/website/', label: 'Home' },
             { href: 'https://github.com/resoluteraccoon', label: 'GitHub' },
-            { href: 'https://discord.gg/resoluteraccoon', label: 'Discord' }
+            { href: 'https://discord.gg/resoluteraccoon', label: 'Discord' },
+            { href: 'https://x.com/ResoluteRC', label: 'X' }
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Resolute Raccoon.`
+      copyright: `Copyright © ${new Date().getFullYear()} Resolute Raccoon.`,
     },
     prism: { theme: lightCodeTheme, darkTheme: darkCodeTheme },
   },
